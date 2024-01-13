@@ -19,50 +19,66 @@
   </head>
 
   <body>
-    <!-- Header content within body
-
-    <section>HERO image and welcome and CTA</section>
-    <section>services and call to Action bookin and shop</section>
-    <section> Contact - end text -  diploma logos</section>
-    <section> footer</section>
-
-     -->
-
+    <!-- Header with logo and nav bar -->
     
     <header>
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="company logo" id="logo">
-        </a>
-    
-        <!-- insert -->
-
         <nav>
-            <!-- Navigation Menu -->  
-            <ul id="menu">
-                <li>
-                    <a href="#index.html" class="active" aria-label="Button for Home section">Home</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-            
-                <!-- insert a submenu dropdown 
-                     Lymphatic Therapy, Herbal Therapy, zone therapy -->
-                <li>
-                    <a href="#booking-prices.html" aria-label="Button for boooking and prices section">Booking & Prices</a>
-                </li>
-                <li>
-                    <a href="#shop.html" aria-label="Button for Webshop section">Shop</a>
-                </li>
-                <li>
-                    <a href="#contact.html" aria-label="Button for Contact us section">Connect with us</a>
-                </li>
-            </ul>
-         </nav>
-
+            <div class="header-wrapper">
+                <div class:"logo-img">
+                    <a href="index.html">
+                    <img src="assets/images/logo.png" alt="company logo" id="logo">
+                    </a>
+                </div>
+                
+                <div class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="#index.html" class="active" aria-label="Button for Home section">Home</a> 
+                        </li>
+                        
+                        <!-- Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar -->
+                        <li>
+                            <div class="dropdown>
+                                <button class="dropbtn">Services
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#booking-prices.html" aria-label="Button for boooking and prices section">Booking & Prices</a>
+                                    <a href="#herbal.html" aria-label="Button for Herabal medicine section">Herbal Medicine</a>
+                                    <a href="#lymphatic.html" aria-label="Button for Lymphatic Drainage Therapy section">Lymphatic Drainage Therapy</a>
+                                    <a href="#zone-therapy.html" aria-label="Button for Zone Theapy section">Zone Therapy</a>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="#shop.html" aria-label="Button for Webshop section">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#contact.html" aria-label="Button for Contact us section">Connect with us</a>
+                            </li>                
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
- 
+    <main>
+
+     <!-- services and call to Action booking and shop -->
+
+     <section>Hero img and Welcome text presenting services and CTA booking and shop</section>
+
+
+     <!-- Therapy types with CTA booking -->
+
+     <section>Therapy types img w. link to page and CTA booking </section>
+
+    <!-- End note, who am i, where did i get my certification logo -->
+
+    <section>End note, who am i, where did i get my certification logo</section>
+
+
+    </main>
+    
 
     <!-- Footer -->
     <footer>

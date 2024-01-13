@@ -23,8 +23,15 @@ body {
     color: rgba(48, 19, 1, 1); 
 } 
 
-/* Header */
-header {   
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'Roboto' , sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: inherit;
+}
+
+/* Header & Logo */
+.header-wrapper {   
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -39,29 +46,123 @@ header {
     align-items: center;
 }
 
-header a {
-    /* removing line from under logo */
-    text-decoration: none;
-    color: inherit;
-}
 #logo {
     height: 249px;
     width: 249x;
     margin: 5px;
 }
 
-h1, h2, h3, h4, h5, h6  {
-    font-family: 'Roboto' , sans-serif;
-    text-transform: uppercase; 
-    letter-spacing: 2px;
-    color: inherit;
+.logo-img {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;  
+    font-size: 2em;
+    font-weight: 600; 
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-#menu {
+/*  Remove?
+ header a {
+    /* removing line from under logo 
+    text-decoration: none;
+    color: inherit;
+}
+ * /
+
+/* Navigation menu & links */
+
+.nav-menu {
     font-size: 100%;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
     list-style-type: none;
+    padding-right: calc(1.5rem + 5px);
+    gap: 20px;
+    
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;  
     color: rgba(48, 19, 1, 1); 
+    
+}
+
+.nav-menu a:hover {
+    font-weight: bold;
+   /* text-shadow: 1px 1px 2px black; */
+}
+
+.active {
+    border-bottom: 1px solid #301301;
+}
+
+/* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    color: #ded9db;
+}
+
+/* Dropdown button */
+.dropbtn {
+    letter-spacing: 4px;
+    display: flex; 
+    flex-direction: row;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline:invert;
+    color: rgba(48, 19, 1, 1);
+    padding: 0 14px 0 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #301301;
+    color: rgba(253, 248, 245, 1); 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #301301;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: rgba(253, 248, 245, 1);
+}
+
+.dropdown-content a:hover {
+    background-color: #301301;
+    color: rgba(253, 248, 245, 1); 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #301301;
+}
+
+.dropdown-content .sub-menu {
+    color: #301301;
 }
 
 /* Main */
