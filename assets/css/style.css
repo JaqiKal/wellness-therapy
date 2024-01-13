@@ -34,11 +34,11 @@ h1, h2, h3, h4, h5, h6  {
 .header-wrapper {   
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     height: 170px;
     background-color: #ded9db;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 200px 0 50px; 
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6  {
 
 #logo {
     height: 249px;
-    width: 249x;
+    width: 249px;
     margin: 5px;
 }
 
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6  {
 /* The dropdown container */
 .dropdown {
     float: left;
-    overflow: hidden
+    overflow: hidden;
     position: relative;
     color: #ded9db;
 }
@@ -117,12 +117,7 @@ h1, h2, h3, h4, h5, h6  {
     justify-content: space-between;
     flex-direction: column;
     letter-spacing: 4px;
-    align-items: center;  
-    border: none;
-    outline: none;
-    background-color: transparent;  
 }
-
 
 .dropdown .dropbtn {
     font-size: 16px;  
@@ -179,6 +174,7 @@ main {
    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+    padding: 0 10px 0 50px; 
 }
 
 
