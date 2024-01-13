@@ -8,17 +8,151 @@
     box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    background-color: #fdf8f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #301301;
+    font-family: 'open-sans', 'Roboto' , sans-serif;
+
 /* Header */
-header {
-    background-color: lightcoral;
+header {    
+    background-color: #ded9db;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    /* removing line from under logo */
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Roboto' , sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: #301301;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    color: #ded9db;
 }
 
 /* Main */
 main {
-    background-color: lightblue;
+    background-color: #fdf8f5;  
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+   /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
 
+/* Navbar styles with dropdown toggle */
+
 /* Footer */
+
 footer {
-    background-color: orange}  
+    background-color: #ded9db;
+    width: 100%;
+    padding: 1rem;
+    color: #3a3a3a;
+    font-size: 14px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social-networks, #payment-options {
+    list-style-type: none;
+    display: flex;
+
+}
+
+#social-networks li, #payment-options li {
+    /* Add space between items */
+    margin-right: 20px; 
+}
+
+#social-networks li:last-child, #payment-options li:last-child {
+    /* Remove margin for the last item */
+    margin-right: 0; 
+}
+
+.footer-center {
+    flex-grow: 1;
+    text-align: center;
+    /* Add padding on both sides */
+    padding: 0 20px;
+}
+
+.footer-center a {
+    margin: 0 10px;
+}
+
+.footer-divider {
+    border: none;
+    height: 1px; 
+    background-color: #301301; 
+    margin: 20px 0 10px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: small;
+}
+
+/* Footer Icons */
+#social-networks i, #payment-options i {
+    font-size: 160%;
+    padding: 5%;
+    color: #301301;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for very small screens if necessary */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack payment options at the top */
+    #payment-options {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    /* Social networks in the middle */
+    #social-networks {
+        order: 2;
+        margin-bottom: 10px;
+    }
+
+    /* Footer center content (Cookies, Privacy Policy) */
+    .footer-center {
+        order: 3;
+    }
 }
