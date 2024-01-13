@@ -19,16 +19,17 @@ body {
     font-family: 'open-sans', 'Roboto' , sans-serif;
 
 /* Header */
-header {    
+header {   
+    display: flex; 
+    justify-content: space-between;
+    height: 250px;
     background-color: #ded9db;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    box-shadow: 0 1px 1px #301301;
+    align-items: center;
 }
 
 header a {
@@ -36,6 +37,12 @@ header a {
     text-decoration: none;
     color: inherit;
 }
+#logo {
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+}
+
 
 h1 {
     font-family: 'Roboto' , sans-serif;
@@ -45,8 +52,8 @@ h1 {
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
+    font-size: 100%;
+    letter-spacing: 5px;
     list-style-type: none;
     color: #301301;
 }
@@ -57,21 +64,21 @@ main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
+    margin-top: 250px;
    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
 }
 
-/* Navbar styles with dropdown toggle */
 
 /* Footer */
 
 footer {
     background-color: #ded9db;
+    height: 100px;
     width: 100%;
     padding: 1rem;
-    color: #3a3a3a;
+    color: #30130;
     font-size: 14px;
 }
 
@@ -123,7 +130,7 @@ footer {
 
 /* Footer Icons */
 #social-networks i, #payment-options i {
-    font-size: 160%;
+    font-size: 180%;
     padding: 5%;
     color: #301301;
 }
