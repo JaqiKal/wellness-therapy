@@ -62,14 +62,6 @@ h1, h2, h3, h4, h5, h6  {
     text-decoration: none;
 }
 
-/*  Remove?
- header a {
-    /* removing line from under logo 
-    text-decoration: none;
-    color: inherit;
-}
- * /
-
 /* Navigation menu & links */
 
 .nav-menu {
@@ -91,7 +83,7 @@ h1, h2, h3, h4, h5, h6  {
     list-style-type: none;
     justify-content: space-between;
     text-decoration: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-menu a {
@@ -117,22 +109,26 @@ h1, h2, h3, h4, h5, h6  {
     overflow: hidden
     position: relative;
     color: #ded9db;
-   
 }
 
 /* Dropdown button */
 .dropbtn {
-    letter-spacing: 4px;
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    
+    letter-spacing: 4px;
+    align-items: center;  
+    border: none;
+    outline: none;
+    background-color: transparent;  
 }
 
+
 .dropdown .dropbtn {
-    font-size: 14px;  
+    font-size: 16px;  
     border: none;
     outline:invert;
-    color:rgba(253, 248, 245, 1); 
+    color: rgba(48, 19, 1, 1);   
     padding: 0 14px 0 14px;
     background-color: inherit;
     font-family: inherit;
@@ -176,8 +172,7 @@ h1, h2, h3, h4, h5, h6  {
 
 /* Main */
 main {
-    background-color: #fdf8f5;  
-    /* Enlarge main element to push footer down*/
+       /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 250px;
