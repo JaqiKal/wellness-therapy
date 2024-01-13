@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6  {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    height: 180x;
     background-color: #ded9db;
     margin: 0;
     padding: 0 1rem;
@@ -62,6 +61,10 @@ h1, h2, h3, h4, h5, h6  {
     font-weight: 600; 
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.logo-img :hover {
+    transform: scale(1.1); 
 }
 
 /* Navigation menu & links */
@@ -106,7 +109,7 @@ h1, h2, h3, h4, h5, h6  {
 /* The dropdown container */
 .dropdown {
     float: left;
-    overflow: hidden
+    overflow: hidden;
     position: relative;
     color: #ded9db;
 }
@@ -256,12 +259,16 @@ footer {
 
 
 /* Responsive Styles */
+/* MAX-width 480 px */
+
 @media screen and (max-width: 480px) {
     /* Adjust styles for very small screens if necessary */
        /* Main */
 
 
 }
+
+/* MAX-width 768 px */
 
 @media screen and (max-width: 768px) {
     /* Header */
@@ -312,32 +319,13 @@ footer {
         order: 3;
     }
 
+    /* MAX-width 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
+    }
 
-    .welcome p {
-        font-size: 20px !important;
-    }
-    
-    .quote h1 {
-        font-size: 20px;
-        width: 75%
-    }
-    
-    }
-    
-    @media screen and (min-width: 1400px){
-    
-    .features {
-        margin: 0% 10px 3% 10px;  
-    }
+
+    /* MAX-width 1400 px */  
         
-    .feature_button {
-        height: 225px;
-        width: 450px;
-        background-color: rgb(49, 63, 63);
-        border: #3a3a3a solid 2px;
-        background-size: cover;
-        padding: 5px;
+@media screen and (min-width: 1400px){
     }
-        
-    }
+}
