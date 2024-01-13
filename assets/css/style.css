@@ -10,20 +10,27 @@
 
 /* General styles */
 body {
+    font-family: 'open-sans', 'Roboto' , sans-serif;
+    font-weight: 400;
     background-color: #fdf8f5;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    /* Better text readability on large screens */
+    max-width: 2000px;
     /* Generic project styles */
-    color: #301301;
-    font-family: 'open-sans', 'Roboto' , sans-serif;
+    color: rgba(48, 19, 1, 1); 
+} 
 
 /* Header */
 header {   
     display: flex; 
+    flex-direction: row;
     justify-content: space-between;
-    height: 250px;
+    height: 170px;
     background-color: #ded9db;
+    margin: 0;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -38,24 +45,23 @@ header a {
     color: inherit;
 }
 #logo {
-    height: 250px;
-    width: 250px;
+    height: 249px;
+    width: 249x;
     margin: 5px;
 }
-
 
 h1 {
     font-family: 'Roboto' , sans-serif;
     text-transform: uppercase; 
     letter-spacing: 2px;
-    color: #301301;
+    color: rgba(48, 19, 1, 1);
 }
 
 #menu {
     font-size: 100%;
     letter-spacing: 5px;
     list-style-type: none;
-    color: #301301;
+    color: rgba(48, 19, 1, 1); 
 }
 
 /* Main */
@@ -78,8 +84,9 @@ footer {
     height: 100px;
     width: 100%;
     padding: 1rem;
-    color: #30130;
+    color: rgba(48, 19, 1, 1); 
     font-size: 14px;
+    margin: 0;
 }
 
 .footer-top {
@@ -132,7 +139,7 @@ footer {
 #social-networks i, #payment-options i {
     font-size: 180%;
     padding: 5%;
-    color: #301301;
+    color: rgba(48, 19, 1, 1); 
 }
 
 /* Responsive Styles */
