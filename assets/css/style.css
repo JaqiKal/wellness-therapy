@@ -116,20 +116,22 @@ h1, h2, h3, h4, h5, h6  {
     float: left;
     overflow: hidden;
     color: #ded9db;
+   
 }
 
 /* Dropdown button */
 .dropbtn {
     letter-spacing: 4px;
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
+    
 }
 
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
     outline:invert;
-    color: rgba(48, 19, 1, 1);
+    color:rgba(253, 248, 245, 1); 
     padding: 0 14px 0 14px;
     background-color: inherit;
     font-family: inherit;
@@ -152,8 +154,8 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 .dropdown-content a:hover {
-    background-color: #301301;
-    color: rgba(253, 248, 245, 1); 
+    background-color:  rgba(253, 248, 245, 1); 
+    color:  #301301;
 }
 
 .dropdown:hover .dropdown-content {
