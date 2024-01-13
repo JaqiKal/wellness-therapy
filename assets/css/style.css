@@ -17,9 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    /* Better text readability on large screens */
-    max-width: 2000px;
-    /* Generic project styles */
+     /* Generic project styles */
     color: rgba(48, 19, 1, 1); 
 } 
 
@@ -172,7 +170,7 @@ h1, h2, h3, h4, h5, h6  {
 
 /* Main */
 main {
-       /* Enlarge main element to push footer down*/
+    /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 250px;
@@ -186,7 +184,7 @@ main {
 
 footer {
     background-color: #ded9db;
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     padding: 1rem;
     color: rgba(48, 19, 1, 1); 
