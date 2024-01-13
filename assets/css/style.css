@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-     /* Generic project styles */
+    /* Generic project styles */
     color: rgba(48, 19, 1, 1); 
 } 
 
@@ -28,12 +28,16 @@ h1, h2, h3, h4, h5, h6  {
     color: inherit;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header & Logo */
 .header-wrapper {   
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    height: 170px;
+    height: 180x;
     background-color: #ded9db;
     margin: 0;
     padding: 0 1rem;
@@ -45,8 +49,8 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 #logo {
-    height: 249px;
-    width: 249x;
+    height: 100px;
+    width: 150px;
     margin: 5px;
 }
 
@@ -170,10 +174,11 @@ h1, h2, h3, h4, h5, h6  {
 
 /* Main */
 main {
+    margin-left: 5px;
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 250px;
+    margin-top: 150px;
    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
@@ -248,9 +253,38 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 480px) {
     /* Adjust styles for very small screens if necessary */
+       /* Main */
+
+
 }
 
 @media screen and (max-width: 768px) {
+    /* Header */
+
+    .header-wrapper {
+        display: block;
+        background-color: #ded9db;
+        width: 100%;
+        height: auto;
+        margin: 0;    
+    }
+
+    #logo {
+        height: 100%;
+        width: 50%;  
+     }
+
+
+     /* Main */
+
+     main {
+        /* Add margin at the top to prevent content from being covered by the header */
+         margin-top: 230px;
+     }
+
+
+    /* Footer */
+
     .footer-top {
         flex-direction: column;
         align-items: center;
@@ -272,4 +306,33 @@ footer {
     .footer-center {
         order: 3;
     }
-}
+
+@media only screen and (min-width: 951px) and (max-width: 1110px) {
+
+    .welcome p {
+        font-size: 20px !important;
+    }
+    
+    .quote h1 {
+        font-size: 20px;
+        width: 75%
+    }
+    
+    }
+    
+    @media screen and (min-width: 1400px){
+    
+    .features {
+        margin: 0% 10px 3% 10px;  
+    }
+        
+    .feature_button {
+        height: 225px;
+        width: 450px;
+        background-color: rgb(49, 63, 63);
+        border: #3a3a3a solid 2px;
+        background-size: cover;
+        padding: 5px;
+    }
+        
+    }
