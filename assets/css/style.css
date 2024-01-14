@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6  {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(222, 217, 219, 0.6); 
+    background-color: rgba(222, 217, 219, 1); 
     margin: 0;
     padding: 0 1rem;
     position: fixed;
@@ -178,7 +178,6 @@ main {
     flex-direction: column;
 }
 
-
 /* Footer */
 
 footer {
@@ -255,37 +254,118 @@ footer {
     color: rgb(251, 5, 235, 1); 
 }
 
-/* Responsive Styles */
-/* MAX-width 480 px */
-
-@media screen and (max-width: 480px) {
-    /* Adjust styles for very small screens if necessary */
-       /* Main */
-
-
-}
-
 /* Shop page */
 
+.perfect-container, .image-container, # {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: left; /* Center-align children horizontally */
+    justify-content: center; /* Center-align children vertically */
+}
+
+
 /* Resize the £50 and £100 gift card image */
-#gift50, #gift100 {
-    width: 300px; 
+.gift-pic {
+    width: 200px; 
     /* maintains the aspect ratio */
     height: auto; 
 }
 
 .image-container {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
+    justify-content: left; 
+    align-items: left;   
     gap: 20px;
-}
-.image-container img {
     width: auto; 
-    height: 100px;
+    height: auto;
 }
 
-  
+
+    /* Thank You page */
+    .thank-you  {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 50px;
+        width: 50%; 
+    }
+
+    .thank-you ul {
+        margin-left: 20px
+        list-style-type: disc;
+        padding: 20px;
+    }
+
+
+    /* 404 Not found page */
+    .not-found   {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 50px;
+        width: 50%;
+            
+    }
+
+    .not-found ul {       
+        margin-left: 20px
+        list-style-type: disc;
+        padding: 20px;
+}
+
+  /* Media queries */
+/* MAX-width 480 px */
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for very small screens if necessary */
+   /* Main */
+
+    /* Ensuring the .shop container stacks its children vertically */
+    .shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+        /* Adjusting the .image-container for smaller screens */
+        .image-container {
+            display: flex;
+            flex-direction: column
+            align-items: center;
+        }
+    
+        .gift-pic {
+            width: 100%; 
+            height: auto;
+        }
+
+}
+
+/* MAX-width 625 */
+@media screen and (max-width: 625px) {
+
+    /* Ensuring the .shop container stacks its children vertically */
+    .shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+        /* Adjusting the .image-container for smaller screens */
+        .image-container {
+            display: flex;
+            flex-direction: column
+            align-items: center;
+        }
+    
+        .gift-pic {
+            width: 100%; 
+            height: auto;
+        }
+
+}
 
 /* MAX-width 768 px */
 
@@ -310,7 +390,7 @@ footer {
 
      main {
         /* Add margin at the top to prevent content from being covered by the header */
-         margin-top: 230px;
+         margin-top: 200px;
      }
 
 
@@ -340,16 +420,49 @@ footer {
 
 
     /* Shop page */
+    /* Ensuring the .shop container stacks its children vertically */
 
-    /* Layout change: menu stacks below logo */
-    .image-container {
+    .shop h1, h2, h3, h4, h5, h6, p {
+        text-align: left;
+    }
+
+    .shop {
         display: flex;
         flex-direction: column;
-        justify-content: center; 
-        align-items: center;   
-        width: auto; 
-        height: 100px;
+        align-items: center;
+        }
+    
+    /* Adjusting the .image-container for smaller screens */
+    .image-container {
+        display: flex;
+        flex-direction: column
+        align-items: center;
     }
+
+    .gift-pic {
+        width: 100%; 
+        height: auto;
+    }
+
+    /* 404 Not found page */
+
+    .not-found   {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 50px;
+        width: 50%;
+        line-height: 1.7;
+    }
+
+    .not-found ul {
+        margin-left: 20px
+    }
+
+
+    
+
 
     /* MAX-width 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
