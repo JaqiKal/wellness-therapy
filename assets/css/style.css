@@ -342,14 +342,6 @@ footer {
     /* Shop page */
 
     /* Layout change: menu stacks below logo */
-    .header-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;    
-    }
-
-/* Resize the £50 and £100 gift card image */
     .image-container {
         display: flex;
         flex-direction: column;
