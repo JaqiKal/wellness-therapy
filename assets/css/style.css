@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3, h4, h5, h6  {
     font-family: 'Roboto' , sans-serif;
-    text-transform: uppercase; 
     letter-spacing: 2px;
     color: inherit;
 }
@@ -102,6 +101,9 @@ h1, h2, h3, h4, h5, h6  {
 .active {
     border-bottom: 1px solid #301301;
 }
+#active-service {
+    border-bottom: 1px solid #301301;
+}
 
 /* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
 
@@ -121,8 +123,8 @@ h1, h2, h3, h4, h5, h6  {
     align-items: center;  
     border: none;
     outline: none;
-    background-color: transparent; 
-    }
+    background-color: transparent;
+}
 
 
 .dropdown .dropbtn {
