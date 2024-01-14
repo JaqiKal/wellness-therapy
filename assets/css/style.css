@@ -250,7 +250,7 @@ footer {
     transform: scale(1.1); 
 }
 
-#footer-center:hover {
+#footer-cookie:hover, #footer-privacy:hover {
     color: rgb(251, 5, 235); 
 }
 
