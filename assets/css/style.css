@@ -265,6 +265,28 @@ footer {
 
 }
 
+/* Shop page */
+
+/* Resize the £50 and £100 gift card image */
+#gift50, #gift100 {
+    width: 300px; 
+    /* maintains the aspect ratio */
+    height: auto; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    gap: 20px;
+}
+.image-container img {
+    width: auto; 
+    height: 100px;
+}
+
+  
+
 /* MAX-width 768 px */
 
 @media screen and (max-width: 768px) {
@@ -314,6 +336,27 @@ footer {
     /* Footer center content (Cookies, Privacy Policy) */
     .footer-center {
         order: 3;
+    }
+
+
+    /* Shop page */
+
+    /* Layout change: menu stacks below logo */
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;    
+    }
+
+/* Resize the £50 and £100 gift card image */
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;   
+        width: auto; 
+        height: 100px;
     }
 
     /* MAX-width 1110 px */
