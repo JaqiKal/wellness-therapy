@@ -251,7 +251,7 @@ footer {
 }
 
 #footer-cookie:hover, #footer-privacy:hover {
-    color: rgb(251, 5, 235); 
+    color: rgb(251, 5, 235, 1); 
 }
 
 /* Responsive Styles */
