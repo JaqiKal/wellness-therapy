@@ -241,6 +241,39 @@ main {
     opacity: 0.6;
 }
 
+/* Services section */
+
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.service p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
 
 /* Footer */
 
