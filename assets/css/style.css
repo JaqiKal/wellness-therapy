@@ -265,15 +265,22 @@ main {
     margin-bottom: 20px;
 }
 
-.service p {
+.appointment-button {
+    background-color: rgb(150, 192, 150);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
     margin-top: 10px;
-    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.button:hover {
+.appointment-button:hover {
     background-color: #0056b3;
 }
-
 
 /* Footer */
 
@@ -420,6 +427,7 @@ footer {
 }
 
 /* Media queries */
+
 /* Media query: max-width 480 px */
 @media screen and (min-width: 480px) {
 /* Adjust styles for very small screens if necessary */
@@ -463,6 +471,14 @@ footer {
 main {
 /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 119;
+}
+
+
+@media (min-width: 768px) {
+    .service img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Footer */
