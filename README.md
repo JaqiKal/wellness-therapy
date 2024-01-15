@@ -198,6 +198,7 @@ While developing the website, I've carefully focused on maximizing its accessibi
 
 ### Frameworks, Libraries & Programs Used
 
+* [ASPOSE](https://products.aspose.app/pdf/sv/conversion/jpg-to-webp#): Used to convert image to WEBP.
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 * [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
 * [Git](https://git-scm.com/) - For version control.
