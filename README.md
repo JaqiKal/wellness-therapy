@@ -328,6 +328,7 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 * [Favicon.io](https://favicon.io/favicon-converter/): Used to create the site Favicon and provided the code in the head of all pages.
 * [HowTo: Create A Hoverable Dropdown](https://www.w3schools.com/howto/howto_css_dropdown.asp): 
 The coding for the dropdown menu on the "Services" menu was derived from the guidelines provided on this page.
+* [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create content in [Privacy Policy page](https://jaqikal.github.io/wellness-therapy/privacy-policy).
 
 ### Content
 

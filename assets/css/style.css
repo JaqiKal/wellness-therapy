@@ -25,8 +25,20 @@ h1, h2, h3, h4, h5, h6  {
     font-family: 'Roboto' , sans-serif;
     letter-spacing: 2px;
     color: inherit;
+    margin-top: 20px; /* Add space above each heading */
+    margin-bottom: 15px; /* Add space below each heading */
 }
 
+p {
+    margin-top: 10px; /* Add space above each paragraph */
+    margin-bottom: 10px; /* Add space below each paragraph */
+}
+
+ul {
+    margin-top: 15px; /* Add space above each list */
+    margin-bottom: 15px; /* Add space below each list */
+    padding-left: 20px; /* Add space inside the list, to the left of list items */
+}
 
 /* Header & Logo */
 .header-wrapper {   

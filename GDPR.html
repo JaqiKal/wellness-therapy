@@ -1,73 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerbaShop - GDPR Disclaimer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Meta tags for search engines -->
+    <meta name="description" content="Discover expert reflexology and lymphatic drainage massage at Manus Herba in Södertälje, south of Stockholm. Enhance wellness with our personalized therapy sessions and thoughtful gift cards.">
+    <meta name="keywords" content="reflexology, zone therapy, lymphatic drainage massage, therapeutic massage, wellness therapy, massage">
+    <!-- Title -->
+    <title>ManusHerbaTherapy</title>
+    <!--Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
 
-<body>
+  <body>
+    <!-- Header with logo and nav bar -->
 
-    <div class="page">
+    <header>
+      <nav>
+        <div class="header-wrapper">
+          <div class="logo-img">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="company logo" id="logo">
+            </a>
+          </div>
 
-        <!-- Sticky header -->
-        <header>
-            <h1>HerbaShop</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="/products/index.html">Products</a>
-                <a href="herbarchive.html">Herb Archive</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+          <div class="nav-menu">
+            <ul>
+              <li>
+                <a href="index.html"  aria-label="Button for Home section">Home</a>
+              </li>
+
+              <!-- Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar -->
+              <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                  <div class="dropdown-content">
+                    <a href="booking-price.html" aria-label="Button for boooking and prices section">Booking & Prices</a>
+                    <a href="herbal-therapy.html" aria-label="Button for Herbal Therapy section">Herbal Therapy</a>
+                    <a href="lymphatic-drainage-therapy.html" aria-label="Button for Lymphatic Drainage Therapy section">Lymphatic Drainage Therapy</a>
+                    <a href="zone-therapy.html" aria-label="Button for Zone Therapy section">Zone Therapy</a>
+                  </div>
+                </div>
+              <li>
+                <a href="shop.html" aria-label="Button for Webshop section">Shop</a>
+              </li>
+              <li>
+                <a href="contact.html" aria-label="Button for Contact us section">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section>
 
         <!-- Main content with GDPR disclaimer -->
         
-            <h2>GDPR Disclaimer</h2>
+            <h1>GDPR Disclaimer</h1>
 
-            <p>This GDPR disclaimer is for informational purposes only and does not constitute legal advice. The following information outlines how we handle your personal data in compliance with the General Data Protection Regulation (GDPR).</p>
+            <p>This GDPR disclaimer is for informational purposes only and does not constitute legal advice. 
+                The following information outlines how we handle your personal data in compliance with the General Data Protection Regulation (GDPR).</p>
+            <br>
 
-            <h3>1. Information We Collect</h3>
+            <h2>Information We Collect</h2>
             <p>We may collect and process the following personal data:</p>
             <ul>
                 <li>Data provided voluntarily by you through forms or interactions on the website.</li>
                 <li>Automatically collected data, including but not limited to IP addresses, browser details, and device information.</li>
             </ul>
-
-            <h3>2. Use of Information</h3>
+            <br>
+            <h2>Use of Information</h2>
             <p>We use the collected information for purposes such as providing and personalizing our services, administering the website, and analyzing user behavior to improve our content and services.</p>
-
-            <h3>3. Cookies</h3>
-            <p>This website uses cookies to enhance user experience. By using our website, you consent to the use of cookies in accordance with our <a href="pages/cookies.html">Cookie Policy</a>.</p>
-
-            <h3>4. Data Security</h3>
+            <br>
+            <h2>Cookies</h2>
+            <p>This website uses cookies to enhance user experience. By using our website, you consent to the use of cookies in accordance with our <a href="cookies.html">Cookie Policy</a>.</p>
+            <br>
+            <h2>Data Security</h2>
             <p>We take appropriate measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction.</p>
-
-            <h3>5. Your Rights</h3>
+            <br>
+            <h2>Your Rights</h2>
             <p>You have the right to access the personal information we hold about you, correct inaccuracies, and request the deletion of your personal information.</p>
-
-            <h3>6. Changes to this Disclaimer</h3>
+            <br>
+            <h2>Changes to this Disclaimer</h2>
             <p>This GDPR disclaimer may be updated from time to time. Please review it periodically for any changes.</p>
-
-            <h3>7. Contact Information</h3>
+            <br>
+            <h2>Contact Information</h2>
             <p>If you have any questions about this GDPR disclaimer or our data practices, contact us at <a href="mailto:contact@email.com">contact@email.com</a>.</p>
 
-        
+            </section>
+        </main>
+
+
         <!-- Footer -->
         <footer>
-            <a href="index.html">Home</a>
-            <a href="pages/about-us.html">About Us</a>
-            <a href="pages/sustainability.html">Sustainability</a>
-            <a href="pages/privacy-policy.html">Privacy Policy</a>
-            <a href="pages/sitemap.html">Sitemap</a>
-            <a href="pages/cookies.html">Cookies</a>
-            <a href="pages/gdpr.html">GDPR</a>
+          <div class="footer-top">
+            <ul id="social-networks">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                  <i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                  <i class="fa-brands fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+                  <i class="fa-brands fa-youtube-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                  <i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+    
+            <div class="footer-center">
+              <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
+              <a href="privacy-policy" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
+            </div>
+    
+            <ul id="payment-options">
+              <li>
+                <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
+                  <i class="fa-brands fa-cc-mastercard"></i></a>
+              </li>
+              <li>
+                <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
+                  <i class="fa-brands fa-cc-visa"></i></a>
+              </li>
+              <li>
+                <a href="https://www.americanexpress.com/" target="_blank" rel="noopener" aria-label="Pay securely with AMEX (opens in a new tab)">
+                  <i class="fa-brands fa-cc-amex"></i></a>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
+                  <i class="fa-brands fa-cc-paypal"></i></a>
+              </li>
+              <li>
+                <a href="https://www.bitcoin.com/" target="_blank" rel="noopener" aria-label="Pay securely with Bitcoin (opens in a new tab)">
+                  <i class="fa-brands fa-bitcoin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Horizontal rule for separation -->
+          <hr class="footer-divider">
+          <div class="footer-bottom">
+            <p>
+              This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
+          </div>
         </footer>
-
-    </div>
-
-</body>
-
-</html>
+    
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
+      </body>
+    
+    </html>
+    
