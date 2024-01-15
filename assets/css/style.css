@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6  {
     margin-bottom: 15px; /* Add space below each heading */
 }
 
+.hidden-heading {
+    display: none;
+}
+
 p {
     margin-top: 10px; /* Add space above each paragraph */
     margin-bottom: 10px; /* Add space below each paragraph */
@@ -257,7 +261,7 @@ main {
 .service img {
     width: 100%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 20px; 
 }
 
 .service p {
@@ -274,7 +278,7 @@ main {
     display: inline-block;
     margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s;
 }
 
