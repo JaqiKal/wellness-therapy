@@ -12,7 +12,7 @@
 body {
     font-family: 'open-sans', 'Roboto' , sans-serif;
     font-weight: 400;
-    background-color: #fdf8f5;
+    background-color: rgba(222, 217, 219, 0.2);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -256,30 +256,39 @@ footer {
 
 /* Shop page */
 
-.perfect-container, .image-container {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack children vertically */
-    align-items: left; /* Center-align children horizontally */
-    justify-content: center; /* Center-align children vertically */
-}
-
-
-/* Resize the £50 and £100 gift card image */
-.gift-pic {
-    width: 250px; 
-    /* maintains the aspect ratio */
-    height: auto; 
-}
-
-.image-container {
-    display: flex;
-    justify-content: left; 
-    align-items: left;   
-    gap: 20px;
+.shop  {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: inherit;
+    text-align: center;
+    position: relative; 
+    gap:20px;
     width: auto; 
     height: auto;
 }
 
+.image-container {
+    display: flex; /* Enable Flexbox for the container */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    align-items: center; /* Vertically center items in the container */
+    justify-content: center;
+ 
+    box-sizing: content-box;
+    background-color: rgba(222, 217, 219, 0.2); /* Semi-transparent background */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Resize the £50 and £100 gift card image */
+.gift-pic {
+    width: 200px; 
+    /* maintains the aspect ratio */
+    height: auto; 
+    margin: 10px;
+}
 
 /* Thank You page & Not Found page*/
 
@@ -313,60 +322,26 @@ footer {
 }
 
 
-  /* Media queries */
-/* MAX-width 480 px */
+/* Media queries */
 
+/* Smaller screesn */
+@media (max-width: 600px) {
+    .image-container {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .gift-pic {
+        width: 100%; /* Full width of the container */
+        margin: 10px 0; /* Vertical margin */
+    }
+}
+/* MAX-width 480 px */
 @media screen and (max-width: 480px) {
     /* Adjust styles for very small screens if necessary */
-   /* Main */
-
-    /* Ensuring the .shop container stacks its children vertically */
-    .shop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    
-        /* Adjusting the .image-container for smaller screens */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .gift-pic {
-            width: 100%; 
-            height: auto;
-        }
-
-}
-
-/* MAX-width 625 */
-@media screen and (max-width: 625px) {
-
-    /* Ensuring the .shop container stacks its children vertically */
-    .shop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    
-        /* Adjusting the .image-container for smaller screens */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .gift-pic {
-            width: 100%; 
-            height: auto;
-        }
 
 }
 
 /* MAX-width 768 px */
-
 @media screen and (max-width: 768px) {
     /* Header */
 
@@ -381,7 +356,6 @@ footer {
     /* Centers logo above nav-menu */
     .logo-img {
         display: block;
-
     }
 
      /* Main */
@@ -391,56 +365,35 @@ footer {
          margin-top: 200px;
      }
 
-
     /* Footer */
-
     .footer-top {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Stack payment options at the top */
-    #payment-options {
+        #payment-options {
+        /* Stack payment options at the top */
         order: 1;
         margin-bottom: 10px;
     }
-
-    /* Social networks in the middle */
+    
     #social-networks {
+        /* Social networks in the middle */
         order: 2;
         margin-bottom: 10px;
     }
 
-    /* Footer center content (Cookies, Privacy Policy) */
-    .footer-center {
+        .footer-center {
+        /* Footer center content (Cookies, Privacy Policy) */
         order: 3;
     }
 
-
     /* Shop page */
-    /* Ensuring the .shop container stacks its children vertically */
-
-    .shop h1, h2, h3, h4, h5, h6, p {
+        .shop h1, h2, h3, h4, h5, h6, p {
+            /* Ensuring the .shop container stacks its children vertically */
         text-align: left;
     }
 
-    .shop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    
-    /* Adjusting the .image-container for smaller screens */
-    .image-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gift-pic {
-        width: 100%; 
-        height: auto;
-    }
 
 
 }
