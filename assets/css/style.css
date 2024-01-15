@@ -190,6 +190,55 @@ main {
     flex-direction: column;
 }
 
+/* Hero section - Welcome */
+
+#hero .background-image {
+    background-image: url('path-to-your-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; 
+}
+
+#hero .content {
+    text-align: center;
+    color: white; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+#hero .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    /* Gap between buttons */
+    margin-right: 10px; 
+    /* Ensures buttons have the same width */
+    min-width: 150px; 
+    text-align: center;
+}
+
+.appointment-button {
+    background-color: green;
+}
+
+.gift-button {
+    background-color: blue;
+}
+
+#hero .content a:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
 /* Footer */
 
 footer {
@@ -333,11 +382,27 @@ footer {
     max-width: max;
 }
 
-
 /* Media queries */
 
-/* Smaller screesn */
-@media (max-width: 600px) {
+Max 420
+Min 548
+Min 772
+Min 992
+
+
+
+/* Media query: max-width 480 px */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for very small screens if necessary */
+
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+}
+
+@media (min-width: 600px) {
     .image-container {
         flex-direction: column; /* Stack children vertically */
     }
@@ -346,14 +411,8 @@ footer {
         width: 100%; /* Full width of the container */
         margin: 10px 0; /* Vertical margin */
     }
-}
-/* MAX-width 480 px */
-@media screen and (max-width: 480px) {
-    /* Adjust styles for very small screens if necessary */
 
-}
 
-/* MAX-width 768 px */
 @media screen and (max-width: 768px) {
     /* Header */
 
@@ -406,6 +465,15 @@ footer {
         text-align: left;
     }
 
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
 
 
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
