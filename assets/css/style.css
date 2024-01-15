@@ -195,7 +195,7 @@ main {
 /* Hero section - Welcome */
 
 #hero .background-image {
-    background: url("../images/ocean-canva.webp") no-repeat center center/cover; 
+    background: url("../images/ocean-banner.webp") no-repeat center center/cover; 
     background-size: cover;
     background-position: center;
     padding: 100px 0; 
@@ -473,8 +473,10 @@ main {
     margin-top: 119;
 }
 
+/* Services*/
 
 @media (min-width: 768px) {
+    /* To have proper img scaling for devices larger thn 768px */
     .service img {
         width: 100%;
         height: auto;
