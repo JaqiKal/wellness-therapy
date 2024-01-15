@@ -266,7 +266,7 @@ footer {
 
 /* Resize the £50 and £100 gift card image */
 .gift-pic {
-    width: 200px; 
+    width: 250px; 
     /* maintains the aspect ratio */
     height: auto; 
 }
@@ -281,39 +281,37 @@ footer {
 }
 
 
-    /* Thank You page */
-    .thank-you  {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 50px;
-        width: 50%; 
-    }
+/* Thank You page & Not Found page*/
 
-    .thank-you ul {
-        margin-left: 20px;
-        list-style-type: disc;
-        padding: 20px;
-    }
-
-
-    /* 404 Not found page */
-    .not-found   {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 50px;
-        width: 50%;
-            
-    }
-
-    .not-found ul {       
-        margin-left: 20px;
-        list-style-type: disc;
-        padding: 20px;
+.thank-you, .not-found {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+       margin-top: 50px;
+    /* Center the box */
+    margin-left: auto; 
+    /* Center the box */
+    margin-right: auto; 
+    /* Responsive width */
+    width: 80%; 
+    max-width: 640px; 
+    font-size: inherit;
+    background-color: rgba(222, 217, 219, 0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    position: relative; 
 }
+
+.thank-you ul, .not-found ul {
+    margin: 0 auto; /* Centers the list */
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: left; 
+    max-width: max;
+}
+
 
   /* Media queries */
 /* MAX-width 480 px */
@@ -444,19 +442,5 @@ footer {
         height: auto;
     }
 
-    /* 404 Not found page */
 
-    .not-found   {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 50px;
-        width: 50%;
-        line-height: 1.7;
-    }
-
-    .not-found ul {
-        margin-left: 20px
-    }
 }
