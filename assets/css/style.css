@@ -261,7 +261,7 @@ main {
     max-width: 100%; 
     /* Maintains image aspect ratio */
     height: auto; 
-    padding: 50px; 
+    padding: 0x; 
     margin: 10px;
     border: 1px  #3013010e;
     border-radius: 10px;
@@ -271,7 +271,6 @@ main {
 #services img:hover {
     transform: scale(1.05);
 }
-
 
 /* End-note */
 #end-note {
@@ -287,10 +286,9 @@ main {
 }
 
 .why {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: inherit;
+    
+    font-size: larger;
+    max-width: 68%;
     padding: 10px;
     margin: 10px;
     /* Centers the content inside each div */
