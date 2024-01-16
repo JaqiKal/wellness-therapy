@@ -277,7 +277,6 @@ main {
     background-color:rgba(161, 184, 194, 0.192);
     border-top: 1px solid #ddeef8;
     border-bottom: 1px solid #ddeef8;
-    background-position-x: ;
 }
 
 #end.-note .background-image {
@@ -286,7 +285,6 @@ main {
 }
 
 .why {
-    
     font-size: larger;
     max-width: 68%;
     padding: 10px;
@@ -299,34 +297,6 @@ main {
     padding: 10px 50px;
 }
 
-
-/* End-note section */
-
-#end-note {
-    background-color:rgba(161, 184, 194, 0.192);
-    border-top: 1px solid #ddeef8;
-    border-bottom: 1px solid #ddeef8;
-    background-position-x: ;
-}
-
-#end.-note .background-image {
-    background-size: cover;
-    background-position: center;
-}
-
-.why {
-    
-    font-size: larger;
-    max-width: 68%;
-    padding: 10px;
-    margin: 10px;
-    /* Centers the content inside each div */
-    text-align: left; 
-    }
-
-.why p {
-    padding: 10px 50px;
-}
 /* Booking & Price sub-page */
 
 /* Form */
@@ -334,15 +304,27 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 2%;
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 
+.left-side p {
+    .padding: 10px;
+}
+
+}
 .left-side, .right-side {
     width: 50%;
+    border-radius: 10px;
 }
 
 .left-side {
     background-color: #ded9db;
     /* Lägg till stil för din text här */
+}
+
+.left-side p, h1 {
+    padding: 30px;
 }
 
 .fieldset {
@@ -351,6 +333,7 @@ main {
 
 .right-side {
     margin: 2%;
+
 }
 
 #form  {
@@ -366,15 +349,16 @@ main {
     padding: 10px 20px;
     color: rgb(48, 19, 1, 1);;
     font-weight: bold;
+    font-size: large;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#send .content a:hover {
-    opacity: 0.6;
+#send:hover {
+    transform: scale(1.05);
+  
 }
-
 
  /* Footer */
 
@@ -529,99 +513,89 @@ footer {
 
 /* Media queries */
 
-/* Media query: max-width 480 px */
+/* Styles for small devices (phones, less than 480px) */
+/* Default CSS before the first breakpoint */
+
+/* Styles for devices at least 480px wide */
 @media screen and (min-width: 480px) {
-/* Adjust styles for very small screens if necessary */
-.gift-pic {
-    width: 100%; /* Full width of the container */
-    margin: 10px 0; /* Vertical margin */
-}    
-
-@media (min-width: 540px) {
-.image-container {
-    flex-direction: column; /* Stack children vertically */
+    .gift-pic {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
 
-.gift-pic {
-    width: 100%; /* Full width of the container */
-    margin: 10px 0; /* Vertical margin */
+/* Styles for devices at least 540px wide */
+@media screen and (min-width: 540px) {
+    .image-container {
+        flex-direction: column;
+    }
+    .gift-pic {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
 
-
-@media screen and (max-width: 600px) {
+/* Styles for devices at least 600px wide */
+@media screen and (min-width: 600px) {
     .split-section {
         flex-direction: column;
     }
-
     .left-side, .right-side {
         width: 100%;
     }
 
-@media screen and (max-width: 768px) {
-/* Header */
-
-/* Layout change: menu stacks below logo */
-.header-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;    
-}
-
-/* Centers logo above nav-menu */
-.logo-img {
-    display: block;
-}
-
-/* Main */
-
-main {
-/* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 119;
-}
-
-/* Services*/
-
-
-/* Footer */
-.footer-top {
-    flex-direction: column;
-    align-items: center;
-}
-
-    #payment-options {
-    /* Stack payment options at the top */
-    order: 1;
-    margin-bottom: 10px;
-}
-
-#social-networks {
-    /* Social networks in the middle */
-    order: 2;
-    margin-bottom: 10px;
-}
-
-.footer-center {
-    /* Footer center content (Cookies, Privacy Policy) */
-    order: 3;
-}
-
-/* Shop page */
-    .shop h1, h2, h3, h4, h5, h6, p {
-        /* Ensuring the .shop container stacks its children vertically */
-    text-align: left;
-}
-
-}
-
-/* Media query: tablets and larger (768px and up) */
+/* Styles for Devices at Least 768px Wide */
 @media screen and (min-width: 768px) {
+    
+    /* index */
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-img {
+        display: block;
+    }
+    main {
+        margin-top: 119px;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    #payment-options {
+        order: 1;
+        margin-bottom: 10px;
+    }
+    #social-networks {
+        order: 2;
+        margin-bottom: 10px;
+    }
+    .footer-center {
+        order: 3;
+    }
 
+    /* Shop */
+    .shop h1, h2, h3, h4, h5, h6, p {
+        text-align: left;
+    }
 
-/* Large devices (laptops and desktops, 992px and up) */
+    /* Booking & Pricing */
+    .split-section {
+        flex-direction: column;
+    }
+    .left-side, .right-side {
+        width: 100%;
+    }
+}
+
+/* Styles for Devices at Least 992px Wide (laptops and desktops) */
 @media screen and (min-width: 992px) {
 }
 
+
+/* Styles for Devices at Least 1200px Wide */
 @media screen and (min-width: 1200px) {
 }
 }
