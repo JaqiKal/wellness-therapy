@@ -258,8 +258,10 @@ main {
     }
 
 #services img {
-    max-width: 100%; /* Ensures images are responsive */
-    height: auto; /* Maintains image aspect ratio */
+    /* Ensures images are responsive */
+    max-width: 100%; 
+    /* Maintains image aspect ratio */
+    height: auto; 
     padding: 50px; 
     margin: 10px;
     border: 1px solid #301301;
@@ -268,15 +270,16 @@ main {
 }
 
 #services img:hover {
-    transform: scale(1.05); /* Slightly increase the size */
+    transform: scale(1.05);
 }
 
 
 /* End-note */
+#end-note {
+    background-color:rgba(161, 184, 194, 0.192);
+}
 
 #end.-note .background-image {
-   
-   /* background: url("../images/XX.webp") no-repeat center center/cover; */
     background-size: cover;
     background-position: center;
 }
