@@ -251,23 +251,33 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
  /* This evenly spaces out the divs */
-    padding: 80px 0 100px; /* Optional: Adds some padding above and below the section */
-    }
-
-#services .therapy {
+    padding: 50px; /* Optional: Adds some padding above and below the section */
     flex-basis: calc(33.333% - 20px); /* Adjust width to be one-third, minus any margins */
     margin: 10px; /* Optional: Adds margin around each service div */
     text-align: center; /* Centers the content inside each div */
-}
+    }
+
+
 
 #services img {
     max-width: 100%; /* Ensures images are responsive */
     height: auto; /* Maintains image aspect ratio */
-    padding: 70px; 0;
-    margin: 20px;
-    border: 2px solid #301301;
-    border-radius: 20px;
-    background: rgba(222, 217, 219, 1);   
+    padding: 50px; 
+    margin: 10px;
+    border: 1px solid #301301;
+    border-radius: 10px;
+    background: rgba(222, 217, 219, .3);
+}
+
+
+
+
+
+/* End-note */
+#end.-note .background-image {
+    background: url("../images/XX.webp") no-repeat center center/cover; 
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -284,6 +294,13 @@ footer {
     box-shadow: 1px 0 0 #301301;
     box-shadow: 1px 0px 0px 0px rgba(222, 217, 219, .2);
 }
+#end-note div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 
 .footer-top {
     display: flex;
