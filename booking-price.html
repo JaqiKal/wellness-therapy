@@ -39,7 +39,7 @@
               <!-- Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar -->
               <li>
                 <div class="dropdown">
-                    <button class="dropbtn" class="active" id="active-service">Services</button>
+                  <button class="dropbtn" class="active" id="active-service">Services</button>
                   <div class="dropdown-content">
                     <a href="booking-price.html" aria-label="Button for boooking and prices section">Booking & Prices</a>
                     <a href="herbal-therapy.html" aria-label="Button for Herabal Therapy section">Herbal Therapy</a>
@@ -63,20 +63,68 @@
 
       <!-- Prices and booking form -->
 
+
       <section class="split-section">
         <div class="left-side">
-            <!-- Prices -->
-            <p>Här skriver du din text...</p>
+
+          <h1>Pricing </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolores blanditiis pariatur cupiditate maiores neque repellat dolorem, repellendus asperiores atque delectus unde inventore? Enim quasi illum nesciunt tempora neque facere.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ea illum neque iste omnis accusamus, optio placeat quam in dicta beatae non. Dolor possimus velit nemo incidunt quas aliquam quam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nostrum hic quibusdam enim vero quisquam, sint voluptas distinctio nulla nisi quas sequi. Aliquam eaque, quo laboriosam excepturi vitae modi corrupti?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum totam molestias cumque ad. Asperiores perspiciatis, doloribus sint maiores excepturi unde magni culpa optio aliquid corporis repudiandae debitis, eveniet odio?
+          </p>
+
         </div>
+
         <div class="right-side">
-            <!-- Form -->
+          <h1>Booking form</h1>
+          <br>
+          <form id="form" name="form" method="post" action="">
             <form id="form" name="form" method="post" action="">
-                <!-- Formulärets innehåll -->
+
+              <fieldset style="width: 550px;">
+                <legend>Contact details</details>
+                </legend>
+                <br>
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" name="fnamn" id="fnamn">
+                <br>
+                <label for="lnamn">Last name:</label>
+                <br>
+                <input type="text" name="lname" id="lname">
+                <br>
+                <label for="email">E-mail address:</label>
+                <br>
+                <input type="text" name="email" id="email">
+                <br>
+                <label for="phone">Phone:</label>
+                <br>
+                <input type="phone" name="phone" id="phone">
+              </fieldset>
+
+              <br>
+              <br>
+
+              <fieldset style="width:550px;">
+                <legend>Please select your therapy form: <strong>(mandatory)</strong></legend>
+                <br>
+                <input type="radio" name="t-type" value="herbal-t" checked="checked"> Herbal therapy
+                <input type="radio" name="t-type" value="lymphati-t"> Lymphatic drainage therapy
+                <input type="radio" name="t-type" value="zone-t"> Zone therapy
+                <br>
+                <br>
+                <br>
+                <label for="msg">Do you wish to combine therapy types, please write a message!</label> <br>
+                <textarea name="msg" id="msg" cols="55" rows="5"></textarea>
+              </fieldset>
+              <br>
+              <br>
+              <input type="submit" name="send" id="send" value="Send message" />
+
             </form>
         </div>
-    </section>
-
-
+      </section>
     </main>
 
 

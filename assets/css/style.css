@@ -299,67 +299,81 @@ main {
     padding: 10px 50px;
 }
 
-/* Form in Booking & Price sub-page */
 
+/* End-note section */
 
-/*from love running 
+#end-note {
+    background-color:rgba(161, 184, 194, 0.192);
+    border-top: 1px solid #ddeef8;
+    border-bottom: 1px solid #ddeef8;
+    background-position-x: ;
+}
 
-
-#signup {
-    background-image: url("../images/signup-image.webp");
+#end.-note .background-image {
     background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
+    background-position: center;
 }
 
+.why {
+    
+    font-size: larger;
+    max-width: 68%;
+    padding: 10px;
+    margin: 10px;
+    /* Centers the content inside each div */
+    text-align: left; 
+    }
 
-#signup-form {
-    color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
+.why p {
+    padding: 10px 50px;
 }
+/* Booking & Price sub-page */
 
-
-#signup-form>h2 {
-    color: #fafafa;
-    margin-bottom: 20px;
-}
-
-
-.text-input {
-    background: transparent;
-    color: #fafafa;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    padding: 0 5px;
-}
-
-
-.radio-buttons {
-    width: 100%;
+/* Form */
+.split-section {
     display: flex;
     justify-content: space-between;
+    margin: 2%;
 }
 
-
-.join-button {
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px;
-    font-size: 100%;
-    background-color: #454b1b;
-    color: #fafafa;
+.left-side, .right-side {
+    width: 50%;
 }
 
-*
+.left-side {
+    background-color: #ded9db;
+    /* Lägg till stil för din text här */
+}
 
+.fieldset {
+    padding-left: 10px;
+}
 
-*/
+.right-side {
+    margin: 2%;
+}
 
+#form  {
+    font-size: large;
+}
+#form fieldset {
+    padding: 15px;
+}
+
+#send {
+    background-color: rgba(150, 192, 150);
+    border: 0.6px solid rgba(255, 255, 255, .6);
+    padding: 10px 20px;
+    color: rgb(48, 19, 1, 1);;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send .content a:hover {
+    opacity: 0.6;
+}
 
 
  /* Footer */
@@ -535,13 +549,13 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-    form {
+    .split-section {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
         width: 100%;
     }
-    input[type='text'] {
-        width: 100%;
-    }
-}
 
 @media screen and (max-width: 768px) {
 /* Header */
