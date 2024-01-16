@@ -201,19 +201,17 @@ main {
     background: url("../images/ocean-banner.webp") no-repeat center center/cover; 
     background-size: cover;
     background-position: center;
-    padding: 100px 0; 
-    
+    padding: 100px 0;   
 }
 
 #hero .content {
     text-align: center;
-    color: rgba(28, 19, 1, 1); 
-    font-weight: 500;
+    color: rgba(28, 19, 1, 1);
+    font-weight: 600;
     max-width: 600px; 
     margin: 0 auto;
     position: relative;
  }
-
 
 #hero .content a {
     display: inline-block;
@@ -250,14 +248,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
- /* This evenly spaces out the divs */
-    padding: 50px; /* Optional: Adds some padding above and below the section */
-    flex-basis: calc(33.333% - 20px); /* Adjust width to be one-third, minus any margins */
-    margin: 10px; /* Optional: Adds margin around each service div */
-    text-align: center; /* Centers the content inside each div */
+    /* This evenly spaces out the divs */
+    padding: 50px; 
+    /* Adjust width to be one-third, minus any margins */
+    flex-basis: calc(33.333% - 20px); 
+    margin: 10px;
+    /* Centers the content inside each div */
+    text-align: center; 
     }
-
-
 
 #services img {
     max-width: 100%; /* Ensures images are responsive */
@@ -269,16 +267,25 @@ main {
     background: rgba(222, 217, 219, .3);
 }
 
-
-
-
-
 /* End-note */
+
 #end.-note .background-image {
-    background: url("../images/XX.webp") no-repeat center center/cover; 
+   /* background: url("../images/XX.webp") no-repeat center center/cover; */
     background-size: cover;
     background-position: center;
 }
+
+
+.why {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* This evenly spaces out the divs */
+    padding: 10px 20px; 
+    margin: 10px;
+    /* Centers the content inside each div */
+    text-align: left; 
+    }
 
 
 /* Footer */
