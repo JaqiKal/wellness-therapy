@@ -263,6 +263,11 @@ main {
 #services img {
     max-width: 100%; /* Ensures images are responsive */
     height: auto; /* Maintains image aspect ratio */
+    padding: 70px; 0;
+    margin: 20px;
+    border: 2px solid #301301;
+    border-radius: 20px;
+    background: rgba(222, 217, 219, 1);   
 }
 
 
