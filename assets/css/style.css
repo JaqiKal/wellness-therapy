@@ -58,9 +58,9 @@ ul {
 }
 
 #logo {
+    margin: 5px;
     height: 100px;
     width: 150px;
-    margin: 5px;
     display: inline-block;
     text-align: center;
 }
@@ -69,10 +69,12 @@ ul {
     display: flex;
     align-items: center;
     letter-spacing: 2px;  
+    margin-right: auto;
     font-size: 2em;
     font-weight: 600; 
     text-transform: uppercase;
     text-decoration: none;
+    padding: 20px;
 }
 
 
@@ -87,6 +89,8 @@ ul {
     letter-spacing: 2px;
     display: flex;
     justify-content: space-between;
+    margin-left:auto;
+    padding-right:20px;
     text-decoration: none;
     list-style-type: none;
     gap: 30px;            
@@ -302,37 +306,39 @@ main {
     padding: 20px 20px;
     margin: 15px;
     border-radius: 10px;
-    width: 25%;
 }
 
 table, th, td {
-    border:1px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
-    margin: 30px;
 }
 
 th, td {
     padding: 20px;
+    text-align:left;
 }
 
 tr:nth-child(even) {
-    background-color:rgba(161, 184, 194, 0.192);
+    background-color:rgba(151, 200, 221, 0.192);
   }
 
 /* Form */
-fieldset {
-    
-}
-
 form  {
     font-size: large;
-}
-fieldset {
-    padding: 15px;
-    width: 444px;
-    padding-left: 10px;
+    width: 40%;
 }
 
+#booking-form {
+    border: 0.6px solid rgba(48, 19, 1, 0.5);
+}
+
+fieldset {
+     padding: 10px 20px;
+     width: 5%;
+
+     
+ }
+    
 #send {
     background-color: rgba(150, 192, 150);
     border: 0.6px solid rgba(255, 255, 255, .6);
@@ -600,5 +606,4 @@ footer {
     
     @media screen and (min-width: 1200px) {
     }
- 
-    }
+}
