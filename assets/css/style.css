@@ -335,15 +335,17 @@ form  {
 fieldset {
      padding: 10px 20px;
      width: 5%;
+ }
 
-     
+ legend {
+    font-weight: bold;;
  }
     
 #send {
     background-color: rgba(150, 192, 150);
     border: 0.6px solid rgba(255, 255, 255, .6);
     padding: 10px 20px;
-    color: rgb(48, 19, 1, 1);;
+    color: rgb(253, 248, 245, 1);;
     font-weight: bold;
     font-size: large;
     border-radius: 20px;
