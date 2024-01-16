@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 10;
     /* Generic project styles */
     color: rgba(48, 19, 1, 1); 
 } 
@@ -50,7 +50,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(222, 217, 219, 1); 
-    margin: 0;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -184,6 +183,7 @@ ul {
 
 /* Main */
 main {
+    min-height:800px;
     margin-left: 1px;
     margin-right:1px;
     /* Enlarge main element to push footer down*/
@@ -195,7 +195,6 @@ main {
     flex-direction: column;
 }
 
-
 /* Hero section - Welcome */
 
 #hero .background-image {
@@ -203,7 +202,7 @@ main {
     background-size: cover;
     background-position: center;
     padding: 100px 0; 
-    position:relative;
+    
 }
 
 #hero .content {
@@ -247,44 +246,25 @@ main {
 
 /* Services section */
 
-.services-section {
+#services {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+ /* This evenly spaces out the divs */
+    padding: 80px 0 100px; /* Optional: Adds some padding above and below the section */
+    }
+
+#services .therapy {
+    flex-basis: calc(33.333% - 20px); /* Adjust width to be one-third, minus any margins */
+    margin: 10px; /* Optional: Adds margin around each service div */
+    text-align: center; /* Centers the content inside each div */
 }
 
-.service {
-    flex-basis: 30%;
-    text-align: center;
+#services img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains image aspect ratio */
 }
 
-.service img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px; 
-}
-
-.service p {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.appointment-button {
-    background-color: rgb(150, 192, 150);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.appointment-button:hover {
-    background-color: #0056b3;
-}
 
 /* Footer */
 
@@ -454,6 +434,7 @@ footer {
 
 }
 
+
 @media screen and (max-width: 768px) {
 /* Header */
 
@@ -479,13 +460,6 @@ main {
 
 /* Services*/
 
-@media (min-width: 768px) {
-    /* To have proper img scaling for devices larger thn 768px */
-    .service img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 /* Footer */
 .footer-top {
@@ -527,4 +501,5 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+}
 }
