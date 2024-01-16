@@ -17,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10;
-    /* Generic project styles */
     color: rgba(48, 19, 1, 1); 
 } 
 
@@ -25,8 +24,8 @@ h1, h2, h3, h4, h5, h6  {
     font-family: 'Roboto' , sans-serif;
     letter-spacing: 2px;
     color: inherit;
-    margin-top: 20px; /* Add space above each heading */
-    margin-bottom: 15px; /* Add space below each heading */
+    margin-top: 20px;
+    margin-bottom: 15px; 
 }
 
 .hidden-heading {
@@ -34,14 +33,14 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 p {
-    margin-top: 10px; /* Add space above each paragraph */
-    margin-bottom: 10px; /* Add space below each paragraph */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 
 ul {
-    margin-top: 15px; /* Add space above each list */
-    margin-bottom: 15px; /* Add space below each list */
-    padding-left: 20px; /* Add space inside the list, to the left of list items */
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    padding-left: 20px;
 }
 
 /* Header & Logo */
@@ -264,9 +263,9 @@ main {
     height: auto; 
     padding: 50px; 
     margin: 10px;
-    border: 1px solid #301301;
+    border: 1px  #3013010e;
     border-radius: 10px;
-    background: rgba(222, 217, 219, .3);
+   /* background: rgba(222, 217, 219, .3); */
 }
 
 #services img:hover {
@@ -277,6 +276,9 @@ main {
 /* End-note */
 #end-note {
     background-color:rgba(161, 184, 194, 0.192);
+    border-top: 1px solid #ddeef8;
+    border-bottom: 1px solid #ddeef8;
+    background-position-x: ;
 }
 
 #end.-note .background-image {
@@ -288,7 +290,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: larger;
+    font-size: inherit;
     padding: 10px;
     margin: 10px;
     /* Centers the content inside each div */
