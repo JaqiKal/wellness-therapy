@@ -267,28 +267,36 @@ main {
     background: rgba(222, 217, 219, .3);
 }
 
+#services img:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+}
+
+
 /* End-note */
 
 #end.-note .background-image {
+   
    /* background: url("../images/XX.webp") no-repeat center center/cover; */
     background-size: cover;
     background-position: center;
 }
 
-
 .why {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* This evenly spaces out the divs */
-    padding: 10px 20px; 
+    font-size: larger;
+    padding: 10px;
     margin: 10px;
     /* Centers the content inside each div */
     text-align: left; 
     }
 
+.why p {
+    padding: 10px 50px;
+}
 
-/* Footer */
+ /* Footer */
 
 footer {
     background-color: #ded9db;
