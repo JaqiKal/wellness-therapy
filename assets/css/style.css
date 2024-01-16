@@ -265,8 +265,7 @@ main {
     margin: 10px;
     border: 1px  #3013010e;
     border-radius: 10px;
-   /* background: rgba(222, 217, 219, .3); */
-}
+  }
 
 #services img:hover {
     transform: scale(1.05);
@@ -298,49 +297,40 @@ main {
 }
 
 /* Booking & Price sub-page */
+/* Table */
+.book-price {
+    padding: 20px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+th, td {
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color:rgba(161, 184, 194, 0.192);
+  }
 
 /* Form */
-.split-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 2%;
-    padding: 20px 20px;
-    border-radius: 10px;
+fieldset {
+    
 }
 
-.left-side p {
-    .padding: 10px;
-}
-
-}
-.left-side, .right-side {
-    width: 50%;
-    border-radius: 10px;
-}
-
-.left-side {
-    background-color: #ded9db;
-    /* Lägg till stil för din text här */
-}
-
-.left-side p, h1 {
-    padding: 30px;
-}
-
-.fieldset {
-    padding-left: 10px;
-}
-
-.right-side {
-    margin: 2%;
-
-}
-
-#form  {
+form  {
     font-size: large;
 }
-#form fieldset {
+fieldset {
     padding: 15px;
+    width: 444px;
+    padding-left: 10px;
 }
 
 #send {
@@ -513,89 +503,102 @@ footer {
 
 /* Media queries */
 
-/* Styles for small devices (phones, less than 480px) */
-/* Default CSS before the first breakpoint */
+/* Media queries */
 
-/* Styles for devices at least 480px wide */
+/* Media query: max-width 480 px */
 @media screen and (min-width: 480px) {
+    /* Adjust styles for very small screens if necessary */
     .gift-pic {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* Styles for devices at least 540px wide */
-@media screen and (min-width: 540px) {
-    .image-container {
-        flex-direction: column;
-    }
-    .gift-pic {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* Styles for devices at least 600px wide */
-@media screen and (min-width: 600px) {
-    .split-section {
-        flex-direction: column;
-    }
-    .left-side, .right-side {
-        width: 100%;
-    }
-
-/* Styles for Devices at Least 768px Wide */
-@media screen and (min-width: 768px) {
+        width: 100%; /* Full width of the container */
+        margin: 10px 0; /* Vertical margin */
+    }    
     
-    /* index */
+    @media (min-width: 540px) {
+    .image-container {
+        flex-direction: column; /* Stack children vertically */
+    }
+    
+    .gift-pic {
+        width: 100%; /* Full width of the container */
+        margin: 10px 0; /* Vertical margin */
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+        .split-section {
+            flex-direction: column;
+        }
+    
+        .left-side, .right-side {
+            width: 100%;
+        }
+    
+    @media screen and (max-width: 768px) {
+    /* Header */
+    
+    /* Layout change: menu stacks below logo */
     .header-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center; 
+        justify-content: center;    
     }
+    
+    /* Centers logo above nav-menu */
     .logo-img {
         display: block;
     }
+    
+    /* Main */
+    
     main {
-        margin-top: 119px;
+    /* Add margin at the top to prevent content from being covered by the header */
+        margin-top: 119;
     }
+    
+    /* Services*/
+    
+    
+    /* Footer */
     .footer-top {
         flex-direction: column;
         align-items: center;
     }
-    #payment-options {
+    
+        #payment-options {
+        /* Stack payment options at the top */
         order: 1;
         margin-bottom: 10px;
     }
+    
     #social-networks {
+        /* Social networks in the middle */
         order: 2;
         margin-bottom: 10px;
     }
+    
     .footer-center {
+        /* Footer center content (Cookies, Privacy Policy) */
         order: 3;
     }
-
-    /* Shop */
-    .shop h1, h2, h3, h4, h5, h6, p {
+    
+    /* Shop page */
+        .shop h1, h2, h3, h4, h5, h6, p {
+            /* Ensuring the .shop container stacks its children vertically */
         text-align: left;
     }
-
-    /* Booking & Pricing */
-    .split-section {
-        flex-direction: column;
+    
     }
-    .left-side, .right-side {
-        width: 100%;
+    
+    /* Media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
+    
+    
+    /* Large devices (laptops and desktops, 992px and up) */
+    @media screen and (min-width: 992px) {
     }
-}
-
-/* Styles for Devices at Least 992px Wide (laptops and desktops) */
-@media screen and (min-width: 992px) {
-}
-
-
-/* Styles for Devices at Least 1200px Wide */
-@media screen and (min-width: 1200px) {
-}
-}
+    
+    @media screen and (min-width: 1200px) {
+    }
+ 
+    }
