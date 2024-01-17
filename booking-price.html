@@ -51,27 +51,93 @@
     </header>
 
     <!-- Main content -->
-    <main>
-		<section>
-      <!-- Shop -->
-			<div class="shop">
-				<h1>Discover the perfect gift, explore our Gift Cards!</h1>
-				<p>Looking for the perfect gift? Our gift cards offer the joy of choice and the promise of a delightful experience. 
-				Whether it's for a special occasion or just to show your appreciation, our gift certificates make an ideal present 
-				for anyone. 
-				<p>Available in £50 and £100 denominations, they are the gateway to a world of wellness and relaxation.</p>
-			</div>
-			
-			<div class="perfect-container">
-				<p><i>The perfect gift is a click away, make someone special happy today! </i></p>
-			</div>
-				
-			<div class="image-container">
-				<a href="thank-you.html"><img src="assets/images/gift-50.webp" alt="gift card £50" class="gift-pic"></a>
-				<a href="thank-you.html"><img src="assets/images/gift-100.webp" alt="gift card £100" class="gift-pic"></a>
-			</div>
-						
-		</section>
+   <main>
+      <section class="book-price">
+        <h1>Pricing</h1>
+        <div>
+          <table>
+            <tr>
+              <th>Initial Consultation</th>
+              <td>$40</td>
+            </tr>
+            <tr>
+              <th>Follow-Up Consult</th>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <th>Herbal Therapy</th>
+              <td>$60</td>
+            </tr>
+            <th>Lymphatic Drainage Therapy</th>
+            <td>$60</td>
+            </tr>
+            <th>Zone Therapy</th>
+            <td>$60</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <h1>Booking form</h1>
+        <br>
+        <form id="booking-contact" name="booking-contact" method="get" action="https://jaqikal.github.io/wellness-therapy/thankyou.html">
+
+          <fieldset style="width: 450px">
+            <legend>Contact</legend>
+            <label for="fname">First name:</label> 
+            <br>
+            <input type="text" name="fname" id="fname" class="text-input" required checked> 
+            <br>
+            <label for="lname">Last name:</label> 
+            <br>
+            <input type="text" name="lnamn" id="lnamn" class="text-input" required checked> 
+            <br>
+            <label for="phone">Phone:</label> 
+            <br>
+            <input type="text" name="phone" id="phone" class="text-input" required checked> 
+            <br>
+            <label for="email">E-mail:</label> 
+            <br>
+            <input type="text" name="email" id="email" class="text-input" required checked>
+          </fieldset>
+          <br>
+          <br>
+          <fieldset style="width: 450px;">
+            <legend>How do you wish to be contacted?: <strong>(mandatory)</strong></legend>
+            <br>
+            <label for="contact-opt">Please select an option:</label>
+            <select id="opt" name="opt">
+              <option value="by-phone">Please give me a call!
+              </option>
+              <option value="by-email ">Please send me an e-mail!
+              </option>
+            </select>
+          </fieldset>
+          <br>
+          <br>
+          <fieldset style="width: 450px;">
+            <legend>Please select your therapy form: <strong>(mandatory)</strong></legend>
+            <br>
+            <input type="radio" name="t-type" value="herbal-t" checked="checked" required checked> Herbal therapy
+            <input type="radio" name="t-type" value="lymphat-t" required checked> Lymphatic drainage therapy
+            <input type="radio" name="t-type" value="zone-t" required checked> Zone therapy
+          </fieldset>
+          <br>
+          <br>
+          <fieldset style="width: 450px;">
+            <legend>Combine therapy types?</legend>
+            <label for="msg">Do you wish to combine therapy types, please write a message!:</label>
+            <br>
+            <textarea name="msg" id="msg" cols="35" rows="5"></textarea>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+          <input type="submit" name="send" id="send" value="Send message" />
+        
+        </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
