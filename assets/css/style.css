@@ -10,9 +10,18 @@
 
 /* Basic styles */
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'open-sans', 'Roboto' , sans-serif;
+    height: 100%
+    color: rgba(48, 19, 1, 1); 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -35,7 +44,7 @@ body {
     position: absolute;
     top: 0;
     z-index: 1000; 
-    background-color: #333;
+    background-color: #ded9db;
 }
 
 .logo-img :hover {
@@ -130,6 +139,7 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+    background-color: #fdf8f5;  
 }
 
 /* HERO */
@@ -223,9 +233,7 @@ img {
     margin-bottom: 15px;
 }
 
-
 /* END-NOTE */
-
 #end-note {
     background-color: rgb(233, 241, 245);
     text-align: center;
@@ -236,14 +244,64 @@ img {
     font-weight: 500;
 }
  
-
  /* BOOKING & PRICE */
+
+
+ /* SHOP */
+ #shop-hero {
+    text-align: center;
+    padding: 20px;
+}
+
+#shop-hero h1 {
+    margin-bottom: 20px;
+    
+}
+
+#shop-hero p {
+    margin-bottom: 20px;
+    
+}
+
+/* Shop Items Section Styles */
+#shop-items {
+    padding: 20px;
+     
+}
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px; 
+}
+
+.shop-item {
+    flex: 1;
+    max-width: 50%; 
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.shop-item img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    /* Center the image in its container */
+    margin: 0 auto; 
+}
+
+#shop h1, p {
+    text-align: center;
+}
 
 
  /* CONTACT */
 
-/* THANK YOU & NOT FOUND YOU SUB-PAGE */
 
+/* THANK YOU & NOT FOUND YOU SUB-PAGE */
 .thank-you, .not-found {
     display: flex;
     justify-content: center;
@@ -354,11 +412,9 @@ footer {
 
 
 
-
-
 /* RESPONSIVE STYLES */
 
-/* MAX-width 480 px */
+/* Media Query for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
     /* Adjust styles for very small screens if necessary */
     #hero {
@@ -376,7 +432,7 @@ footer {
 
 
 
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices - MAX 768px */
 @media screen and (max-width: 768px) {
     .burger {
         display: block;
@@ -393,55 +449,53 @@ footer {
 
     .menu {
         display: flex;
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center; /* Center-align the menu items */
+        flex-direction: column; 
+        align-items: center; 
         width: 100%;
     }
 
     .menu a {
         text-align: center;
         padding: 10px;
-        width: 100%; /* Full width for each menu item */
-        display: block; /* Make links block-level elements */
+        width: 100%; 
+        display: block; 
     }
 
     /* Adjusting the dropdowns for mobile view */
     .dropdown-content {
-        position: relative; /* To stack dropdowns under each menu item */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #services {
-        flex-direction: column;
-        align-items: center;
+        position: relative; 
     }
 
-    .service {
-        width: 80%; /* Larger width for smaller screens */
-        margin-bottom: 20px;
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
     .hero-container h1 {
-        font-size: 2.5rem; /* Slightly smaller font size for headline */
+        font-size: 2.5rem; 
     }
 
     .hero-container p {
-        font-size: 1.2rem; /* Adjust the font size for the description */
+        font-size: 1.2rem; 
     }
 
     .hero-buttons {
         flex-direction: column;
     }
 
-    .btn-hero {
-        width: 100%; /* Full width for buttons on smaller screens */
+    #services {
+        flex-direction: column;
+        align-items: center;
     }
-}
 
+    .service {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    .btn-hero {
+        width: 100%; 
+    }
+
+    /* SHOP */
+    .shop-item {
+        max-width: 100%; 
+    }
 
     /* FOOTER */
     @media screen and (max-width: 768px) {
