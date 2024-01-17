@@ -313,15 +313,13 @@ img {
 
 
 /* THANK YOU  */
-
 .thank-you {
-    text-align: left;
     padding: 2% 0 2% 5%;
 }
 
-.thank-you h1 p {
-    margin-bottom: 20px;
-    text-align: left;
+.thank-you ul {
+    padding-left: 40px; 
+    list-style-position: outside; 
 }
 
 
@@ -351,7 +349,6 @@ img {
 }
 
 
-
 /* COOKIE SUB-PAGE */
 #cookie-hero {
     text-align: left;
@@ -369,6 +366,7 @@ img {
 #cookie-hero ul {
     padding-left: 20px; 
 }
+
 
 /* GDPR SUB-PAGE */
 #gdpr-hero {
@@ -388,11 +386,12 @@ img {
     padding-left: 20px; 
 }
 
+
 /* PRIVACY-POLICY SUB-PAGE */
 
 #privacy-policy {
     text-align: left;
-    padding: 10px 20px;
+    padding: 2% 0 5% 5%;
 }
 
 #privacy-policy h1 p {
@@ -400,7 +399,10 @@ img {
     text-align: left;
 }
 
-
+#privacy-policy ul {
+    padding-left: 40px; /* Adjust as needed for indentation */
+    list-style-position: outside; /* Optional: Ensures bullets are aligned with the indented text */
+}
 
 
 
@@ -532,6 +534,26 @@ footer {
         left: auto;
     }
 
+    /* THANK YOU PAGE */
+    .thank-you {
+        width: 100%; 
+        padding: 15px; 
+        outline-offset: -5px; 
+    }
+    .thank-you ul {
+        padding-left: 20px; 
+
+
+    /* PRIVACY POLICY */
+    .thank-you {
+        width: 100%;
+        padding: 15px 5px;
+    }
+    .thank-you ul {
+        padding-left: 15px;
+    }
+}
+
 /* Media Query for Mobile Devices - MAX 768px */
 @media screen and (max-width: 768px) {
 
@@ -644,22 +666,44 @@ footer {
         width: 95%; 
         padding: 20px 10px; 
     }
-}
 
-/* MAX-width 1110 px */
+    /* THANK YOU PAGE */
+    @media screen and (max-width: 768px) {
+        .thank-you {
+            width: 95%; /* Adjust width for tablet screens */
+        }
+
+    /* PRIVACY POLICY */
+    .thank-you {
+        width: 95%; 
+        padding: 20px 10px;
+    }
+
+/* Media Query for Desktops - MAX 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
 
     /* SHOP */
     .shop-item {
         flex: 1 1 25%; 
-        max-width: 25%; /* Adjust as needed */
+        max-width: 25%; 
     }
 
     /* 404-PAGE */
     .ono-hero {
-        width: 95%; /* Increase width for smaller screens */
-        padding: 20px 10px; /* Adjust padding */
+        width: 90%; 
     }
+
+    /* THANK YOU PAGE */
+    .thank-you {
+        width: 90%; /* Adjust width for larger screens */
+    }
+
+    /* PRIVACY POLICY */
+    .thank-you {
+        width: 90%; 
+    }
+
+
 
 /* Media Query for Full HD and Larger Displays (1400px and above) */
 @media screen and (min-width: 1400px) {
@@ -669,18 +713,32 @@ footer {
         flex: 1 1 25%; 
         max-width: 25%; 
     }
+    /* THANK YOU PAGE */
+    .thank-you {
+        max-width: 1200px; 
+    }
+
 
 
 /* Media Query for Ultra Wide Displays (1920px and above) */
 @media screen and (min-width: 1920px) {
         /* SHOP */
     .shop-item {
-        /* Adjustments for ultra-wide displays */
+        
         flex: 1 1 20%; 
         max-width: 20%; 
     }
     /* 404 PAGE */
     .ono-hero {
-        max-width: 1200px; /* Adjust for larger screens */
+        max-width: 1200px; 
+    }
+
+    /* THANK YOU PAGE */
+    .thank-you {
+        
+    }
+
+    /* PRIVACY POLICY */
+    .thank-you {
     }
 }
