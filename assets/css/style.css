@@ -47,9 +47,7 @@ body {
     background-color: #ded9db;
 }
 
-.logo-img :hover {
-    transform: scale(1.1); 
-}
+
 
 /* HEADER & NAVIGATION BAR */
 .navbar {
@@ -65,6 +63,15 @@ body {
 
 .navbar-logo {
     font-size: 1.5rem;
+}
+
+.navbar-logo img {
+    width: 180px;
+    height: auto;
+
+}
+.logo-img :hover {
+    transform: scale(1.1); 
 }
 
 .burger {
@@ -149,7 +156,7 @@ main {
 
 /* Hero Section */
 #hero {
-    background-image: url("../images/ocean-banner.webp");
+    background-image: url("../images/pale-ocean.webp");
     background-position: center;
     color: #301301;
     text-align: center;
@@ -164,15 +171,19 @@ main {
 
 .hero-container h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .hero-container p {
     font-size: 1rem;
     margin-bottom: 15px;
+    margin-top: 15px;
     line-height: 1.5; /* Improves readability */
     font-size: larger;
     font-weight: 500;
+    text-align: center;
+
 }
 
 .hero-buttons {
@@ -558,6 +569,14 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* NAVIGATION */
+/* Adjust the logo size for mobile */
+    .navbar-logo img {
+        width: 150px; /* Smaller width for mobile devices */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    
+
     .burger {
         display: block;
     }
@@ -681,6 +700,11 @@ footer {
 
 /* Media Query for Desktops - MAX 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
+    /* Adjust the logo size */
+    .navbar-logo img {
+        width: 250px; 
+        height: auto; 
+    }
 
     /* SHOP */
     .shop-item {
