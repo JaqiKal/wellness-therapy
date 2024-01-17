@@ -319,7 +319,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.footer-top a:hover,{
+.footer-top a:hover {
     color: rgba(74, 5, 135, 0.8);
     transform: scale(1.1); 
 }
@@ -434,7 +434,7 @@ footer {
         }
     }
 
-
+/*
 /* MAX-width 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
     }
@@ -445,3 +445,4 @@ footer {
 @media screen and (min-width: 1400px){
     }
 }
+*/
