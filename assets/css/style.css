@@ -22,6 +22,7 @@ body {
 html, body {
     height: 100%;
     margin: 0;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -138,6 +139,8 @@ main {
     margin-top: 10;
     /* Enable flex properties for child elements */
     display: flex;
+    /* Ensure full width */
+    width: 100%;
     flex-direction: column;
     background-color: #fdf8f5;  
 }
@@ -250,12 +253,11 @@ img {
  /* SHOP */
  #shop-hero {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 #shop-hero h1 {
     margin-bottom: 20px;
-    
 }
 
 #shop-hero p {
@@ -265,8 +267,7 @@ img {
 
 /* Shop Items Section Styles */
 #shop-items {
-    padding: 20px;
-     
+    padding: 10px;
 }
 
 .shop-container {
@@ -275,18 +276,19 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    gap: 20px; 
+    gap: 5px; 
+    
 }
 
 .shop-item {
     flex: 1;
     max-width: 50%; 
     box-sizing: border-box;
-    padding: 20px; 
+    padding: 5px; 
 }
 
 .shop-item img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block; 
     /* Center the image in its container */
@@ -418,17 +420,27 @@ footer {
 @media screen and (max-width: 480px) {
     /* Adjust styles for very small screens if necessary */
     #hero {
-        height: 60vh; /* Adjust the height of the hero section on very small devices */
+        height: 60vh; 
     }
 
     .hero-container h1 {
-        font-size: 2rem; /* Even smaller font size for headline */
+        font-size: 2rem; 
     }
 
     .hero-container p {
-        font-size: 1rem; /* Further adjust the font size for the description */
+        font-size: 1rem; 
     }
-}
+
+    .shop-item {
+        max-width: 100%; 
+    }
+
+    #shop-hero h1 {
+        font-size: 1.4rem; 
+    }
+
+    #shop-hero p {
+        font-size: 0.9rem; /
 
 
 
@@ -493,35 +505,74 @@ footer {
     }
 
     /* SHOP */
-    .shop-item {
-        max-width: 100%; 
+    .shop-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* FOOTER */
-    @media screen and (max-width: 768px) {
-        .footer-top {
-            flex-direction: column;
-            text-align: center;
-        }
-    
-        #social-networks,
-        #payment-options {
-            flex-direction: column;
-        }
-    
-        .footer-center a,
-        #social-networks li,
-        #payment-options li {
-            margin-bottom: 10px;
-        }
+    .shop-item {
+        flex: 1 0 100%;
+        max-width: 100%; 
+        padding: 5px;
     }
+
+    #shop-hero h1 {
+        font-size: 1.5rem; 
+    }
+
+    #shop-hero p {
+        font-size: 1rem; 
+    }
+
+    .shop-item img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* FOOTER */
+@media screen and (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #social-networks,
+    #payment-options {
+        flex-direction: column;
+    }
+
+    .footer-center a,
+    #social-networks li,
+    #payment-options li {
+        margin-bottom: 10px;
+    }
+}
 
 /* MAX-width 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
+
+    .shop-item {
+        flex: 1 1 25%; 
+        max-width: 25%; /* Adjust as needed */
+
+    }
+
+/* Media Query for Full HD and Larger Displays (1400px and above) */
+@media screen and (min-width: 1400px) {
+    .shop-item {
+        /* Allow four items per row on larger screens */
+        flex: 1 1 25%; 
+        max-width: 25%; 
     }
 
 
-
-    /* MIN-width 1400 px */    
-@media screen and (min-width: 1400px){
+/* Media Query for Ultra Wide Displays (1920px and above) */
+@media screen and (min-width: 1920px) {
+    .shop-item {
+        /* Adjustments for ultra-wide displays */
+        flex: 1 1 20%; 
+        max-width: 20%; 
     }
