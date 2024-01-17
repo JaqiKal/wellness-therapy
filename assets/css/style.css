@@ -1,14 +1,14 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Basic Reset */
+/* BASIC RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Basic styles */
+/* BASIC STYLES */
 body {
     display: flex;
     flex-direction: column;
@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6  {
     display: none;
 }
 
-/* Nav bar style */
 body {
     margin: 0;
     padding: 0;
@@ -51,6 +50,8 @@ body {
 .logo-img :hover {
     transform: scale(1.1); 
 }
+
+/* HEADER & NAVIGATION BAR */
 
 .navbar {
     background-color: #ded9db;
@@ -77,7 +78,8 @@ body {
     text-decoration: none;
     color: #301301;
     padding: 1rem;
-    display: inline-block; /* Make the menu horizontal */
+    /* Make the menu horizontal */
+    display: inline-block; 
     transition: transform 0.3s; 
 }
 
@@ -95,6 +97,7 @@ body {
 }
 
 /* Dropdown Menu Styles */
+/* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -130,6 +133,7 @@ body {
     color: white; 
 }
 
+/* MAIN CONTENT */
 /* MAIN */
 
 main {
@@ -145,7 +149,7 @@ main {
     background-color: #fdf8f5;  
 }
 
-/* HERO */
+/* HERO SECTION */
 
 #hero {
     background-image: url("../images/ocean-banner.webp");
@@ -213,7 +217,7 @@ img {
     height: auto;
 }
 
- /* SERVICES */
+ /* SERVICES SECTION*/
 
  #services {
     display: flex;
@@ -236,7 +240,7 @@ img {
     margin-bottom: 15px;
 }
 
-/* END-NOTE */
+/* END-NOTE SECTION */
 #end-note {
     background-color: rgb(233, 241, 245);
     text-align: center;
@@ -247,10 +251,14 @@ img {
     font-weight: 500;
 }
  
- /* BOOKING & PRICE */
+ /* BOOKING & PRICE SUB-PAGE*/
 
 
- /* SHOP */
+
+
+ /* SHOP SUB-PAGE*/
+ /* Main Content Shop */
+
  #shop-hero {
     text-align: center;
     padding: 10px;
@@ -261,11 +269,10 @@ img {
 }
 
 #shop-hero p {
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
 
-/* Shop Items Section Styles */
+/* Shop Items Section */
 #shop-items {
     padding: 10px;
 }
@@ -276,8 +283,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    gap: 5px; 
-    
+    gap: 5px;  
 }
 
 .shop-item {
@@ -299,11 +305,13 @@ img {
     text-align: center;
 }
 
+ /* CONTACT  SUB-PAGE */
 
- /* CONTACT */
+
 
 
 /* THANK YOU & NOT FOUND YOU SUB-PAGE */
+
 .thank-you, .not-found {
     display: flex;
     justify-content: center;
@@ -333,13 +341,50 @@ img {
     max-width: max;
 }
 
+/* COOKIE SUB-PAGE */
+
+#cookie-hero {
+    text-align: left;
+    padding: 0 2%;
+}
+
+#cookie-hero h1 p {
+    margin-bottom: 20px;
+}
+
+#cookie h1, p {
+    text-align: left;
+}
+
+#cookie-hero ul {
+    padding-left: 20px; 
+}
+
+/* PRIVACY-POLICY SUB-PAGE */
+
+#privacy-hero {
+    text-align: left;
+    padding: 10px;
+}
+
+#privacy-hero h1 p {
+    margin-bottom: 20px;
+}
+
+#privacy h1, p {
+    text-align: left;
+    
+}
+
 /* FOOTER */
+/* Footer Main */
 footer {
     background-color: #ded9db; 
     color: #301301;    
     padding: 20px 0;
 }
 
+/* Footer Top */
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -377,6 +422,7 @@ footer {
     transform: scale(1.1); 
 }
 
+/* Footer Center */
 .footer-center {
     text-align: center;
     font-size: 1.2rem;     
@@ -392,8 +438,9 @@ footer {
     color: rgb(251, 5, 235, 1); 
 }
 
+/* Footer Bottom */
 .footer-divider {
-    border-color: #301301;
+    border-color: 0.5px solid #301301;
     margin-top: 20px;
 }
 
@@ -407,18 +454,13 @@ footer {
     font-size: 1.5rem;
 }
 
-.footer-top a:hover {
-    color: rgba(74, 5, 135, 0.8);
-    transform: scale(1.1); 
-}
-
-
 
 /* RESPONSIVE STYLES */
 
 /* Media Query for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
-    /* Adjust styles for very small screens if necessary */
+
+/* HERO */
     #hero {
         height: 60vh; 
     }
@@ -440,12 +482,22 @@ footer {
     }
 
     #shop-hero p {
-        font-size: 0.9rem; /
+        font-size: 0.9rem; 
+    }
 
+    /* COOKIE */
+    #cookie-hero {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
 
+    #cookie-hero ul {
+        padding-left: 15px;
+    }
 
 /* Media Query for Mobile Devices - MAX 768px */
 @media screen and (max-width: 768px) {
+
+    /* NAVIGATION */
     .burger {
         display: block;
     }
@@ -478,6 +530,7 @@ footer {
         position: relative; 
     }
 
+    /* HERO */
     .hero-container h1 {
         font-size: 2.5rem; 
     }
@@ -530,10 +583,8 @@ footer {
         height: auto;
         margin: 0 auto;
     }
-}
 
-/* FOOTER */
-@media screen and (max-width: 768px) {
+    /* FOOTER */
     .footer-top {
         flex-direction: column;
         text-align: center;
@@ -554,6 +605,7 @@ footer {
 /* MAX-width 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
 
+    /* SHOP */
     .shop-item {
         flex: 1 1 25%; 
         max-width: 25%; /* Adjust as needed */
@@ -562,6 +614,7 @@ footer {
 
 /* Media Query for Full HD and Larger Displays (1400px and above) */
 @media screen and (min-width: 1400px) {
+        /* SHOP */
     .shop-item {
         /* Allow four items per row on larger screens */
         flex: 1 1 25%; 
@@ -571,6 +624,7 @@ footer {
 
 /* Media Query for Ultra Wide Displays (1920px and above) */
 @media screen and (min-width: 1920px) {
+        /* SHOP */
     .shop-item {
         /* Adjustments for ultra-wide displays */
         flex: 1 1 20%; 
