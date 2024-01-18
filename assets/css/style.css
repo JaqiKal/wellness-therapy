@@ -10,13 +10,13 @@
 
 /* BASIC STYLES */
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding-top: 60px;
   font-family: 'open-sans', 'Roboto', sans-serif;
-  min-height: 100vh;
+  
   color: rgba(48, 19, 1, 1);
   background-color: #ded9db;
   top: 0;
@@ -126,46 +126,6 @@ h6 {
   transform: scale(1.1);
 }
 
-
-/* Dropdown Menu Styles */
-/* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
-.dropdown {
-  position: absolute;
-  display: none;
-  padding-right: 1rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #301301;
-  min-width: 160px;
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: transform 0.3s;
-  font-size: 14px;
-}
-
-.dropdown-content a:hover {
-  background-color: #555;
-  transform: scale(1.1);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover>a {
-  color: white;
-}
-
 /* MAIN CONTENT */
 /* Main */
 main {
@@ -183,17 +143,14 @@ main {
 
 /* Hero Section */
 #hero {
-  background-image: url("../images/pale-ocean.webp");
+  background: url("../images/pale-ocean.webp") no-repeat center center/cover;
   background-position: center;
   color: #301301;
   text-align: center;
   font-weight: 400;
   padding: 80px 10px 10px;
-}
-
-.hero-container {
-  max-width: 1200px;
-  margin: auto;
+  height: 600px;
+  width: 100%;
 }
 
 .hero-container h1 {
@@ -252,7 +209,7 @@ main {
 
 /* Responsive Images */
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -302,14 +259,9 @@ img {
 /* THERAPIES SUP-PAGE */
 /* General Styles for All Sections */
 
-main {
-  min-height: calc(100vh - [header height] - [footer height]);
-  /* ... other styles ... */
-}
-
 .section {
   display: flex;
-  align-items: center;
+  /* align-items: center;*/
   justify-content: space-between;
 }
 
@@ -320,10 +272,10 @@ main {
 }
 
 .section img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   padding: 10px 40px;
-  border: 0.5px solid #301301;
+
 }
 
 .buttons #btn-shop,
@@ -390,7 +342,7 @@ top-section p {
 }
 
 .bottom-section img {
-  max-height: 200px;
+  height:200px ;
   width: auto;
   /* Spacing between images when stacked */
   margin-bottom: 20px;
