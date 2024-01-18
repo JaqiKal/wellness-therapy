@@ -12,11 +12,15 @@
 body {
     display: flex;
     flex-direction: column;
+    position: absolute;
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
     font-family: 'open-sans', 'Roboto' , sans-serif;
     height: 100%;
     color: rgba(48, 19, 1, 1); 
+    background-color: #ded9db;
+    top: 0;
+    z-index: 1000; 
 }
 
 html, body {
@@ -26,7 +30,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6  {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     color: #301301;
     margin-top: 20px;
@@ -36,18 +40,6 @@ h1, h2, h3, h4, h5, h6  {
 .hidden-heading {
     display: none;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    padding-top: 60px;
-    font-family: 'Roboto' , sans-serif;
-    position: absolute;
-    top: 0;
-    z-index: 1000; 
-    background-color: #ded9db;
-}
-
 
 /* HEADER & NAVIGATION BAR */
 .navbar {
@@ -169,7 +161,7 @@ main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 10;
+    margin-top: 10px;
     /* Enable flex properties for child elements */
     display: flex;
     /* Ensure full width */
@@ -203,7 +195,8 @@ main {
     font-size: 1rem;
     margin-bottom: 15px;
     margin-top: 15px;
-    line-height: 1.5; /* Improves readability */
+    /* Improves readability */
+    line-height: 1.5; 
     font-size: larger;
     font-weight: 500;
     text-align: center;
@@ -289,55 +282,92 @@ img {
     padding: 2% 0 2% 5%;
 }
 
+/* THERAPIES SUP-PAGE */
+/* General Styles for All Sections */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1; /* Adjust as needed */
+    margin-left: 20px;
+}
+
+.section img {
+    width: 300px;
+    height: 300px;
+    padding: 10px 40;
+    border: 0.5px solid #301301;
+}
+.buttons #btn-shop, #btn-book {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+
+#btn-book {
+    padding: 10px 30px;
+    background-color:  #007bff;
+    border: 0.5px solid #ded9db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#btn-shop {
+    padding: 10px 30px;
+    background-color:  #46ce9a;
+    border: 0.5px solid #ded9db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Top Section */
+.top-section {
+    margin: 60px 40px 30px;
+    
+}
+
+/* Middle Section */
+.mid-section {
+    margin: 40px 30px;
+}
+
+/* Bottom Section */
+.bot-section {
+    background-color: #f8f8f8;
+    margin: 40px 30px;
+ 
+}
 
  /* SHOP SUB-PAGE*/
- /* Main Shop */
-
- #shop-hero {
+ 
+ top-section p {
+    /* Styles for your top section text */
+    padding: 20px;
     text-align: center;
-    padding: 2% 0 2% 5%;
 }
 
-#shop-hero h1 {
-    margin-bottom: 20px;
-}
-
-#shop-hero p {
-    margin-bottom: 20px; 
-}
-
-/* Shop Items Section */
-#shop-items {
-    padding: 10px;
-}
-
-.shop-container {
+.bottom-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 5px;  
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.shop-item {
-    flex: 1;
-    max-width: 50%; 
-    box-sizing: border-box;
-    padding: 5px; 
+.bottom-section img {
+    max-height: 250px;
+    width: auto;
+    margin-bottom: 20px; /* Spacing between images when stacked */
+    border: 0.5px solid #301301;
 }
 
-.shop-item img {
-    width: 80%;
-    height: auto;
-    display: block; 
-    /* Center the image in its container */
-    margin: 0 auto; 
-}
-
-#shop h1, p {
-    text-align: center;
-}
 
  /* CONTACT  SUB-PAGE */
 
@@ -525,30 +555,7 @@ footer {
 /* Media Query for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
 
-/* HERO */
-    #hero {
-        height: 60vh; 
-    }
 
-    .hero-container h1 {
-        font-size: 2rem; 
-    }
-
-    .hero-container p {
-        font-size: 1rem; 
-    }
-
-    .shop-item {
-        max-width: 100%; 
-    }
-
-    #shop-hero h1 {
-        font-size: 1.4rem; 
-    }
-
-    #shop-hero p {
-        font-size: 0.9rem; 
-    }
 
     /* COOKIE */
     #cookie-hero {
@@ -650,32 +657,26 @@ footer {
         width: 100%; 
     }
 
+    /* THERAPIES SUB-PAGE */
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     /* SHOP */
-    .shop-container {
-        display: flex;
+
+    @media (max-width: 768px) {
+    .bottom-section {
         flex-direction: column;
         align-items: center;
     }
 
-    .shop-item {
-        flex: 1 0 100%;
-        max-width: 100%; 
-        padding: 5px;
-    }
-
-    #shop-hero h1 {
-        font-size: 1.5rem; 
-    }
-
-    #shop-hero p {
-        font-size: 1rem; 
-    }
-
-    .shop-item img {
-        width: 100%;
+    .bottom-section img {
+        max-width: 100%; /* Full width on smaller screens */
         height: auto;
-        margin: 0 auto;
     }
+
+
 
     /* FOOTER */
     .footer-top {
@@ -712,7 +713,20 @@ footer {
         padding: 20px 10px;
     }
 
-/* Media Query for Desktops - MAX 1110 px */
+
+
+/* Additional Styles for Larger Screens (> 768px) */
+@media screen and (min-width: 769px) {
+    /*THERAPIES SUB-PAGE */
+    .section {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .section img {
+        max-height: 250px; /* Smaller max height for images */
+    }
+
+ /* Media Query for Desktops - MAX 1110 px */
 @media only screen and (min-width: 951px) and (max-width: 1110px) {
     /* Adjust the logo size */
     .navbar-logo img {
@@ -720,12 +734,7 @@ footer {
         height: auto; 
     }
 
-    /* SHOP */
-    .shop-item {
-        flex: 1 1 25%; 
-        max-width: 25%; 
-    }
-
+ 
     /* 404-PAGE */
     .ono-hero {
         width: 90%; 
@@ -742,32 +751,22 @@ footer {
     }
 
 
+    /* Media Query for Desktops (min-width: 1024px) */
+    @media screen and (min-width: 1024px) {
+ 
+    }
+
+
 
 /* Media Query for Full HD and Larger Displays (1400px and above) */
 @media screen and (min-width: 1400px) {
-        /* SHOP */
-    .shop-item {
-        /* Allow four items per row on larger screens */
-        flex: 1 1 25%; 
-        max-width: 25%; 
-    }
-    /* THANK YOU PAGE */
-    .thank-you {
-        max-width: 1200px; 
-    }
 
+}
 
+}
 
 /* Media Query for Ultra Wide Displays (1920px and above) */
 @media screen and (min-width: 1920px) {
-        /* SHOP */
-    .shop-item {
-        
-        flex: 1 1 20%; 
-        max-width: 20%; 
-    }
-    /* 404 PAGE */
-    .ono-hero {
-        max-width: 1200px; 
-    }
+
+
 }
