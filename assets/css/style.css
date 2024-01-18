@@ -12,11 +12,11 @@
 body {
     display: flex;
     flex-direction: column;
-    position: absolute;
+   
     margin: 0;
     padding-top: 60px;
     font-family: 'open-sans', 'Roboto' , sans-serif;
-    height: 100%;
+    min-height: 100vh;
     color: rgba(48, 19, 1, 1); 
     background-color: #ded9db;
     top: 0;
@@ -65,10 +65,20 @@ h1, h2, h3, h4, h5, h6  {
     height: auto;
 }
 
+/* HAmburger menu styles */
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    right: 1rem; 
+    z-index: 1001;
+}
+
 /* Burger menu icon - displayed on small screens */
 .burger {
     display: none;
- 
 }
 
 /* Checkbox for burger menu - hidden as it's just for functionality */
@@ -80,17 +90,12 @@ h1, h2, h3, h4, h5, h6  {
 .menu {
   /* Change to 'none' on smaller screens, and 'flex' when burger is clicked */
     display: flex; 
-    flex-direction: row;
     align-items: center;
-    /* ...rest of your styles... */
-}
-
-#toggle:checked + .menu {
-    display: block;
+    
 }
 
 /* Display menu when burger icon (checkbox) is clicked */
-#toggle:checked + .menu-container .menu {
+#toggle:checked ~ .menu-container .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,8 +124,8 @@ h1, h2, h3, h4, h5, h6  {
 /* Dropdown Menu Styles */
 /* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    display: none;
     padding-right: 1rem;
 }
 
@@ -284,6 +289,12 @@ img {
 
 /* THERAPIES SUP-PAGE */
 /* General Styles for All Sections */
+
+main {
+    min-height: calc(100vh - [header height] - [footer height]);
+    /* ... other styles ... */
+}
+
 .section {
     display: flex;
     align-items: center;
@@ -298,7 +309,7 @@ img {
 .section img {
     width: 300px;
     height: 300px;
-    padding: 10px 40;
+    padding: 10px 40px;
     border: 0.5px solid #301301;
 }
 .buttons #btn-shop, #btn-book {
@@ -350,22 +361,25 @@ img {
  
  top-section p {
     /* Styles for your top section text */
-    padding: 20px;
+    padding-bottom: 120px;
     text-align: center;
 }
 
 .bottom-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px;
+   
 }
 
 .bottom-section img {
-    max-height: 250px;
+    max-height: 200px;
     width: auto;
-    margin-bottom: 20px; /* Spacing between images when stacked */
+    /* Spacing between images when stacked */
+    margin-bottom: 20px; 
     border: 0.5px solid #301301;
+      
 }
 
 
@@ -477,6 +491,10 @@ footer {
     background-color: #ded9db; 
     color: #301301;    
     padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 /* Footer Top */
@@ -600,24 +618,52 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* NAVIGATION */
-/* Adjust the logo size for mobile */
+   /* Adjust the logo size for mobile */
+
     .navbar-logo img {
         width: 150px; /* Smaller width for mobile devices */
         height: auto; /* Maintain aspect ratio */
     }
     
+    /* Show hamburger menu icon */
     .burger {
         display: block;
     }
 
+    /* Hide menu by default */
+    .menu-container {
+    display: none;
+    }
+
+    /* Show menu when hamburger icon is clicked */
+    #toggle:checked ~ .menu-container {
+    display: block;
+    }
+
+    /* Style for menu items */
+    .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    /* Additional styles for menu */
+}
+
     .menu {
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on the header height */
+        left: 0;
+        background-color: #ded9db; /* Adjust the background as needed */
+        z-index: 1000; /* Ensure menu is below the hamburger icon */
     }
 
     /* When checkbox is checked, display the menu container */
-    #toggle:checked + .menu-container {
-        display: block;
-}
+    #toggle:checked ~ .menu-container .menu{
+        display: flex;  
+    }
+
     .menu a {
         text-align: center;
         padding: 10px;
@@ -627,8 +673,24 @@ footer {
 
     /* Adjusting the dropdowns for mobile view */
     .dropdown-content {
-        position: relative; 
+        display: none;
+        position: static; /* Adjust submenu position */
+        background-color: transparent;
+        min-width: 100%;
+        box-shadow: none;
     }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: #301301;
+        background-color: transparent;
+    }
+
+
 
     /* HERO */
     .hero-container h1 {
@@ -702,8 +764,7 @@ footer {
     }
 
     /* THANK YOU PAGE */
-    @media screen and (max-width: 768px) {
-        .thank-you {
+           .thank-you {
             width: 95%; /* Adjust width for tablet screens */
         }
 
@@ -717,6 +778,16 @@ footer {
 
 /* Additional Styles for Larger Screens (> 768px) */
 @media screen and (min-width: 769px) {
+    /*NAVBAR - HAmbureg Toggle */
+    .burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex; 
+    }
+
+
     /*THERAPIES SUB-PAGE */
     .section {
         padding: 10px; /* Reduce padding */
