@@ -74,16 +74,43 @@ body {
     height: auto;
 }
 
+/* Burger menu icon - displayed on small screens */
 .burger {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-.menu {
-    font: 1rem;
+/* Checkbox for burger menu - hidden as it's just for functionality */
+#toggle {
+    display: none;
 }
 
+/* Menu - adjust for smaller screens */
+.menu {
+  /* Change to 'none' on smaller screens, and 'flex' when burger is clicked */
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    /* ...rest of your styles... */
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+/* Display menu when burger icon (checkbox) is clicked */
+#toggle:checked + .menu-container .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    font-size: 1rem;
+}
+
+/* Styling of the anchor tags in menu */
 .menu a {
     text-decoration: none;
     color: #301301;
@@ -93,18 +120,11 @@ body {
     transition: transform 0.3s; 
 }
 
+
 .menu a:hover {
     transform: scale(1.1);
 }
 
-/* Checkbox Hack for Toggle Menu */
-#toggle {
-    display: none;
-}
-
-#toggle:checked + .menu {
-    display: block;
-}
 
 /* Dropdown Menu Styles */
 /* Sub-menu dropdown adapted from w3schools.com/howto/howto_css_dropdown_navbar */
@@ -578,28 +598,14 @@ footer {
     .navbar-logo img {
         width: 150px; /* Smaller width for mobile devices */
     height: auto; /* Maintain aspect ratio */
-}
-
+    }
     
-
     .burger {
         display: block;
     }
 
-    #toggle {
-        display: none;
-    }
-
-    #toggle:checked + .menu-container,
-    .menu-container {
-        display: block;
-    }
-
     .menu {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%;
+        display: none;
     }
 
     .menu a {
