@@ -49,7 +49,6 @@ body {
 }
 
 
-
 /* HEADER & NAVIGATION BAR */
 .navbar {
     background-color: #ded9db;
@@ -77,8 +76,7 @@ body {
 /* Burger menu icon - displayed on small screens */
 .burger {
     display: none;
-    font-size: 2rem;
-    cursor: pointer;
+ 
 }
 
 /* Checkbox for burger menu - hidden as it's just for functionality */
@@ -131,6 +129,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding-right: 1rem;
 }
 
 .dropdown-content {
@@ -597,7 +596,7 @@ footer {
 /* Adjust the logo size for mobile */
     .navbar-logo img {
         width: 150px; /* Smaller width for mobile devices */
-    height: auto; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
     }
     
     .burger {
@@ -608,6 +607,10 @@ footer {
         display: none;
     }
 
+    /* When checkbox is checked, display the menu container */
+    #toggle:checked + .menu-container {
+        display: block;
+}
     .menu a {
         text-align: center;
         padding: 10px;
