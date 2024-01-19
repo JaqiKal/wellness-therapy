@@ -71,9 +71,10 @@ h6 {
   height: auto;
 }
 
-/* HAmburger menu styles */
+/* Hamburger bars*/
 .burger {
-  display: none;
+  display: flex;
+  align-items:center;
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
@@ -104,8 +105,8 @@ h6 {
 #toggle:checked~.menu-container .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
- 
+  /* Right align menu buttons */
+  align-items: flex-start;
 }
 
 .menu {
@@ -589,6 +590,12 @@ footer {
     0px 4px 8px rgba(48, 19, 1, 1), 
     0px 8px 16px rgba(48, 19, 1, 1);
     text-align: left;
+    border-radius: 3px;
+}
+
+.menu a {
+font-size: large;
+line-height: 1.5rem;
 }
 
 .hero-container h1 {
@@ -689,42 +696,15 @@ footer {
     .menu {
       flex-direction: column;
       align-items: flex-start;
-      /* Additional styles for menu */
+      width: 100%; 
+      margin-top: calc(.06rem + 5px);
     }
 
-    /* .menu {
-        width: 100%; 
-        justify-content: flex-end; /* Aligns items to the right *
-        width: 100%;
-    }*/
-  
-  
-
-    .menu a {
-      text-align: left;
+      .menu a {
       padding: 10px;
       width: 100%;
       display: block;
-    }
 
-    /* Adjusting the dropdowns for mobile view */
-    .dropdown-content {
-      display: none;
-      position: static;
-      /* Adjust submenu position */
-      background-color: transparent;
-      min-width: 100%;
-      box-shadow: none;
-    }
-
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus-within .dropdown-content {
-      display: block;
-    }
-
-    .dropdown-content a {
-      color: #301301;
-      background-color: transparent;
     }
 
     /* HERO */
