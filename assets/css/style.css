@@ -105,28 +105,21 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(253, 248, 245, 0.95);
-  /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
-  box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
-  0px 2px 4px rgba(48, 19, 1, 1), 
-  0px 4px 8px rgba(48, 19, 1, 1), 
-  0px 8px 16px rgba(48, 19, 1, 1);
-  text-align: left;
-  
+ 
 }
 
 .menu {
-  font-size: 1rem;
-  letter-spacing: 4px;
   display: flex; 
   justify-content: space-between;
-  color: white;
+  list-style-type: none;
+  font-size: 130%;
+  letter-spacing: 3px;
   text-decoration: none;
+  color: white;
   padding-right: calc(1.25rem + 5px);
   margin-right: calc(1.25rem + 5px);
-  margin-top: calc(9.06rem + 5px);
-  gap: 20
- 
+  margin-top: calc(4.06rem + 5px);
+  gap: 20;
 }
 
 /* Styling of the anchor tags in menu */
@@ -134,8 +127,6 @@ h6 {
   text-decoration: none;
   color: #301301;
   padding-right: 1rem;
-  /* Make the menu horizontal */
-  display: inline-block;
   transition: transform 0.3s;
 }
 
@@ -144,13 +135,15 @@ h6 {
 }
 
 .menu a.active::after {
-    content: '';
-    display: block;
-    margin: auto; /* This centers the line */
-    height: 1px;
-    width: 100%; /* Adjust width as needed */
-    background-color: #3a3a3a;
+  content: '';
+  display: block;
+  margin: auto; /* This centers the line */
+  height: 1px;
+  width: 100%;
+  background-color: #3a3a3a;
+
 }
+
 
 
 
@@ -585,24 +578,37 @@ footer {
 /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
 
-    .hero-container h1 {
-        font-size: xxx-small;
-      }
-    
-      .hero-container p {
-        font-size: 0.9rem; 
-        padding: 0 10px; 
-      }
-    
-      #hero {
-        padding: 70px 5px 40px 5px; 
-        height: auto;
-      }
-    
-      .hero-buttons a {
-        padding: 0px; 
-        font-size: 1rem; 
-      }
+.menu {
+  font-size: 80%;
+  font-weight: 500;
+  margin-top: calc(8.06rem + 5px);
+    /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
+    background-color: rgba(222, 217, 219, 0.99);
+    box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
+    0px 2px 4px rgba(48, 19, 1, 1), 
+    0px 4px 8px rgba(48, 19, 1, 1), 
+    0px 8px 16px rgba(48, 19, 1, 1);
+    text-align: left;
+}
+
+.hero-container h1 {
+    font-size: xxx-small;
+  }
+
+  .hero-container p {
+    font-size: 0.9rem; 
+    padding: 0 10px; 
+  }
+
+  #hero {
+    padding: 70px 5px 40px 5px; 
+    height: auto;
+  }
+
+  .hero-buttons a {
+    padding: 0px; 
+    font-size: 1rem; 
+  }
 
 
   /* COOKIE */
@@ -686,13 +692,13 @@ footer {
       /* Additional styles for menu */
     }
 
-    .menu {
-        width: 100%; /* Ensures the container takes full width */
-        justify-content: flex-end; /* Aligns items to the right */
+    /* .menu {
+        width: 100%; 
+        justify-content: flex-end; /* Aligns items to the right *
         width: 100%;
-    }
+    }*/
   
-    }
+  
 
     .menu a {
       text-align: left;
