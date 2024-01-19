@@ -58,8 +58,8 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  height: 100px;
+  z-index: 101;
+  height: 120px;
 }
 
 .navbar-logo {
@@ -67,7 +67,7 @@ h6 {
 }
 
 .navbar-logo img {
-  width: 170px;
+  width: 200px;
   height: auto;
 }
 
@@ -105,10 +105,28 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(253, 248, 245, 0.95);
+  /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
+  box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
+  0px 2px 4px rgba(48, 19, 1, 1), 
+  0px 4px 8px rgba(48, 19, 1, 1), 
+  0px 8px 16px rgba(48, 19, 1, 1);
+  text-align: left;
+  
 }
 
 .menu {
   font-size: 1rem;
+  letter-spacing: 4px;
+  display: flex; 
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  padding-right: calc(1.25rem + 5px);
+  margin-right: calc(1.25rem + 5px);
+  margin-top: calc(9.06rem + 5px);
+  gap: 20
+ 
 }
 
 /* Styling of the anchor tags in menu */
@@ -121,10 +139,20 @@ h6 {
   transition: transform 0.3s;
 }
 
-
 .menu a:hover {
   transform: scale(1.1);
 }
+
+.menu a.active::after {
+    content: '';
+    display: block;
+    margin: auto; /* This centers the line */
+    height: 1px;
+    width: 100%; /* Adjust width as needed */
+    background-color: #3a3a3a;
+}
+
+
 
 /* MAIN CONTENT */
 /* Main */
@@ -143,14 +171,27 @@ main {
 
 /* Hero Section */
 #hero {
-  background: url("../images/pale-ocean.webp") no-repeat center center/cover;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background: url("../images/ocean-banner.webp") no-repeat center center/cover;
   background-position: center;
   color: #301301;
   text-align: center;
-  font-weight: 400;
   padding: 80px 10px 10px;
   height: 600px;
   width: 100%;
+}
+
+.hero-container {
+    background-color: rgba(253, 248, 245, 0.5);
+    font-size: 105%;
+    position: static;
+    top: 10px;
+    width: 78%;
+    border-radius: 18px;
+    min-height: 100px;
+   
 }
 
 .hero-container h1 {
@@ -544,6 +585,24 @@ footer {
 /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
 
+    .hero-container h1 {
+        font-size: xxx-small;
+      }
+    
+      .hero-container p {
+        font-size: 0.9rem; 
+        padding: 0 10px; 
+      }
+    
+      #hero {
+        padding: 70px 5px 40px 5px; 
+        height: auto;
+      }
+    
+      .hero-buttons a {
+        padding: 0px; 
+        font-size: 1rem; 
+      }
 
 
   /* COOKIE */
@@ -616,6 +675,10 @@ footer {
       display: block;
     }
 
+  /* When checkbox is checked, display the menu container */
+  #toggle:checked~.menu-container .menu {
+    display: flex;
+
     /* Style for menu items */
     .menu {
       flex-direction: column;
@@ -624,27 +687,15 @@ footer {
     }
 
     .menu {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      /* Adjust based on the header height */
-      left: 0;
-      background-color: #ded9db;
-      /* Adjust the background as needed */
-      z-index: 1000;
-      /* Ensure menu is below the hamburger icon */
+        width: 100%; /* Ensures the container takes full width */
+        justify-content: flex-end; /* Aligns items to the right */
+        width: 100%;
     }
-
-    /* When checkbox is checked, display the menu container */
-    #toggle:checked~.menu-container .menu {
-      display: flex;
+  
     }
 
     .menu a {
-      text-align: center;
+      text-align: left;
       padding: 10px;
       width: 100%;
       display: block;
