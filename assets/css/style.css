@@ -268,6 +268,18 @@ main {
 .service h2 {
   margin-bottom: 15px;
 }
+/* Responsive video styling */
+/* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
+.video-responsive {
+  float: right;
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 0 10px 10px; /* Add margin for spacing around the video */
+}
+
+.video-responsive iframe {
+  width: 100%;
+  height: auto;
+}
 
 /* End-note section */
 #end-note {
