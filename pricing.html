@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,196 +10,135 @@
     <meta name="keywords" content="reflexology, zone therapy, lymphatic drainage massage, therapeutic massage, wellness therapy, massage">
     <!-- Title -->
     <title>ManusHerbaTherapy</title>
-    <!--Favicon -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <!-- Style -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  </head>
-
-  <body>
+<body>
     <!-- Header & Navigation -->
-
     <header>
-      <nav class="navbar">
-        <!-- Logo Section -->
-        <div class="navbar-logo">
-          <a href="index.html">
-            <img src="assets/images/logo.png" alt="ManusHerba Therapy Logo">
-          </a>
-        </div>
-
-        <!-- Burger Menu for Mobile -->
-        <input type="checkbox" id="toggle" class="burger-chkbox">
-        <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
-
-
-        <!-- Menu Items -->
-        <div class="menu-container">
-          <div class="menu">
-            <a href="index.html" class="active" aria-label="Button for Home section">Home</a>
-            <a href="therapies.html" aria-label="Button for Herbal Therapy section">Services</a>
-            <a href="booking-price.html" aria-label="Button for boooking and prices section">Booking & Pricing</a>
-            <a href="shop.html" aria-label="Button for Webshop section">Shop</a>
-            <a href="contact.html" aria-label="Button for Contact us section">Contact</a>
-          </div>
-        </div>
-      </nav>
-
+        <nav class="navbar">
+            <!-- Logo Section -->
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="ManusHerba Therapy Logo">
+                </a>
+            </div>
+            <!-- Burger Menu for Mobile -->
+            <input type="checkbox" id="toggle" class="burger-chkbox">
+            <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
+            <!-- Menu Items -->
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="index.html" class="active" aria-label="Button for Home section"><i class="fa-solid fa-house" style="font-size: 20px;"></i>Home</a>
+                    <a href="services.html" aria-label="Button for Herbal Therapy section"><i class="fa-solid fa-hand-holding-heart" style="font-size: 20px;"></i>Services</a>
+                    <a href="pricing.html" aria-label="Button for boooking and prices section"><i class="fa-solid fa-calendar-check" style="font-size: 20px;"></i>Booking</a>
+                    <a href="contact.html" aria-label="Button for Contact us section"><i class="fa-solid fa-phone" style="font-size: 20px;"></i>Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Main content -->
-   <main>
-      <section class="book-price">
-        <h1>Pricing</h1>
-        <div>
-          <table>
-            <tr>
-              <th>Initial Consultation</th>
-              <td>$40</td>
-            </tr>
-            <tr>
-              <th>Follow-Up Consult</th>
-              <td>$30</td>
-            </tr>
-            <tr>
-              <th>Herbal Therapy</th>
-              <td>$60</td>
-            </tr>
-            <th>Lymphatic Drainage Therapy</th>
-            <td>$60</td>
-            </tr>
-            <th>Zone Therapy</th>
-            <td>$60</td>
-            </tr>
-          </table>
-        </div>
-
-
-        <h1>Booking form</h1>
-        <br>
-        <form id="booking-contact" name="booking-contact" method="get" action="https://jaqikal.github.io/wellness-therapy/thankyou.html">
-
-          <fieldset style="width: 450px">
-            <legend>Contact</legend>
-            <label for="fname">First name:</label> 
-            <br>
-            <input type="text" name="fname" id="fname" class="text-input" required checked> 
-            <br>
-            <label for="lname">Last name:</label> 
-            <br>
-            <input type="text" name="lnamn" id="lnamn" class="text-input" required checked> 
-            <br>
-            <label for="phone">Phone:</label> 
-            <br>
-            <input type="text" name="phone" id="phone" class="text-input" required checked> 
-            <br>
-            <label for="email">E-mail:</label> 
-            <br>
-            <input type="text" name="email" id="email" class="text-input" required checked>
-          </fieldset>
-          <br>
-          <br>
-          <fieldset style="width: 450px;">
-            <legend>How do you wish to be contacted?: <strong>(mandatory)</strong></legend>
-            <br>
-            <label for="contact-opt">Please select an option:</label>
-            <select id="opt" name="opt">
-              <option value="by-phone">Please give me a call!
-              </option>
-              <option value="by-email ">Please send me an e-mail!
-              </option>
-            </select>
-          </fieldset>
-          <br>
-          <br>
-          <fieldset style="width: 450px;">
-            <legend>Please select your therapy form: <strong>(mandatory)</strong></legend>
-            <br>
-            <input type="radio" name="t-type" value="herbal-t" checked="checked" required checked> Herbal therapy
-            <input type="radio" name="t-type" value="lymphat-t" required checked> Lymphatic drainage therapy
-            <input type="radio" name="t-type" value="zone-t" required checked> Zone therapy
-          </fieldset>
-          <br>
-          <br>
-          <fieldset style="width: 450px;">
-            <legend>Combine therapy types?</legend>
-            <label for="msg">Do you wish to combine therapy types, please write a message!:</label>
-            <br>
-            <textarea name="msg" id="msg" cols="35" rows="5"></textarea>
-          </fieldset>
-          <br>
-          <br>
-          <br>
-          <input type="submit" name="send" id="send" value="Send message" />
-        
-        </form>
-        </div>
-      </section>
+    <main>
+        <section id="price-section">
+            
+            <div id="price-table">
+                <h1>Pricing</h1>
+                <table>
+                    <tr>
+                        <th>Initial Consultation</th>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <th>Follow-Up Consult</th>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <th>Herbal Therapy</th>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <th>Lymphatic Drainage Therapy</th>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <th>Zone Therapy</th>
+                        <td>$60</td>
+                    </tr>
+                </table>
+            </div>
+            
+           
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-top">
-        <ul id="social-networks">
-          <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
-              <i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
-              <i class="fa-brands fa-twitter-square"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
-              <i class="fa-brands fa-youtube-square"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
-              <i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
-
-        <div class="footer-center">
-          <a href="#cookies" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
-          <a href="#privacy-policy" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
+   
+     <!-- Footer -->
+     <footer>
+        <div class="footer-top">
+          <ul id="social-networks">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+                <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                <i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+  
+          <div class="footer-center">
+            <a href="#cookies" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
+            <a href="#privacy-policy" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
+          </div>
+  
+          <ul id="payment-options">
+            <li>
+              <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
+                <i class="fa-brands fa-cc-mastercard"></i></a>
+            </li>
+            <li>
+              <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
+                <i class="fa-brands fa-cc-visa"></i></a>
+            </li>
+            <li>
+              <a href="https://www.americanexpress.com/" target="_blank" rel="noopener" aria-label="Pay securely with AMEX (opens in a new tab)">
+                <i class="fa-brands fa-cc-amex"></i></a>
+            </li>
+            <li>
+              <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
+                <i class="fa-brands fa-cc-paypal"></i></a>
+            </li>
+            <li>
+              <a href="https://www.bitcoin.com/" target="_blank" rel="noopener" aria-label="Pay securely with Bitcoin (opens in a new tab)">
+                <i class="fa-brands fa-bitcoin"></i></a>
+            </li>
+          </ul>
         </div>
-
-        <ul id="payment-options">
-          <li>
-            <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
-              <i class="fa-brands fa-cc-mastercard"></i></a>
-          </li>
-          <li>
-            <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
-              <i class="fa-brands fa-cc-visa"></i></a>
-          </li>
-          <li>
-            <a href="https://www.americanexpress.com/" target="_blank" rel="noopener" aria-label="Pay securely with AMEX (opens in a new tab)">
-              <i class="fa-brands fa-cc-amex"></i></a>
-          </li>
-          <li>
-            <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
-              <i class="fa-brands fa-cc-paypal"></i></a>
-          </li>
-          <li>
-            <a href="https://www.bitcoin.com/" target="_blank" rel="noopener" aria-label="Pay securely with Bitcoin (opens in a new tab)">
-              <i class="fa-brands fa-bitcoin"></i></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Horizontal rule for separation -->
-      <hr class="footer-divider">
-      <div class="footer-bottom">
-        <p>
-          This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
-      </div>
-    </footer>
-
-    <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
-  </body>
-
-</html>
+        <!-- Horizontal rule for separation -->
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <p>
+            This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
+        </div>
+      </footer>
+  
+      <!-- Font Awesome kit -->
+      <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
+    </body>
+  
+  </html>
+  

@@ -18,7 +18,7 @@ body {
   font-family: 'open-sans', 'Roboto', sans-serif;
   
   color: rgba(48, 19, 1, 1);
-  background-color: #ded9db;
+ /* background-color: #ded9db;*/
   top: 0;
   z-index: 1000;
 }
@@ -45,6 +45,7 @@ h6 {
 
 .hidden-heading {
   display: none;
+  
 }
 
 /* HEADER & NAVIGATION BAR */
@@ -62,9 +63,6 @@ h6 {
   height: 120px;
 }
 
-.navbar-logo {
-  font-size: 0.5rem;
-}
 
 .navbar-logo img {
   width: 200px;
@@ -113,7 +111,7 @@ h6 {
   display: flex; 
   justify-content: space-between;
   list-style-type: none;
-  font-size: 130%;
+  font-size: 110%;
   letter-spacing: 3px;
   text-decoration: none;
   color: white;
@@ -129,23 +127,28 @@ h6 {
   color: #301301;
   padding-right: 1rem;
   transition: transform 0.3s;
-}
+  padding: 20px;
+} 
 
 .menu a:hover {
   transform: scale(1.1);
 }
 
+/* Decorative line under active menu item. */
+/* class active with border-bottom did not function as wished */
 .menu a.active::after {
   content: '';
   display: block;
-  margin: auto; /* This centers the line */
+  /* This centers the line */
   height: 1px;
   width: 100%;
   background-color: #3a3a3a;
-
 }
 
-
+/* FontAwesome icons activ on large viewport */
+.menu a i {
+  display: inline-block;
+}
 
 
 /* MAIN CONTENT */
@@ -242,12 +245,6 @@ main {
   /* darker shade for hover effect */
 }
 
-/* Responsive Images */
-img {
-  max-width: 80%;
-  height: auto;
-}
-
 /* Services section*/
 #services {
   display: flex;
@@ -284,14 +281,12 @@ img {
   font-weight: 500;
 }
 
-/* BOOKING & PRICE SUB-PAGE*/
+/* PRICING SUB-PAGE*/
 
-.book-price {
-  text-align: left;
-  padding: 2% 0 2% 5%;
-}
 
-/* THERAPIES SUP-PAGE */
+
+
+/* SERVICES SUP-PAGE */
 /* General Styles for All Sections */
 
 .section {
@@ -388,22 +383,71 @@ top-section p {
 
 /* CONTACT  SUB-PAGE */
 
-#contact-hero {
-  text-align: left;
-  padding: 2% 0 2% 5%;
+#contact {
+  background: url(../images/ocean-banner.webp) no-repeat center center/cover;
+   padding: 500px 10% 10%;
 }
 
-
-/* THANK YOU  */
-.thank-you {
-  padding: 2% 0 2% 5%;
+#signup-form {
+  color: #2b2929;
+  background-color: rgba(255, 166, 48, 0.8);
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 13px;
 }
 
-.thank-you ul {
-  padding-left: 40px;
-  list-style-position: outside;
+#signup-form>h2 {
+  font-size: 2rem;
+  color: #2b2929;
 }
 
+#signup-form>p {
+  color: #004E64;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.text-input {
+  background: transparent;
+  color: #2b2929;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 5px;
+  border: 1px solid #2b2929;
+  border-radius: 13px;
+  padding: 0 5px;
+}
+
+.radio-btn {
+  width: 100%;
+}
+
+.radio-btn>h3 {
+  font-size: 0.9rem;
+  color: #2b2929;
+}
+
+/* Button styles */
+#send-btn {
+  background-color: ##301301;
+  color: #FDFFFC;
+  font-size: 1em;
+  text-decoration: underline #FFA630;
+  border: none;
+  border-radius: 25px;
+  margin-top: 25px;
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+#send-btn:hover {
+  background-color: #FDf8f9;
+  color: #FFA630;
 
 /* NOT FOUND (404) SUB-PAGE */
 
@@ -579,23 +623,43 @@ footer {
 /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
 @media screen and (max-width: 480px) {
 
+
+    /* Show hamburger menu icon */
+    .burger {
+      display: block;
+    }
+
+    /* Hide menu by default */
+    .menu-container {
+      display: none;
+    }
+
+    /* Show menu when hamburger icon is clicked */
+    #toggle:checked~.menu-container {
+      display: block;
+    }
+
+  /* When checkbox is checked, display the menu container */
+  #toggle:checked~.menu-container .menu {
+    display: flex;
+  }
+
 .menu {
   font-size: 80%;
   font-weight: 500;
   margin-top: calc(8.06rem + 5px);
-    /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
-    background-color: rgba(222, 217, 219, 0.99);
-    box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
-    0px 2px 4px rgba(48, 19, 1, 1), 
-    0px 4px 8px rgba(48, 19, 1, 1), 
-    0px 8px 16px rgba(48, 19, 1, 1);
-    text-align: left;
-    border-radius: 3px;
-}
-
-.menu a {
-font-size: large;
-line-height: 1.5rem;
+  /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
+  background-color: rgba(222, 217, 219, 0.99);
+  box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
+  0px 2px 4px rgba(48, 19, 1, 1), 
+  0px 4px 8px rgba(48, 19, 1, 1), 
+  0px 8px 16px rgba(48, 19, 1, 1);
+  text-align: left;
+  border-radius: 3px;
+  /*To adjust toggle box */
+  padding: 5x; /* Reduced padding */
+  line-height: 50%;
+  font-size: 16px;
 }
 
 .hero-container h1 {
@@ -664,48 +728,6 @@ line-height: 1.5rem;
   @media screen and (max-width: 768px) {
 
     /* NAVIGATION */
-
-    /* Adjust the logo size for mobile */
-    .navbar-logo img {
-      width: 150px;
-      /* Smaller width for mobile devices */
-      height: auto;
-      /* Maintain aspect ratio */
-    }
-
-    /* Show hamburger menu icon */
-    .burger {
-      display: block;
-    }
-
-    /* Hide menu by default */
-    .menu-container {
-      display: none;
-    }
-
-    /* Show menu when hamburger icon is clicked */
-    #toggle:checked~.menu-container {
-      display: block;
-    }
-
-  /* When checkbox is checked, display the menu container */
-  #toggle:checked~.menu-container .menu {
-    display: flex;
-
-    /* Style for menu items */
-    .menu {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%; 
-      margin-top: calc(.06rem + 5px);
-    }
-
-      .menu a {
-      padding: 10px;
-      width: 100%;
-      display: block;
-
-    }
 
     /* HERO */
     .hero-container h1 {
@@ -785,7 +807,7 @@ line-height: 1.5rem;
           display: flex;
         }
 
-        /*THERAPIES SUB-PAGE */
+      /*THERAPIES SUB-PAGE */
         .section {
           padding: 10px;
           /* Reduce padding */
@@ -820,3 +842,4 @@ line-height: 1.5rem;
           .thank-you {
             width: 90%;
           }
+          
