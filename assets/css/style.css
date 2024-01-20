@@ -152,7 +152,7 @@ h6 {
 
 
 /* MAIN CONTENT */
-/* Main */
+/* Main in index */
 main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
@@ -166,7 +166,7 @@ main {
   background-color: #fdf8f5;
 }
 
-/* Hero Section */
+/* Hero Section in index */
 #hero {
   display: flex; 
   justify-content: center; 
@@ -188,7 +188,6 @@ main {
     width: 78%;
     border-radius: 18px;
     min-height: 100px;
-   
 }
 
 .hero-container h1 {
@@ -206,7 +205,6 @@ main {
   font-size: larger;
   font-weight: 500;
   text-align: center;
-
 }
 
 .hero-buttons {
@@ -221,7 +219,7 @@ main {
 #btn-hero-shop {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #46ce9a;
+  background-color: #1e5540;
   border: 0.5px solid #ded9db;
   color: white;
   text-decoration: none;
@@ -232,7 +230,7 @@ main {
 #btn-hero-book {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #007bff;
+  background-color: #073d77;
   border: 0.5px solid #ded9db;
   color: white;
   text-decoration: none;
@@ -240,12 +238,7 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.btn-hero:hover {
-  background-color: #0056b3;
-  /* darker shade for hover effect */
-}
-
-/* Services section*/
+/* Services section in index */
 #services {
   display: flex;
   justify-content: space-around;
@@ -268,24 +261,6 @@ main {
 .service h2 {
   margin-bottom: 15px;
 }
-/* Responsive video styling */
-/* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
-.video-responsive {
-  float: rigth;
-  width: 90%; /* Adjust the width as needed */
-  margin: 5px; /* Add margin for spacing around the video */
-}
-
-.video-responsive iframe {
-  width: 100%;
-  height: auto;
-}
-
-.fixed-size {
-  width: 100px; 
-  height: auto;
-
-}
 
 /* End-note section */
 #end-note {
@@ -304,26 +279,31 @@ main {
 
 
 
-/* SERVICES SUP-PAGE */
+
+
+/* SERVICES PAGE */
 /* General Styles for All Sections */
 
 .section {
   display: flex;
-  /* align-items: center;*/
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #fdf8f5;
+  padding: 0 20x;
+  text-align: start;
+  width: 98%;
 }
 
 .content {
   flex: 1;
-  /* Adjust as needed */
-  margin-left: 20px;
+  padding: 0 5px;
+   
 }
 
 .section img {
   width: 250px;
   height: 250px;
-  padding: 10px 40px;
-
+  object-fit: cover;
 }
 
 .buttons #btn-shop,
@@ -337,7 +317,7 @@ main {
 
 #btn-book {
   padding: 10px 30px;
-  background-color: #007bff;
+  background-color: #073d77;
   border: 0.5px solid #ded9db;
   color: white;
   text-decoration: none;
@@ -347,7 +327,7 @@ main {
 
 #btn-shop {
   padding: 10px 30px;
-  background-color: #46ce9a;
+  background-color: #1e5540;
   border: 0.5px solid #ded9db;
   color: white;
   text-decoration: none;
@@ -355,10 +335,17 @@ main {
   transition: background-color 0.3s ease;
 }
 
+/* Responsive video styling */
+/* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
+.video-responsive {
+  float: none;
+  width: 100% 
+  margin: 5px;
+}
+
 /* Top Section */
 .top-section {
   margin: 60px 40px 30px;
-
 }
 
 /* Middle Section */
@@ -368,7 +355,7 @@ main {
 
 /* Bottom Section */
 .bot-section {
-  background-color: #f8f8f8;
+  background-color: #fdf8f5;
   margin: 40px 30px;
 
 }
@@ -377,7 +364,7 @@ main {
 
 top-section p {
   /* Styles for your top section text */
-  padding-bottom: 120px;
+  pad*/ding-bottom: 120px;
   text-align: center;
 }
 
