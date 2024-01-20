@@ -16,9 +16,9 @@ body {
   margin: 0;
   padding-top: 60px;
   font-family: 'open-sans', 'Roboto', sans-serif;
-  
+
   color: rgba(48, 19, 1, 1);
- /* background-color: #ded9db;*/
+  /* background-color: #ded9db;*/
   top: 0;
   z-index: 1000;
 }
@@ -45,7 +45,7 @@ h6 {
 
 .hidden-heading {
   display: none;
-  
+
 }
 
 /* HEADER & NAVIGATION BAR */
@@ -72,7 +72,7 @@ h6 {
 /* Hamburger bars*/
 .burger {
   display: flex;
-  align-items:center;
+  align-items: center;
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
@@ -108,7 +108,7 @@ h6 {
 }
 
 .menu {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   list-style-type: none;
   font-size: 110%;
@@ -128,7 +128,7 @@ h6 {
   padding-right: 1rem;
   transition: transform 0.3s;
   padding: 20px;
-} 
+}
 
 .menu a:hover {
   transform: scale(1.1);
@@ -168,8 +168,8 @@ main {
 
 /* Hero Section in index */
 #hero {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
   background: url("../images/ocean-banner.webp") no-repeat center center/cover;
   background-position: center;
@@ -181,13 +181,13 @@ main {
 }
 
 .hero-container {
-    background-color: rgba(253, 248, 245, 0.5);
-    font-size: 105%;
-    position: static;
-    top: 10px;
-    width: 78%;
-    border-radius: 18px;
-    min-height: 100px;
+  background-color: rgba(253, 248, 245, 0.5);
+  font-size: 105%;
+  position: static;
+  top: 10px;
+  width: 78%;
+  border-radius: 18px;
+  min-height: 100px;
 }
 
 .hero-container h1 {
@@ -297,7 +297,7 @@ main {
 .content {
   flex: 1;
   padding: 0 5px;
-   
+
 }
 
 .section img {
@@ -339,8 +339,7 @@ main {
 /* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
 .video-responsive {
   float: none;
-  width: 100% 
-  margin: 5px;
+  width: 100% margin: 5px;
 }
 
 /* Top Section */
@@ -360,7 +359,7 @@ main {
 
 }
 
-/* SHOP SUB-PAGE*/
+/* SHOP PAGE*/
 
 top-section p {
   /* Styles for your top section text */
@@ -377,7 +376,7 @@ top-section p {
 }
 
 .bottom-section img {
-  height:200px ;
+  height: 200px;
   width: auto;
   /* Spacing between images when stacked */
   margin-bottom: 20px;
@@ -386,11 +385,11 @@ top-section p {
 }
 
 
-/* CONTACT  SUB-PAGE */
+/* CONTACT PAGE */
 
 #contact {
   background: url(../images/ocean-banner.webp) no-repeat center center/cover;
-   padding: 500px 10% 10%;
+  padding: 500px 10% 10%;
 }
 
 #signup-form {
@@ -454,105 +453,109 @@ top-section p {
   background-color: #FDf8f9;
   color: #FFA630;
 
-/* NOT FOUND (404) SUB-PAGE */
+  /* NOT FOUND (404) PAGE */
 
-#ono-main {
-  padding: 10px 0;
-}
+  #ono-main {
+    padding: 10px 0;
+  }
 
-.ono-hero {
-  /* Bolder outer border */
-  border: 2px solid #301301;
-  /* Thinner inner line */
-  outline: 0.5px solid #301301;
-  /* Adjusts the position of the outline */
-  outline-offset: -10px;
-  border-radius: 10px;
-  padding: 20px;
-  margin: auto;
-  width: 80%;
-  max-width: 960px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  box-sizing: border-box;
-  text-align: center;
-}
-
-
-/* COOKIE SUB-PAGE */
-#cookie-hero {
-  text-align: left;
-  padding: 2% 0 2% 5%;
-}
-
-#cookie-hero h1 p {
-  margin-bottom: 20px;
-}
-
-#cookie h1,
-p {
-  text-align: left;
-}
-
-#cookie-hero ul {
-  padding-left: 20px;
-}
+  .ono-hero {
+    /* Bolder outer border */
+    border: 2px solid #301301;
+    /* Thinner inner line */
+    outline: 0.5px solid #301301;
+    /* Adjusts the position of the outline */
+    outline-offset: -10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    box-sizing: border-box;
+    text-align: center;
+  }
 
 
-/* GDPR SUB-PAGE */
-#gdpr-hero {
-  text-align: left;
-  padding: 2% 0 2% 5%;
-}
+  /* COOKIE PAGE */
+  #cookie-hero {
+    text-align: left;
+    padding: 2% 0 2% 5%;
+  }
 
-#gdpr-hero h1 p {
-  margin-bottom: 20px;
-}
+  #cookie-hero h1 p {
+    margin-bottom: 20px;
+  }
 
-#gdpr h1,
-p {
-  text-align: left;
-}
+  #cookie h1,
+  p {
+    text-align: left;
+  }
 
-#gdpr-hero ul {
-  padding-left: 20px;
-}
-
-
-/* PRIVACY-POLICY SUB-PAGE */
-
-#privacy-policy {
-  text-align: left;
-  padding: 2% 0 5% 5%;
-}
-
-#privacy-policy h1 p {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-#privacy-policy ul {
-  padding-left: 40px;
-  /* Adjust as needed for indentation */
-  list-style-position: outside;
-  /* Optional: Ensures bullets are aligned with the indented text */
-}
+  #cookie-hero ul {
+    padding-left: 20px;
+  }
 
 
+  /* GDPR PAGE */
+  #gdpr-hero {
+    text-align: left;
+    padding: 2% 0 2% 5%;
+  }
 
-/* FOOTER */
-/* Footer Main */
-/* Footer Main */
-footer {
-    background-color: #ded9db; 
-    color: #301301;    
+  #gdpr-hero h1 p {
+    margin-bottom: 20px;
+  }
+
+  #gdpr h1,
+  p {
+    text-align: left;
+  }
+
+  #gdpr-hero ul {
+    padding-left: 20px;
+  }
+
+
+  /* PRIVACY-POLICY PAGE */
+
+  #privacy-policy {
+    text-align: left;
+    padding: 2% 0 5% 5%;
+  }
+
+  #privacy-policy h1 p {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  #privacy-policy ul {
+    padding-left: 40px;
+    /* Adjust as needed for indentation */
+    list-style-position: outside;
+    /* Optional: Ensures bullets are aligned with the indented text */
+  }
+
+
+
+  /* FOOTER */
+  /* Footer Main */
+
+  footer {
+    background-color: #ded9db;
+    color: #301301;
     padding: 20px 0;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-/* Footer Top */
-.footer-top {
+  /* Footer Left */
+  .footer-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -562,71 +565,71 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 20px
-}
+  }
 
-#social-networks,
-#payment-options {
+  /* Footer Mid */
+  .footer-mid {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #301301;
+    margin: 0 10px;
+  }
+
+  #footer-cookie:hover,
+  #footer-privacy:hover {
+    color: rgb(251, 5, 235, 1);
+  }
+
+  #social-networks,
+  #payment-options {
     list-style: none;
     padding: 0;
     display: flex;
     margin: 0;
-}
+  }
 
-#social-networks li,
-#payment-options li {
+  #social-networks li,
+  #payment-options li {
     margin: 0 10px;
-}
+  }
 
-#social-networks i, #payment-options i {
+  #social-networks i,
+  #payment-options i {
     font-size: 180%;
     padding: 5%;
-    color: rgba(48, 19, 1, 1); 
-}
+    color: rgba(48, 19, 1, 1);
+  }
 
-#social-networks i:hover, #payment-options i:hover {
-    color: rgba(74, 5, 135, 0.8); 
-    transform: scale(1.1); 
-}
+  #social-networks i:hover,
+  #payment-options i:hover {
+    color: rgba(74, 5, 135, 0.8);
+    transform: scale(1.1);
+  }
 
-/* Footer Center */
-.footer-center {
+  /* Footer Bottom */
+  .footer-bottom {
+    width: 100%;
     text-align: center;
-    font-size: 1.2rem;     
-}
-
-.footer-center a {
-    text-decoration: none;
-    color: #301301;
-    margin: 0 10px;
-}
-
-#footer-cookie:hover, #footer-privacy:hover {
-    color: rgb(251, 5, 235, 1); 
-}
-
-/* Footer Bottom */
-.footer-divider {
-    border-color: 0.5px solid #301301;
-    margin-top: 20px;
-}
-
-.footer-bottom p {
     font-size: 0.9rem;
     margin-top: 20px;
-    text-align: center;
-}
+  }
 
-.fa-brands {
+  .fa-brands {
     font-size: 1.5rem;
-}
+  }
 
 
 
-/* RESPONSIVE STYLES */
 
-/* MEDIA QUERY  for Mobile Devices - MAX 480 px */
-@media screen and (max-width: 480px) {
+
+
+
+
+  /* RESPONSIVE STYLES */
+
+  /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
+  @media screen and (max-width: 480px) {
 
 
     /* Show hamburger menu icon */
@@ -644,77 +647,78 @@ footer {
       display: block;
     }
 
-  /* When checkbox is checked, display the menu container */
-  #toggle:checked~.menu-container .menu {
-    display: flex;
-  }
+    /* When checkbox is checked, display the menu container */
+    #toggle:checked~.menu-container .menu {
+      display: flex;
+    }
 
-.menu {
-  font-size: 80%;
-  font-weight: 500;
-  margin-top: calc(8.06rem + 5px);
-  /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
-  background-color: rgba(222, 217, 219, 0.99);
-  box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1), 
-  0px 2px 4px rgba(48, 19, 1, 1), 
-  0px 4px 8px rgba(48, 19, 1, 1), 
-  0px 8px 16px rgba(48, 19, 1, 1);
-  text-align: left;
-  border-radius: 3px;
-  /*To adjust toggle box */
-  padding: 5x; /* Reduced padding */
-  line-height: 50%;
-  font-size: 16px;
-}
+    .menu {
+      font-size: 80%;
+      font-weight: 500;
+      margin-top: calc(8.06rem + 5px);
+      /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
+       background-color: rgba(222, 217, 219, 0.99);
+       box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1),
+       0px 2px 4px rgba(48, 19, 1, 1),
+       0px 4px 8px rgba(48, 19, 1, 1),
+       0px 8px 16px rgba(48, 19, 1, 1);
+       text-align: left;
+       border-radius: 3px;
+       /*To adjust toggle box */
+       padding: 5x;
+       /* Reduced padding */
+       line-height: 50%;
+       font-size: 16px;      
+    }
 
-.hero-container h1 {
-    font-size: xxx-small;
-  }
+    .hero-container h1 {
+      font-size: xxx-small;
+    }
 
-  .hero-container p {
-    font-size: 0.9rem; 
-    padding: 0 10px; 
-  }
+    .hero-container p {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
 
-  #hero {
-    padding: 70px 5px 40px 5px; 
-    height: auto;
-  }
+    #hero {
+      padding: 70px 5px 40px 5px;
+      height: auto;
+    }
 
-  .hero-buttons a {
-    padding: 0px; 
-    font-size: 1rem; 
-  }
+    .hero-buttons a {
+      padding: 0px;
+      font-size: 1rem;
+    }
 
 
-  /* COOKIE */
-  #cookie-hero {
-    padding: 0 10px;
-    /* Adjust padding for smaller screens */
-  }
+    /* COOKIE PAGE */
+    #cookie-hero {
+      padding: 0 10px;
+      /* Adjust padding for smaller screens */
+    }
 
-  #cookie-hero ul {
-    padding-left: 15px;
-  }
+    #cookie-hero ul {
+      padding-left: 15px;
+    }
 
-  .ono-hero {
-    width: 100%;
-    padding: 15px 5px;
-    /* Adjust position for better mobile viewing */
-    position: static;
-    transform: none;
-    top: auto;
-    left: auto;
-  }
+    .ono-hero {
+      width: 100%;
+      padding: 15px 5px;
+      /* Adjust position for better mobile viewing */
+      position: static;
+      transform: none;
+      top: auto;
+      left: auto;
+    }
 
-  /* THANK YOU PAGE */
-  .thank-you {
-    width: 100%;
-    padding: 15px;
-    outline-offset: -5px;
-  }
+    /* THANK YOU PAGE */
+    .thank-you {
+      width: 100%;
+      padding: 15px;
+      outline-offset: -5px;
+    }
 
-  .thank-you ul {
+    .thank-you ul {
     padding-left: 20px;
 
 
@@ -727,48 +731,47 @@ footer {
     .thank-you ul {
       padding-left: 15px;
     }
-  }
 
-  /* MEDIA QUERY for Mobile Devices - MAX 768px */
-  @media screen and (max-width: 768px) {
+    /* MEDIA QUERY for Mobile Devices - MAX 768px */
+    @media screen and (max-width: 768px) {
 
-    /* NAVIGATION */
+      /* NAVIGATION */
 
-    /* HERO */
-    .hero-container h1 {
-      font-size: 2.5rem;
-    }
+      /* HERO */
+      .hero-container h1 {
+        font-size: 2.5rem;
+      }
 
-    .hero-container p {
-      font-size: 1.2rem;
-    }
+      .hero-container p {
+        font-size: 1.2rem;
+      }
 
-    .hero-buttons {
-      flex-direction: column;
-    }
+      .hero-buttons {
+        flex-direction: column;
+      }
 
-    #services {
-      flex-direction: column;
-      align-items: center;
-    }
+      #services {
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .service {
-      width: 80%;
-      margin-bottom: 20px;
-    }
+      .service {
+        width: 80%;
+        margin-bottom: 20px;
+      }
 
-    .btn-hero {
-      width: 100%;
-    }
+      .btn-hero {
+        width: 100%;
+      }
 
-    /* THERAPIES SUB-PAGE */
-    .section {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+      /* THERAPY PAGE */
+      .section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-    /* SHOP */
-       .bottom-section {
+      /* SHOP PAGE */
+      .bottom-section {
         flex-direction: column;
         align-items: center;
       }
@@ -779,27 +782,43 @@ footer {
         height: auto;
       }
 
-
       /* FOOTER */
-      .footer-top {
+
+      footer {
         flex-direction: column;
+      }
+
+      .footer-left {
+        width: 100%;
         text-align: center;
-    }
+        order: 2;
+        /* Adjust 'order' as needed */
+      }
 
-    #social-networks,
-    #payment-options {
-        flex-direction: column;
-    }
+      .footer-mid {
+        width: 100%;
+        text-align: center;
+        order: 1;
+        /* Adjust 'order' as needed */
+      }
 
-    .footer-center a,
-    #social-networks li,
-    #payment-options li {
-        margin-bottom: 10px;
-    }
-      
+      .footer-right {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        /* Adjust 'order' as needed */
+      }
 
-      
-  
+      .footer-divider {
+        order: 4;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .footer-bottom {
+        order: 5;
+      }
+
       /* MEDIA QUERY for Larger Screens (> 768px) */
       @media screen and (min-width: 769px) {
 
@@ -812,7 +831,7 @@ footer {
           display: flex;
         }
 
-      /*THERAPIES SUB-PAGE */
+        /*THERAPIES SUB-PAGE */
         .section {
           padding: 10px;
           /* Reduce padding */
@@ -843,8 +862,44 @@ footer {
             /* Adjust width for larger screens */
           }
 
-          /* PRIVACY POLICY */
+          /* PRIVACY POLICY PAGE*/
           .thank-you {
             width: 90%;
           }
-          
+
+          /* FOOTER */
+
+          */ footer {
+            flex-direction: row;
+          }
+
+          .footer-left {
+            width: 100%;
+            text-align: center;
+            order: 1;
+            /* Adjust 'order' as needed */
+          }
+
+          .footer-mid {
+            width: 100%;
+            text-align: center;
+            order: 2;
+            /* Adjust 'order' as needed */
+          }
+
+          .footer-right {
+            width: 100%;
+            text-align: center;
+            order: 3;
+            /* Adjust 'order' as needed */
+          }
+
+          .footer-divider {
+            order: 4;
+            width: 100%;
+            margin-top: 10px;
+          }
+
+          .footer-bottom {
+            order: 5;
+          }
