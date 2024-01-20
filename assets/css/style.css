@@ -118,7 +118,7 @@ h6 {
   padding-right: calc(1.25rem + 5px);
   margin-right: calc(1.25rem + 5px);
   margin-top: calc(4.06rem + 5px);
-  gap: 20;
+  gap: 20px;
 }
 
 /* Styling of the anchor tags in menu */
@@ -135,7 +135,9 @@ h6 {
 }
 
 /* Decorative line under active menu item. */
-/* class active with border-bottom did not function as wished */
+/* class active with border-bottom did not function as wished. Found an answer on slack */
+/* that I modified with the help of reading on w3school, mdn and by trial and error */
+/* https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */ 
 .menu a.active::after {
   content: '';
   display: block;
@@ -151,8 +153,7 @@ h6 {
 }
 
 
-/* MAIN CONTENT */
-/* Main in index */
+/* MAIN CONTENT in LANDING PAGE */
 main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
@@ -166,7 +167,8 @@ main {
   background-color: #fdf8f5;
 }
 
-/* Hero Section in index */
+/* Hero Section in LANDING PAGE */
+
 #hero {
   display: flex;
   justify-content: center;
@@ -238,7 +240,7 @@ main {
   transition: background-color 0.3s ease;
 }
 
-/* Services section in index */
+/* Services section in LANDING PAGE */
 #services {
   display: flex;
   justify-content: space-around;
@@ -249,8 +251,7 @@ main {
 .service {
   text-align: center;
   width: 30%;
-  /* Adjust based on your preference */
-}
+ }
 
 .service img {
   width: 100%;
@@ -262,7 +263,7 @@ main {
   margin-bottom: 15px;
 }
 
-/* End-note section */
+/* End-note section in LANDING PAGE */
 #end-note {
   background-color: rgb(233, 241, 245);
   text-align: center;
@@ -274,35 +275,43 @@ main {
   font-weight: 500;
 }
 
-/* PRICING SUB-PAGE*/
-
-
-
-
-
+/* PRICING SUB*/
 
 /* SERVICES PAGE */
 /* General Styles for All Sections */
-
-.section {
+.section top-section {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   justify-content: space-around;
   background-color: #fdf8f5;
-  padding: 0 20x;
   text-align: start;
   width: 98%;
+}
+
+.top-section {
+  margin: 80px 40px 20px;
+  padding-right: 40px;
+}
+
+.mid-section {
+  margin: 30px 40px 20px;
+  padding-right: 40px;
+}
+
+.bot-section {
+  margin: 30px 40px 20px;
+  padding-right: 40px;
 }
 
 .content {
   flex: 1;
   padding: 0 5px;
-
 }
 
 .section img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -311,8 +320,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 20px;
-  margin-bottom: 10px;
+  margin: 10px 10px 5px;
+  align-items: center;
 }
 
 #btn-book {
@@ -335,35 +344,22 @@ main {
   transition: background-color 0.3s ease;
 }
 
-/* Responsive video styling */
+
+ /* Responsive video styling */
 /* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
 .video-responsive {
   float: none;
-  width: 100% margin: 5px;
+  width: 100%;
+  margin: 2px;
 }
 
-/* Top Section */
-.top-section {
-  margin: 60px 40px 30px;
-}
-
-/* Middle Section */
-.mid-section {
-  margin: 40px 30px;
-}
-
-/* Bottom Section */
-.bot-section {
-  background-color: #fdf8f5;
-  margin: 40px 30px;
-
-}
+.fixed-size {
+  border: 0;
 
 /* SHOP PAGE*/
-
 top-section p {
   /* Styles for your top section text */
-  pad*/ding-bottom: 120px;
+  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -372,7 +368,6 @@ top-section p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
-
 }
 
 .bottom-section img {
@@ -384,9 +379,7 @@ top-section p {
 
 }
 
-
 /* CONTACT PAGE */
-
 #contact {
   background: url(../images/ocean-banner.webp) no-repeat center center/cover;
   padding: 500px 10% 10%;
@@ -434,7 +427,7 @@ top-section p {
 
 /* Button styles */
 #send-btn {
-  background-color: ##301301;
+  background-color: #301301;
   color: #FDFFFC;
   font-size: 1em;
   text-decoration: underline #FFA630;
@@ -446,7 +439,6 @@ top-section p {
   width: 100%;
   display: inline-block;
   cursor: pointer;
-
 }
 
 #send-btn:hover {
@@ -454,12 +446,11 @@ top-section p {
   color: #FFA630;
 
   /* NOT FOUND (404) PAGE */
-
-  #ono-main {
+  #nono-main {
     padding: 10px 0;
   }
 
-  .ono-hero {
+  .nono-hero {
     /* Bolder outer border */
     border: 2px solid #301301;
     /* Thinner inner line */
@@ -478,7 +469,6 @@ top-section p {
     box-sizing: border-box;
     text-align: center;
   }
-
 
   /* COOKIE PAGE */
   #cookie-hero {
@@ -499,7 +489,6 @@ top-section p {
     padding-left: 20px;
   }
 
-
   /* GDPR PAGE */
   #gdpr-hero {
     text-align: left;
@@ -519,9 +508,7 @@ top-section p {
     padding-left: 20px;
   }
 
-
   /* PRIVACY-POLICY PAGE */
-
   #privacy-policy {
     text-align: left;
     padding: 2% 0 5% 5%;
@@ -538,8 +525,6 @@ top-section p {
     list-style-position: outside;
     /* Optional: Ensures bullets are aligned with the indented text */
   }
-
-
 
   /* FOOTER */
   /* Footer Main */
@@ -619,19 +604,10 @@ top-section p {
     font-size: 1.5rem;
   }
 
-
-
-
-
-
-
-
   /* RESPONSIVE STYLES */
-
   /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
   @media screen and (max-width: 480px) {
-
-
+    /* NAVIGATION & MENY max480 */
     /* Show hamburger menu icon */
     .burger {
       display: block;
@@ -690,11 +666,31 @@ top-section p {
       font-size: 1rem;
     }
 
+    /* SERVICES PAGE max480 */
+    .section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section img {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    .content,
+    .buttons {
+      width: 100%; 
+      padding: 10px; /
+      text-align: center; 
+    }
+  
+    .video-responsive {
+      width: 100%; 
+    }
 
-    /* COOKIE PAGE */
+    /* COOKIE PAGE max480 */
     #cookie-hero {
       padding: 0 10px;
-      /* Adjust padding for smaller screens */
     }
 
     #cookie-hero ul {
@@ -711,7 +707,7 @@ top-section p {
       left: auto;
     }
 
-    /* THANK YOU PAGE */
+    /* THANK YOU PAGE max480*/
     .thank-you {
       width: 100%;
       padding: 15px;
@@ -722,7 +718,7 @@ top-section p {
     padding-left: 20px;
 
 
-    /* PRIVACY POLICY */
+    /* PRIVACY POLICY max480 */
     .thank-you {
       width: 100%;
       padding: 15px 5px;
@@ -732,12 +728,10 @@ top-section p {
       padding-left: 15px;
     }
 
-    /* MEDIA QUERY for Mobile Devices - MAX 768px */
+    /* MEDIA QUERY for Mobile Devices max768 */
     @media screen and (max-width: 768px) {
 
-      /* NAVIGATION */
-
-      /* HERO */
+       /* HERO max768 */
       .hero-container h1 {
         font-size: 2.5rem;
       }
@@ -764,11 +758,38 @@ top-section p {
         width: 100%;
       }
 
-      /* THERAPY PAGE */
+      /* SERVICES PAGE max768 */
+      /* General Styles for All Sections */
       .section {
-        flex-direction: column;
+        display: flex;
         align-items: flex-start;
+        justify-content: space-around;
+        background-color: #fdf8f5;
+        text-align: start;
+        width: 98%;
       }
+
+       /* Responsive Styles */
+          .section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .section img {
+          width: 100%; 
+          height: auto; 
+        }
+
+        .content,
+        .buttons {
+          width: 100%; 
+          padding: 10px;
+          text-align: center; 
+        }
+
+        .video-responsive {
+          width: 100%; 
+        }
 
       /* SHOP PAGE */
       .bottom-section {
@@ -778,11 +799,10 @@ top-section p {
 
       .bottom-section img {
         max-width: 100%;
-        /* Full width on smaller screens */
         height: auto;
       }
 
-      /* FOOTER */
+      /* FOOTER max768*/
 
       footer {
         flex-direction: column;
@@ -821,8 +841,7 @@ top-section p {
 
       /* MEDIA QUERY for Larger Screens (> 768px) */
       @media screen and (min-width: 769px) {
-
-        /*NAVBAR - HAmbureg Toggle */
+        /* NAVIGATION & MENU min768 */
         .burger {
           display: none;
         }
@@ -831,7 +850,7 @@ top-section p {
           display: flex;
         }
 
-        /*THERAPIES SUB-PAGE */
+        /*THERAPIES PAGE min768*/
         .section {
           padding: 10px;
           /* Reduce padding */
@@ -844,30 +863,30 @@ top-section p {
 
         /* MEDIA QUERY for Desktops - MAX 1110 px */
         @media only screen and (min-width: 951px) and (max-width: 1110px) {
-
+        /* NAVIGATION & MENU max1110 */
           /* Adjust the logo size */
           .navbar-logo img {
             width: 180px;
             height: auto;
           }
 
-          /* 404-PAGE */
+          /* 404-PAGE max1110 */
           .ono-hero {
             width: 90%;
           }
 
-          /* THANK YOU PAGE */
+          /* THANK YOU PAGE max1110 */
           .thank-you {
             width: 90%;
             /* Adjust width for larger screens */
           }
 
-          /* PRIVACY POLICY PAGE*/
+          /* PRIVACY POLICY PAGE max1110 */
           .thank-you {
             width: 90%;
           }
 
-          /* FOOTER */
+          /* FOOTER max1110 */
 
           */ footer {
             flex-direction: row;
