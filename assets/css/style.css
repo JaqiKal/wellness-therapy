@@ -1,33 +1,23 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* BASIC RESET */
-* {
+/* Copy from LoveRunning: BASIC RESET Asterisk wildcard selector to override default styles added by the browser */
+ {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Adapted from LoveRunning */
 /* BASIC STYLES */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'open-sans', 'Roboto', sans-serif;
+  color: rgba(48, 19, 1, 1);
   margin: 0;
   padding-top: 60px;
-  font-family: 'open-sans', 'Roboto', sans-serif;
-
-  color: rgba(48, 19, 1, 1);
-  /* background-color: #ded9db;*/
-  top: 0;
-  z-index: 1000;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  width: 100%;
 }
 
 h1,
@@ -45,7 +35,6 @@ h6 {
 
 .hidden-heading {
   display: none;
-
 }
 
 /* HEADER & NAVIGATION BAR */
@@ -53,19 +42,18 @@ h6 {
   background-color: #ded9db;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 2rem 2rem;
+  /* Change to column for stacking elements vertically */
+  flex-direction: column;
+  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 101;
-  height: 120px;
 }
 
-
 .navbar-logo img {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
@@ -75,69 +63,53 @@ h6 {
   align-items: center;
   font-size: 2rem;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 1rem;
+  margin-top: 1rem;
   z-index: 1001;
 }
 
 /* Burger menu icon - displayed on small screens */
-.burger {
-  display: none;
-}
-
-/* Checkbox for burger menu - hidden as it's just for functionality */
 #toggle {
   display: none;
 }
 
-/* Menu - adjust for smaller screens */
+/* Hide menu by default on mobile */
 .menu {
-  /* Change to 'none' on smaller screens, and 'flex' when burger is clicked */
-  display: flex;
-  align-items: center;
-
+  display: none; 
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Display menu when burger icon (checkbox) is clicked */
-#toggle:checked~.menu-container .menu {
+#toggle:checked ~ .menu-container .menu {
   display: flex;
   flex-direction: column;
   /* Right align menu buttons */
   align-items: flex-start;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  font-size: 110%;
-  letter-spacing: 3px;
-  text-decoration: none;
-  color: white;
-  padding-right: calc(1.25rem + 5px);
-  margin-right: calc(1.25rem + 5px);
-  margin-top: calc(4.06rem + 5px);
-  gap: 20px;
-}
-
 /* Styling of the anchor tags in menu */
 .menu a {
   text-decoration: none;
   color: #301301;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   transition: transform 0.3s;
-  padding: 20px;
+  margin: 5px 0;
 }
 
 .menu a:hover {
   transform: scale(1.1);
 }
 
+/* FontAwesome Icons in Menu */
+.menu a i.fa-solid {
+  font-size: 1rem; 
+  margin-right: 10px; /* Add some space between the icon and text */
+}
+
 /* Decorative line under active menu item. */
-/* class active with border-bottom did not function as wished. Found an answer on slack */
-/* that I modified with the help of reading on w3school, mdn and by trial and error */
-/* https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */ 
+/* class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
+/* Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, mdn and by trial  */
+/* and error https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */ 
 .menu a.active::after {
   content: '';
   display: block;
@@ -147,18 +119,12 @@ h6 {
   background-color: #3a3a3a;
 }
 
-/* FontAwesome icons activ on large viewport */
-.menu a i {
-  display: inline-block;
-}
-
-
-/* MAIN CONTENT in LANDING PAGE */
+/* MAIN CONTENT */
 main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
   /* Add margin at the top to prevent content from being covered by the header */
-  margin-top: 10px;
+  margin-top: 80px;
   /* Enable flex properties for child elements */
   display: flex;
   /* Ensure full width */
@@ -167,6 +133,8 @@ main {
   background-color: #fdf8f5;
 }
 
+
+/* Leaving LoveRunning - starting my own journey */
 /* Hero Section in LANDING PAGE */
 
 #hero {
@@ -177,34 +145,30 @@ main {
   background-position: center;
   color: #301301;
   text-align: center;
-  padding: 80px 10px 10px;
-  height: 600px;
-  width: 100%;
+  /* Padding for mobile */
+  padding: 110px 20px 10px;
+  /* Flexible height for mobile */
+  height: auto;
 }
 
 .hero-container {
   background-color: rgba(253, 248, 245, 0.5);
-  font-size: 105%;
   position: static;
   top: 10px;
-  width: 78%;
+  /* Full width on mobile */
+  width: 90%;
   border-radius: 18px;
   min-height: 100px;
 }
 
 .hero-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
+  font-size: 1.8rem;
 }
 
 .hero-container p {
   font-size: 1rem;
-  margin-bottom: 15px;
-  margin-top: 15px;
   /* Improves readability */
   line-height: 1.5;
-  font-size: larger;
   font-weight: 500;
   text-align: center;
 }
@@ -215,27 +179,11 @@ main {
   flex-wrap: wrap;
   gap: 10px;
   /* Spacing between buttons */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-#btn-hero-shop {
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #1e5540;
-  border: 0.5px solid #ded9db;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#btn-hero-book {
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #073d77;
-  border: 0.5px solid #ded9db;
-  color: white;
-  text-decoration: none;
+#btn-hero-shop, #btn-hero-book {
+  padding: 8px 20px; /* Smaller buttons for mobile */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -243,24 +191,22 @@ main {
 /* Services section in LANDING PAGE */
 #services {
   display: flex;
-  justify-content: space-around;
+  /* Stack services on mobile */
+  flex-direction: column; 
+  align-items: center;
   background-color: #f8f8f8;
   padding: 20px;
 }
 
 .service {
   text-align: center;
-  width: 30%;
+  width: 100%;
  }
 
 .service img {
   width: 100%;
   /* Responsive image */
   height: auto;
-}
-
-.service h2 {
-  margin-bottom: 15px;
 }
 
 /* End-note section in LANDING PAGE */
@@ -271,654 +217,124 @@ main {
   font-size: 1rem;
   /* Improves readability */
   line-height: 1.5;
-  font-size: large;
-  font-weight: 500;
+   font-weight: 500;
 }
 
-/* PRICING SUB*/
 
-/* SERVICES PAGE */
-/* General Styles for All Sections */
-.section top-section {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #fdf8f5;
-  text-align: start;
-  width: 98%;
-}
 
-.top-section {
-  margin: 80px 40px 20px;
-  padding-right: 40px;
-}
 
-.mid-section {
-  margin: 30px 40px 20px;
-  padding-right: 40px;
-}
 
-.bot-section {
-  margin: 30px 40px 20px;
-  padding-right: 40px;
-}
-
-.content {
-  flex: 1;
-  padding: 0 5px;
-}
-
-.section img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.buttons #btn-shop,
-#btn-book {
+/* Footer */
+footer {
+  background-color: #ded9db;
+  color: #301301;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 10px 10px 5px;
   align-items: center;
 }
-
-#btn-book {
-  padding: 10px 30px;
-  background-color: #073d77;
-  border: 0.5px solid #ded9db;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#btn-shop {
-  padding: 10px 30px;
-  background-color: #1e5540;
-  border: 0.5px solid #ded9db;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-
- /* Responsive video styling */
-/* Video credit: Courtesy of Cancer Rehab PT [https://www.youtube.com/@CancerRehabPT], as featured on their YouTube channel.*/
-.video-responsive {
-  float: none;
-  width: 100%;
-  margin: 2px;
-}
-
-.fixed-size {
-  border: 0;
-
-/* SHOP PAGE*/
-top-section p {
-  /* Styles for your top section text */
-  padding-bottom: 120px;
-  text-align: center;
-}
-
-.bottom-section {
+.footer-left, .footer-right {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
-
-.bottom-section img {
-  height: 200px;
-  width: auto;
-  /* Spacing between images when stacked */
-  margin-bottom: 20px;
-  border: 0.5px solid #301301;
-
+.footer-left ul, .footer-right ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-
-/* CONTACT PAGE */
-#contact {
-  background: url(../images/ocean-banner.webp) no-repeat center center/cover;
-  padding: 500px 10% 10%;
+.footer-left ul li, .footer-right ul li {
+  margin: 5px 0;
 }
-
-#signup-form {
-  color: #2b2929;
-  background-color: rgba(255, 166, 48, 0.8);
-  max-width: 400px;
-  padding: 1rem;
-  border-radius: 13px;
-}
-
-#signup-form>h2 {
-  font-size: 2rem;
-  color: #2b2929;
-}
-
-#signup-form>p {
-  color: #004E64;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.text-input {
-  background: transparent;
-  color: #2b2929;
-  width: 100%;
-  height: 25px;
-  margin-bottom: 5px;
-  border: 1px solid #2b2929;
-  border-radius: 13px;
-  padding: 0 5px;
-}
-
-.radio-btn {
-  width: 100%;
-}
-
-.radio-btn>h3 {
-  font-size: 0.9rem;
-  color: #2b2929;
-}
-
-/* Button styles */
-#send-btn {
-  background-color: #301301;
-  color: #FDFFFC;
-  font-size: 1em;
-  text-decoration: underline #FFA630;
-  border: none;
-  border-radius: 25px;
-  margin-top: 25px;
-  padding: 10px 15px;
+.footer-mid {
   text-align: center;
-  width: 100%;
-  display: inline-block;
-  cursor: pointer;
+  font-size: 1rem;
+  color: #301301;
+  margin: 10px 0;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
-#send-btn:hover {
-  background-color: #FDf8f9;
-  color: #FFA630;
-
-  /* NOT FOUND (404) PAGE */
-  #nono-main {
-    padding: 10px 0;
-  }
-
-  .nono-hero {
-    /* Bolder outer border */
-    border: 2px solid #301301;
-    /* Thinner inner line */
-    outline: 0.5px solid #301301;
-    /* Adjusts the position of the outline */
-    outline-offset: -10px;
-    border-radius: 10px;
-    padding: 20px;
-    margin: auto;
-    width: 80%;
-    max-width: 960px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  /* COOKIE PAGE */
-  #cookie-hero {
-    text-align: left;
-    padding: 2% 0 2% 5%;
-  }
-
-  #cookie-hero h1 p {
-    margin-bottom: 20px;
-  }
-
-  #cookie h1,
-  p {
-    text-align: left;
-  }
-
-  #cookie-hero ul {
-    padding-left: 20px;
-  }
-
-  /* GDPR PAGE */
-  #gdpr-hero {
-    text-align: left;
-    padding: 2% 0 2% 5%;
-  }
-
-  #gdpr-hero h1 p {
-    margin-bottom: 20px;
-  }
-
-  #gdpr h1,
-  p {
-    text-align: left;
-  }
-
-  #gdpr-hero ul {
-    padding-left: 20px;
-  }
-
-  /* PRIVACY-POLICY PAGE */
-  #privacy-policy {
-    text-align: left;
-    padding: 2% 0 5% 5%;
-  }
-
-  #privacy-policy h1 p {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-
-  #privacy-policy ul {
-    padding-left: 40px;
-    /* Adjust as needed for indentation */
-    list-style-position: outside;
-    /* Optional: Ensures bullets are aligned with the indented text */
-  }
-
-  /* FOOTER */
-  /* Footer Main */
-
-  footer {
-    background-color: #ded9db;
-    color: #301301;
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  /* Footer Left */
-  .footer-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  /* Footer Mid */
-  .footer-mid {
-    text-align: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #301301;
-    margin: 0 10px;
-  }
-
-  #footer-cookie:hover,
-  #footer-privacy:hover {
-    color: rgb(251, 5, 235, 1);
-  }
-
-  #social-networks,
-  #payment-options {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-  }
-
-  #social-networks li,
-  #payment-options li {
-    margin: 0 10px;
-  }
-
-  #social-networks i,
-  #payment-options i {
-    font-size: 180%;
-    padding: 5%;
-    color: rgba(48, 19, 1, 1);
-  }
-
-  #social-networks i:hover,
-  #payment-options i:hover {
-    color: rgba(74, 5, 135, 0.8);
-    transform: scale(1.1);
-  }
-
-  /* Footer Bottom */
-  .footer-bottom {
-    width: 100%;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 20px;
-  }
-
-  .fa-brands {
-    font-size: 1.5rem;
-  }
-
-  /* RESPONSIVE STYLES */
-  /* MEDIA QUERY  for Mobile Devices - MAX 480 px */
-  @media screen and (max-width: 480px) {
-    /* NAVIGATION & MENY max480 */
-    /* Show hamburger menu icon */
-    .burger {
-      display: block;
-    }
-
-    /* Hide menu by default */
-    .menu-container {
-      display: none;
-    }
-
-    /* Show menu when hamburger icon is clicked */
-    #toggle:checked~.menu-container {
-      display: block;
-    }
-
-    /* When checkbox is checked, display the menu container */
-    #toggle:checked~.menu-container .menu {
-      display: flex;
-    }
-
-    .menu {
-      font-size: 80%;
-      font-weight: 500;
-      margin-top: calc(8.06rem + 5px);
-      /* Adapted with info from w3schools.com/cssref/css3_pr_box-shadow */
-       background-color: rgba(222, 217, 219, 0.99);
-       box-shadow: 0px 0px 0px 1px rgba(48, 19, 1, 1),
-       0px 2px 4px rgba(48, 19, 1, 1),
-       0px 4px 8px rgba(48, 19, 1, 1),
-       0px 8px 16px rgba(48, 19, 1, 1);
-       text-align: left;
-       border-radius: 3px;
-       /*To adjust toggle box */
-       padding: 5x;
-       /* Reduced padding */
-       line-height: 50%;
-       font-size: 16px;      
-    }
-
-    .hero-container h1 {
-      font-size: xxx-small;
-    }
-
-    .hero-container p {
-      font-size: 0.9rem;
-      padding: 0 10px;
-    }
-
-    #hero {
-      padding: 70px 5px 40px 5px;
-      height: auto;
-    }
-
-    .hero-buttons a {
-      padding: 0px;
-      font-size: 1rem;
-    }
-
-    /* SERVICES PAGE max480 */
-    .section {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .section img {
-      width: 100%; 
-      height: auto; 
-    }
-  
-    .content,
-    .buttons {
-      width: 100%; 
-      padding: 10px; /
-      text-align: center; 
-    }
-  
-    .video-responsive {
-      width: 100%; 
-    }
-
-    /* COOKIE PAGE max480 */
-    #cookie-hero {
-      padding: 0 10px;
-    }
-
-    #cookie-hero ul {
-      padding-left: 15px;
-    }
-
-    .ono-hero {
-      width: 100%;
-      padding: 15px 5px;
-      /* Adjust position for better mobile viewing */
-      position: static;
-      transform: none;
-      top: auto;
-      left: auto;
-    }
-
-    /* THANK YOU PAGE max480*/
-    .thank-you {
-      width: 100%;
-      padding: 15px;
-      outline-offset: -5px;
-    }
-
-    .thank-you ul {
-    padding-left: 20px;
-
-
-    /* PRIVACY POLICY max480 */
-    .thank-you {
-      width: 100%;
-      padding: 15px 5px;
-    }
-
-    .thank-you ul {
-      padding-left: 15px;
-    }
-
-    /* MEDIA QUERY for Mobile Devices max768 */
-    @media screen and (max-width: 768px) {
-
-       /* HERO max768 */
-      .hero-container h1 {
-        font-size: 2.5rem;
-      }
-
-      .hero-container p {
-        font-size: 1.2rem;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-      }
-
-      #services {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .service {
-        width: 80%;
-        margin-bottom: 20px;
-      }
-
-      .btn-hero {
-        width: 100%;
-      }
-
-      /* SERVICES PAGE max768 */
-      /* General Styles for All Sections */
-      .section {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-        background-color: #fdf8f5;
-        text-align: start;
-        width: 98%;
-      }
-
-       /* Responsive Styles */
-          .section {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .section img {
-          width: 100%; 
-          height: auto; 
-        }
-
-        .content,
-        .buttons {
-          width: 100%; 
-          padding: 10px;
-          text-align: center; 
-        }
-
-        .video-responsive {
-          width: 100%; 
-        }
-
-      /* SHOP PAGE */
-      .bottom-section {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .bottom-section img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      /* FOOTER max768*/
-
-      footer {
-        flex-direction: column;
-      }
-
-      .footer-left {
-        width: 100%;
-        text-align: center;
-        order: 2;
-        /* Adjust 'order' as needed */
-      }
-
-      .footer-mid {
-        width: 100%;
-        text-align: center;
-        order: 1;
-        /* Adjust 'order' as needed */
-      }
-
-      .footer-right {
-        width: 100%;
-        text-align: center;
-        order: 3;
-        /* Adjust 'order' as needed */
-      }
-
-      .footer-divider {
-        order: 4;
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      .footer-bottom {
-        order: 5;
-      }
-
-      /* MEDIA QUERY for Larger Screens (> 768px) */
-      @media screen and (min-width: 769px) {
-        /* NAVIGATION & MENU min768 */
-        .burger {
-          display: none;
-        }
-
-        .menu {
-          display: flex;
-        }
-
-        /*THERAPIES PAGE min768*/
-        .section {
-          padding: 10px;
-          /* Reduce padding */
-        }
-
-        .section img {
-          max-height: 250px;
-          /* Smaller max height for images */
-        }
-
-        /* MEDIA QUERY for Desktops - MAX 1110 px */
-        @media only screen and (min-width: 951px) and (max-width: 1110px) {
-        /* NAVIGATION & MENU max1110 */
-          /* Adjust the logo size */
-          .navbar-logo img {
-            width: 180px;
-            height: auto;
-          }
-
-          /* 404-PAGE max1110 */
-          .ono-hero {
-            width: 90%;
-          }
-
-          /* THANK YOU PAGE max1110 */
-          .thank-you {
-            width: 90%;
-            /* Adjust width for larger screens */
-          }
-
-          /* PRIVACY POLICY PAGE max1110 */
-          .thank-you {
-            width: 90%;
-          }
-
-          /* FOOTER max1110 */
-
-          */ footer {
-            flex-direction: row;
-          }
-
-          .footer-left {
-            width: 100%;
-            text-align: center;
-            order: 1;
-            /* Adjust 'order' as needed */
-          }
-
-          .footer-mid {
-            width: 100%;
-            text-align: center;
-            order: 2;
-            /* Adjust 'order' as needed */
-          }
-
-          .footer-right {
-            width: 100%;
-            text-align: center;
-            order: 3;
-            /* Adjust 'order' as needed */
-          }
-
-          .footer-divider {
-            order: 4;
-            width: 100%;
-            margin-top: 10px;
-          }
-
-          .footer-bottom {
-            order: 5;
-          }
+
+
+
+
+/* RESPONSIVE DESIGN */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+  /* LANDING PAGE min768 */
+.navbar {
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.navbar-logo img {
+  width: 180px; 
+}
+
+.burger {
+  display: none; 
+}
+
+main {
+  margin-top: 80px; /* Lesser margin for larger screens */
+}
+
+.menu {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-around; 
+  padding-right: 20px;
+}
+
+.menu a {
+  padding: 0.5rem 1rem; 
+  /* Add horizontal space between menu items */
+  margin: 0 10px; 
+}
+
+.menu a i.fa-solid {
+  font-size: 10px; 
+}
+
+#hero {
+  padding: 80px 10px 10px; 
+  height: 600px; 
+}
+.hero-container h1 {
+  font-size: 2.5rem; 
+}
+#services {
+  flex-direction: row; 
+  justify-content: space-around;
+}
+.service {
+  width: 30%; 
+}
+footer {
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.footer-left, .footer-right {
+  flex-direction: row;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
