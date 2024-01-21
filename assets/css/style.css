@@ -188,10 +188,11 @@ main {
   transition: background-color 0.3s ease;
 }
 
-/* Services section in LANDING PAGE */
+/* v1 nok
+/* Services section in LANDING PAGE *
 #services {
   display: flex;
-  /* Stack services on mobile */
+  /* Stack services on mobile *
   flex-direction: column; 
   align-items: center;
   background-color: #f8f8f8;
@@ -205,8 +206,64 @@ main {
 
 .service img {
   width: 100%;
-  /* Responsive image */
+  /* Responsive image *
   height: auto;
+}
+*/
+
+/* v2 nok
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.service {
+  flex-basis: 30%; /* Width for each service on larger screens *
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  min-height: 50px; /* Set a minimum height for h3 *
+  margin-top: auto; /* Pushes h3 to the bottom if there's extra space *
+}
+*/
+
+
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.service {
+  flex-basis: 100%; /* Full width on smaller screens */
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 100%; /* Adjust to 100% to ensure all images have the same width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the area properly */
+  max-height: 200px; /* Set a maximum height for consistency */
 }
 
 /* End-note section in LANDING PAGE */
@@ -272,6 +329,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
   /* LANDING PAGE min768 */
+  /* Navbar*/
 .navbar {
   flex-direction: row; 
   justify-content: space-between; 
@@ -286,10 +344,12 @@ footer {
   display: none; 
 }
 
+/* MAIN */
 main {
   margin-top: 80px; /* Lesser margin for larger screens */
 }
 
+/* Menu */
 .menu {
   display: flex; 
   flex-direction: row; 
@@ -308,6 +368,7 @@ main {
   font-size: 10px; 
 }
 
+/* Hero section - landing page */
 #hero {
   padding: 80px 10px 10px; 
   height: 600px; 
@@ -315,6 +376,9 @@ main {
 .hero-container h1 {
   font-size: 2.5rem; 
 }
+
+/* Services section - landing page */
+/* v1 nok
 #services {
   flex-direction: row; 
   justify-content: space-around;
@@ -322,6 +386,23 @@ main {
 .service {
   width: 30%; 
 }
+*/
+/* v2 nok
+#services .service {
+  flex-basis: 100%; /* Full width for smaller screens *
+}
+
+.service h3 {
+  min-height: auto; /* Reset min-height for mobile screens *
+} 
+*/
+
+#services .service {
+  flex-basis: 30%; /* Adjust width for larger screens */
+}
+
+
+/* FOOTER */
 footer {
   flex-direction: row; 
   justify-content: space-between;
