@@ -1,8 +1,9 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Copy from LoveRunning: BASIC RESET Asterisk wildcard selector to override default styles added by the browser */
- {
+/* Copy from LoveRunning */
+/* BASIC RESET Asterisk wildcard selector to override default styles added by the browser */
+  {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -50,11 +51,11 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-   width: 100vw;
+  width: 100vw;
   z-index: 101;
   /* Rounded corners adapted from www.w3schools.com/css/css3_borders.asp */
-  border-bottom-left-radius: 15px; 
-  border-bottom-right-radius: 15px; 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .navbar-logo img {
@@ -63,11 +64,13 @@ h6 {
 
 /* Navbar logo hover effect */
 .navbar-logo img {
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease;
+  /* Smooth transition for scaling */
 }
 
 .navbar-logo img:hover {
-  transform: scale(1.05); /* Slightly increase size on hover */
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
 }
 
 /* Hamburger bars*/
@@ -78,9 +81,9 @@ h6 {
   cursor: pointer;
   margin-top: 1rem;
   z-index: 1001;
-  border: 1px solid #301301; 
-  padding: 5px; 
-  border-radius: 5px; 
+  border: 1px solid #301301;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* Burger menu icon - displayed on small screens */
@@ -88,27 +91,26 @@ h6 {
   display: none;
 }
 
-
 /* Hide menu by default on mobile */
 .menu {
-  display: none; 
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   font-weight: 500;
 }
 
 /* Display menu when burger icon (checkbox) is clicked */
-#toggle:checked ~ .menu-container .menu {
+#toggle:checked~.menu-container .menu {
   display: flex;
   flex-direction: column;
   /* Right align menu buttons */
   align-items: flex-start;
   background: #dbd3d8;
-  border: 2px ridge #301301; 
+  border: 2px ridge #301301;
   outline: 1px solid #dbd3d0;
-  padding: 20px; 
+  padding: 20px;
   margin-top: 8px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 /* Styling of the anchor tags in menu */
@@ -126,14 +128,15 @@ h6 {
 
 /* FontAwesome Icons in Menu */
 .menu a i.fa-solid {
-  font-size: 1rem; 
-  margin-right: 10px; /* Add some space between the icon and text */
+  font-size: 1rem;
+  margin-right: 10px;
+  /* Add some space between the icon and text */
 }
 
 /* Decorative line under active menu item. */
 /* class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
 /* Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, mdn and by trial  */
-/* and error https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */ 
+/* and error https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */
 .menu a.active::after {
   content: '';
   display: block;
@@ -198,14 +201,15 @@ main {
 }
 
 /* Styling for both buttons */
-#btn-hero-shop, #btn-hero-book {
-  padding: 10px 10px; 
-  border-radius: 15px; 
-  text-decoration: none; 
-  transition: background-color 0.3s, transform 0.3s; 
-  display: inline-block; 
-  width: 80px; 
-  text-align: center; 
+#btn-hero-shop,
+#btn-hero-book {
+  padding: 10px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
   margin-right: 10px;
   font-style: italic;
   font-weight: 500;
@@ -213,26 +217,26 @@ main {
 
 /* Styling for the btn-hero-shop button */
 #btn-hero-shop {
-  background-color: #fdf8f5; 
+  background-color: #fdf8f5;
   border: 2px ridge #301301;
-  color: #301301; 
+  color: #301301;
 }
 
 #btn-hero-shop:hover {
   background-color: #5ae25f;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 /* Styling for the btn-hero-book button */
 #btn-hero-book {
-  background-color: #301301; 
-  border: 2px ridge #fdf8f5; 
-  color: #fdf8f5; 
+  background-color: #301301;
+  border: 2px ridge #fdf8f5;
+  color: #fdf8f5;
 }
 
 #btn-hero-book:hover {
-  background-color:#5ae25f;
-  transform: scale(1.05); 
+  background-color: #5ae25f;
+  transform: scale(1.05);
 }
 
 /* Service section - LANDING PAGE */
@@ -246,7 +250,7 @@ main {
 
 .service {
   /* Set a maximum height for consistency */
-  flex-basis: 100%; 
+  flex-basis: 100%;
   text-align: center;
   margin: 10px;
   display: flex;
@@ -255,11 +259,11 @@ main {
 }
 
 .service img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   /* Set a maximum height for consistency */
-  max-height: 200px; 
+  max-height: 200px;
   border-radius: 50px;
 
 }
@@ -272,28 +276,28 @@ main {
   font-size: 1rem;
   /* Improves readability */
   line-height: 1.5;
-   font-weight: 500;
+  font-weight: 500;
 }
 
 /* SERVICES PAGE */
 /* Ensuring images and videos are responsive */
-.section top-section {
+.section .top-section {
   padding-top: 130px;
 }
 
 .section img {
-  width: 100%; /
-  max-width: 300px; 
-  height: auto; 
+  width: 100%;/ max-width: 300px;
+  height: auto;
   /* Align image properly */
-  display: block; 
-  margin: 0 auto; 
-  border-radius: 15px; 
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
 }
+
 .video-responsive iframe {
   width: 100%;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 /* Content Styling */
@@ -301,19 +305,21 @@ main {
   font-size: 1.2rem;
   line-height: 1.6;
   margin: 10px 0;
-  padding: 0 15px; /* Padding for readability */
+  padding: 0 15px;
+  /* Padding for readability */
   font-weight: 500;
-  margin-left: 15px; /* Adds space to the left of the text */
+  margin-left: 15px;
+  /* Adds space to the left of the text */
   margin-right: 15px;
-  }
+}
 
-  .content #credit {
-    padding-bottom: 20px;
-  }
+.content #credit {
+  padding-bottom: 20px;
+}
 
-  .buttons {
-    text-align: center; 
-  }
+.buttons {
+  text-align: center;
+}
 
 /* General Styles for All Buttons */
 .buttons a {
@@ -359,7 +365,8 @@ main {
   margin-bottom: 20px;
   padding: 15px;
   background-color: #fdf8f5;
-  border-radius: 10px; /* Adds a slight curve to the corners */
+  border-radius: 10px;
+  /* Adds a slight curve to the corners */
 }
 
 /* Credit Text Styling */
@@ -369,6 +376,59 @@ main {
   text-align: center;
 }
 
+/* SHOP PAGE */
+/* Shop Intro Hero Section */
+#shop-intro-hero {
+  text-align: center;
+  padding: 20px;
+  padding-top: 130px;
+  background-color: #fdf8f5;
+}
+
+#shop-intro-hero h1 {
+  font-size: 1.6rem;
+  /* Responsive font size for heading */
+  margin-bottom: 15px;
+}
+
+#shop-intro-hero p {
+  font-size: 1rem;
+  /* Keeping the font readable on small devices */
+  margin-bottom: 10px;
+}
+
+/* Shop Gift Cards Section */
+#shop-giftcard {
+  display: flex;
+  flex-direction: column;
+  /* Stack the gift cards vertically on smaller screens */
+  align-items: center;
+  padding: 20px;
+}
+
+.shop-giftcard {
+  /* Styles for mobile devices */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+
+.shop-giftcard img {
+  border: 2px ridge #301301; 
+  border-radius: 15px; 
+}
+
+.giftbox-image {
+  width: 50%; 
+  height: auto;
+  display: block;
+  /* Center the image */
+  margin: 0 auto; 
+}
+
+
 /* FOOTER */
 footer {
   background-color: #b7a8a2;
@@ -376,16 +436,16 @@ footer {
   color: #301301;
   padding: 20px 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   /* Rounded corners adapted from www.w3schools.com/css/css3_borders.asp */
-  border-top-left-radius: 15px; 
-  border-top-right-radius: 15px; 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /* Font Awesome icon styles */
 .fa-brands {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 .footer-mid {
@@ -393,7 +453,7 @@ footer {
   font-size: 1.2rem;
   text-decoration: none;
   color: #301301;
-  order: 1; 
+  order: 1;
 }
 
 .footer-right {
@@ -402,7 +462,7 @@ footer {
   display: flex;
   margin: 0;
   padding-right: 10;
-  order: 2; 
+  order: 2;
 }
 
 .footer-left {
@@ -412,137 +472,214 @@ footer {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1200px;
-  order: 3; 
+  order: 3;
 }
 
 .footer-right,
 .footer-left ul {
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-divider {
   width: 100%;
   margin-top: 10px;
-  order: 4; 
+  order: 4;
 }
 
 .footer-bottom {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 20px;
-  order: 5; 
+  order: 5;
 }
 
 /* RESPONSIVE DESIGN */
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) {
+
   /* LANDING PAGE min768 */
   /* Navbar*/
-.navbar {
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: center; 
-}
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.navbar-logo img {
-  width: 180px; 
-}
+  .navbar-logo img {
+    width: 180px;
+  }
 
-.burger {
-  display: none; 
-}
+  .burger {
+    display: none;
+  }
 
-/* MAIN */
-main {
-  margin-top: 80px; 
-}
+  /* MAIN */
+  main {
+    margin-top: 80px;
+  }
 
-/* Menu */
-.menu {
-  display: flex; 
-  flex-direction: row; 
-  align-items: center;
-  justify-content: space-around; 
-  padding-right: 40px;
-}
+  /* Menu */
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 40px;
+  }
 
-.menu a {
-  padding: 0.5rem 1rem; 
-  /* Add horizontal space between menu items */
-  margin: 0 10px; 
-}
+  .menu a {
+    padding: 0.5rem 1rem;
+    /* Add horizontal space between menu items */
+    margin: 0 10px;
+  }
 
-.menu a i.fa-solid {
-  font-size: 10px; 
-}
+  .menu a i.fa-solid {
+    font-size: 10px;
+  }
 
-/* Hero section - landing page */
-#hero {
-  padding: 80px 10px 10px; 
-  height: 600px; 
-}
-.hero-container h1 {
-  font-size: 2.5rem; 
-}
+  /* Hero section - landing page */
+  #hero {
+    padding: 80px 10px 10px;
+    height: 600px;
+  }
 
-#services .service {
-  flex-basis: 30%; 
-}
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
 
-/* SERVICES PAGE */
-.section img {
-  max-width: 500px; 
-}
- .content p {
-  margin-left: 130px; 
-  margin-right: 130px; 
+  #services .service {
+    flex-basis: 30%;
+  }
 
-/* FOOTER */
-footer {
-  flex-direction: row; 
-  justify-content: space-between;
-}
-.footer-left, .footer-right {
-  flex-direction: row;
-}
+  /* SERVICES PAGE */
+  .section img {
+    max-width: 500px;
+  }
+
+  .content p {
+    margin-left: 130px;
+    margin-right: 130px;
+
+    /* SHOP PAGE*/
+    #shop-giftcard {
+      flex-direction: row; 
+      justify-content: space-around;
+    }
+  
+    .shop-giftcard img {
+      max-width: 250px; 
+    }
+  }
+ 
+  /* FOOTER */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex-direction: row;
+  }
 }
 
 /* Large devices (desktops, 820px and up) */
 @media only screen and (min-width: 820px) {
-   /* SERVICES PAGE */
-   .content p {
-    margin-left: 95px; 
-    margin-right: 95px; 
-  }
-  .section img {
-    max-width: 650px; 
-}
-
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* End-note in LANDING PAGE */
-  #end-note {
-    padding-left: 350px; 
-    padding-right: 350px;
-  }
 
   /* SERVICES PAGE */
   .content p {
-    margin-left: 180px; 
-    margin-right: 180px; 
-  }
-  .section img {
-    max-width: 700px; 
-}
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    /* SERVICES PAGE */
-    .section img {
-      max-width: 900px; 
+    margin-left: 95px;
+    margin-right: 95px;
   }
 
+  .section img {
+    max-width: 650px;
+  }
+
+  /* SHOP PAGE*/
+  #shop-giftcard {
+    /* Use flexbox to lay out children in a row */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #shop-intro-hero h1 {
+    font-size: 2rem;
+  }
+
+.shop-giftcard {
+  margin: 10px;
+  flex: 1; 
+}
+
+.shop-giftcard img {
+  max-width: 100%; 
+  height: auto;
+}
+.giftbox-image {
+  width: 150px;
+  height: auto;
+  display: block;
+  background-image: url('assets/images/giftbox-s-t.webp');
+  background-repeat: repeat;
+}
+
+
+
+  /* Large devices (desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    /* End-note in LANDING PAGE */
+    #end-note {
+      padding-left: 350px;
+      padding-right: 350px;
+    }
+
+    /* SERVICES PAGE */
+    .content p {
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+
+    .section img {
+      max-width: 700px;
+    }
+
+    /* SHOP PAGE*/
+    #shop-giftcard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .shop-giftcard {
+      margin: 10px;
+      flex: 1; /* Equal distribution among items */
+  }
+
+  .shop-giftcard img {
+      max-width: 100%; /* Adjust as needed */
+      height: auto;
+  }
+ 
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+    /* SERVICES PAGE */
+    .section img {
+      max-width: 900px;
+    }
+
+    /* SHOP PAGE*/
+    .shop-giftcard img {
+      max-width: 300px; /* Adjust image size for extra large devices */
+    }
+ 
 }
