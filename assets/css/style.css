@@ -523,11 +523,11 @@ main {
 }
 
 #contact {
-  margin-top: 120px;
-  margin-bottom: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-weight: 500;
+  max-width: 100%; /* Adjust the width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  padding: 20px;
 }
 
 #signup-form {
@@ -538,6 +538,8 @@ main {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 /* Style for form headings and labels */
@@ -564,13 +566,12 @@ main {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #50342949;
   border-radius: 4px;
   /* Ensures padding and border are included in the width */
   box-sizing: border-box;
   font-weight: bold;
 }
-
 /* Additional style for textarea */
 #signup-form textarea {
   /* Allows vertical resizing only */
@@ -606,12 +607,16 @@ main {
   margin-left: 10px;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #signup-form {
-    padding: 20px;
-    max-width: 80%;
-  }
+
+/* Style for radio buttons and their labels */
+.radio-btn div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between each radio button option */
+}
+
+.radio-btn input[type="radio"] {
+  margin-right: 10px; /* Space between the radio button and its label */
 }
 
 /* COOKIES PAGE */
@@ -748,6 +753,8 @@ footer {
   order: 5;
 }
 
+
+
 /* RESPONSIVE DESIGN */
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -826,11 +833,11 @@ footer {
       max-width: 250px;
     }
 
-    /* CONTACT PAGE */
-    #signup-form {
-      padding: 20px;
-      max-width: 80%;
-    }
+  /* CONTACT */
+  #signup-form {
+    max-width: 80%;
+}
+
 
     /* COOKIES PAGE */
     #cookie-content {
@@ -969,15 +976,10 @@ footer {
     /* Adjust the width for larger screens */
   }
 
-  /* CONTACT PAGE */
+  /* CONTACT */
   #signup-form {
-    padding: 25px;
     max-width: 70%;
-  }
-
-  #signup-form button[type="submit"] {
-    width: auto;
-  }
+}
 
   /* COOKIES PAGE */
   #cookie-content {
@@ -1017,16 +1019,17 @@ footer {
     /* Further adjust the width for extra large screens */
   }
 
-  /* CONTACT PAGE */
-  main {
-    padding: 40px;
-  }
-
+  /* CONTACT */
   #signup-form {
-    padding: 30px;
     max-width: 60%;
+
+    #contact > h1 {
+      font-size: 1.8rem; /* Adjust the size as needed */
   }
 
+  #contact > p {
+      font-size: 1.8rem; /* Adjust the size as needed */
+}
   /* COOKIES PAGE */
   #cookie-content {
     margin: 150px 100px 100px 100px; 
