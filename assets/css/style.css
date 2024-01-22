@@ -612,11 +612,13 @@ main {
 .radio-btn div {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Space between each radio button option */
+  /* Space between each radio button option */
+  margin-bottom: 10px; 
 }
 
 .radio-btn input[type="radio"] {
-  margin-right: 10px; /* Space between the radio button and its label */
+  /* Space between the radio button and its label */
+  margin-right: 10px; 
 }
 
 /* COOKIES PAGE */
@@ -649,7 +651,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-left: 20px
+  margin-left: 20px;
+  margin-top: 140px;
 }
 
 #nono-content {
@@ -659,7 +662,7 @@ main {
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #nono-content h1 {
