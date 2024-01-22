@@ -528,8 +528,11 @@ main {
 }
 
 #contact {
-  margin-top: 180px;
+  margin-top: 120px;
   margin-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 500;
 }
 
 #signup-form {
@@ -548,7 +551,6 @@ main {
 #signup-form p {
   color: #301301;
   margin-bottom: 10px;
-  font-weight: bold;
   font-size: 1.5rem;
 }
 
@@ -556,7 +558,7 @@ main {
   display: block;
   margin-bottom: 5px;
   color: #301301;
-  font-size: larger;
+  font-size: large;
 }
 
 /* Style for input fields, textarea, and select */
@@ -571,7 +573,7 @@ main {
   border-radius: 4px;
   /* Ensures padding and border are included in the width */
   box-sizing: border-box;
-  font-weight: bold;
+  font-weight: large;
 }
 
 /* Additional style for textarea */
@@ -584,7 +586,7 @@ main {
 #signup-form button[type="submit"] {
   background-color: #301301;
   color: white;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -594,7 +596,6 @@ main {
 }
 
 .submit-btn-container {
-  display: block;
   text-align: center;
   margin-top: 10px;
 }
