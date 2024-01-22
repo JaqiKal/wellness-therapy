@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   font-family: 'open-sans', 'Roboto', sans-serif;
   color: rgba(48, 19, 1, 1);
+  background-color: rgba(253, 248, 245, 1);
   margin: 0;
   padding-top: 60px;
 }
@@ -157,7 +158,7 @@ main {
   /* Ensure full width */
   width: 100%;
   flex-direction: column;
-  background-color: #fdf8f5;
+  
 }
 
 
@@ -173,8 +174,10 @@ main {
   color: #301301;
   text-align: center;
   /* Padding for mobile */
-  padding: 110px 20px 10px;
+  /*padding: 110px 20px 10px;*/
+  padding: 60px 20px;
   /* Flexible height for mobile */
+  margin-top: 60px;
   height: auto;
 }
 
@@ -189,7 +192,8 @@ main {
 }
 
 .hero-container h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .hero-container p {
@@ -281,12 +285,12 @@ main {
 
 /* SERVICES PAGE */
 /* Ensuring images and videos are responsive */
-.section .top-section {
+.section.top-section {
   padding-top: 130px;
 }
 
 .section img {
-  width: 100%;/ max-width: 300px;
+  max-width: 80%;
   height: auto;
   /* Align image properly */
   display: block;
@@ -303,11 +307,12 @@ main {
 /* Content Styling */
 .content p {
   font-size: 1.2rem;
+  font-weight: 500;
   line-height: 1.6;
   margin: 10px 0;
   padding: 0 15px;
   /* Padding for readability */
-  font-weight: 500;
+ 
   margin-left: 15px;
   /* Adds space to the left of the text */
   margin-right: 15px;
@@ -380,9 +385,11 @@ main {
 /* Shop Intro Hero Section */
 #shop-intro-hero {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   padding-top: 130px;
   background-color: #fdf8f5;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 #shop-intro-hero h1 {
@@ -412,7 +419,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
- 
 }
 
 .shop-giftcard img {
@@ -428,6 +434,78 @@ main {
   margin: 0 auto; 
 }
 
+/* PRICING */
+/* Viewport background image */
+body {
+  background: url('../images/pale-ocean.webp') no-repeat center center/cover;
+  background-size: cover; /* Ensure it covers the entire viewport */
+}
+
+/* Hero Section Styling */
+main {
+  padding-top: 60px;
+}
+
+  #hero-pricing {
+  text-align: center;
+  padding: 20px;
+  color: #800000; 
+  font-weight: 500;
+}
+
+#hero-pricing h1 {
+  font-size: 2rem; 
+}
+
+#hero-pricing p {
+  font-size: 1.2rem;
+}
+
+/* Pricing Table Styling */
+#price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  color: #800000; 
+  font-weight: 500;
+}
+
+#price-table {
+  padding: 5px 20px 20px 20px; 
+  border: 3px solid #a0a0a0; 
+  border-radius: 10px; 
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  margin: 20px 0; 
+}
+
+#price-table table {
+  width: 100%; 
+  margin: 0 auto; 
+  border-collapse: collapse; 
+  background-color: #dbd3d0; 
+  
+}
+
+#price-table th, #price-table td {
+  text-align: left; 
+  padding: 15px; 
+  border-bottom: 1px solid #fff; 
+}
+
+#price-table th {
+  color: #301301; 
+  font-weight: 600;
+  background-color: #e1dad7; 
+}
+
+/* Text color for table data cells */
+#price-table td {
+  color: #fff; 
+  font-weight: 600;
+  background-color: #503429; 
+}
 
 /* FOOTER */
 footer {
@@ -572,7 +650,15 @@ footer {
       max-width: 250px; 
     }
   }
- 
+  /* PRICING PAGE */
+  #hero-pricing h1 {
+    font-size: 2.5rem; /* Adjust the font size for larger screens */
+}
+
+#price-table table {
+    width: 90%; /* Adjust the width of the table */
+}
+
   /* FOOTER */
   footer {
     flex-direction: row;
@@ -666,6 +752,11 @@ footer {
       max-width: 100%; /* Adjust as needed */
       height: auto;
   }
+
+  /* PRICING PAGE */
+  #price-table table {
+    width: 80%; /* Adjust the width for larger screens */
+}
  
   }
   
@@ -681,5 +772,15 @@ footer {
     .shop-giftcard img {
       max-width: 300px; /* Adjust image size for extra large devices */
     }
+
+    /* SHOP PAGE */
+    #hero-pricing h1 {
+      font-size: 3.5rem; /* Larger font size for wide screens */
+  }
+
+  #price-table table {
+      width: 70%; /* Further adjust the width for extra large screens */
+  }
  
+}
 }
