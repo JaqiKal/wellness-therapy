@@ -14,9 +14,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <!-- Style -->
+    <!-- Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-
   </head>
 
   <body>
@@ -24,6 +23,7 @@
 
     <header>
       <nav class="navbar">
+        
         <!-- Logo Section -->
         <div class="navbar-logo">
           <a href="index.html">
@@ -33,17 +33,18 @@
 
         <!-- Burger Menu for Mobile -->
         <input type="checkbox" id="toggle" class="burger-chkbox">
-        <label for="toggle" class="burger"><i class="fa-solid fa-bars">Burger menu</i></label>
+        <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
 
 
         <!-- Menu Items -->
-        <div class="menu-container">
+        <!-- Decorative line under active menu item. Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, Mdn and by trial and error - [https]stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item -->
+        
+          <div class="menu-container">
           <div class="menu">
-            <a href="index.html" class="active" aria-label="Button for Home section">Home</a>
-            <a href="therapies.html" aria-label="Button for Herbal Therapy section">Services</a>
-            <a href="booking-price.html" aria-label="Button for boooking and prices section">Pricing</a>
-            <a href="shop.html" aria-label="Button for Webshop section">Shop</a>
-            <a href="contact.html" aria-label="Button for Contact us section">Contact</a>
+            <a href="index.html" class="active" aria-label="Button for Home section"><i class="fa-solid fa-house" style="font-size: 20px;"></i>Home</a>
+            <a href="services.html" aria-label="Button for Herbal Therapy section"><i class="fa-solid fa-hand-holding-heart" style="font-size: 20px;"></i>Services</a>
+            <a href="pricing.html" aria-label="Button for boooking and prices section"><i class="fa-solid fa-calendar-check" style="font-size: 20px;"></i>Pricing</a>
+            <a href="contact.html" aria-label="Button for Contact us section"><i class="fa-solid fa-phone" style="font-size: 20px;"></i>Contact</a>
           </div>
         </div>
       </nav>
@@ -56,6 +57,7 @@
           <!-- Thank you -->
 
         <div id="nono-content">
+          <div>
             <h1>Oops! Page Not Found!</h1>
             <p>We're sorry, but the page you are looking for doesn't exist.
               It might have been moved, renamed, or might never have existed
@@ -63,9 +65,8 @@
               As a student deeply immersed in the world of web development,
               this website represents a significant part of my educational
               journey. It's a platform where I apply new skills and bring my
-              id
-              eas to life.
-               Make sure the address is typed correctly.
+              ideas to life.
+              Please ensure the address is typed correctly.
             </p>
             <br>
             <p>
@@ -84,67 +85,58 @@
             <p>
             <i>-- ManusHerba --</i>
             </p>
-          /div>
-
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-top">
-        <ul id="social-networks">
-          <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
-              <i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
-              <i class="fa-brands fa-twitter-square"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
-              <i class="fa-brands fa-youtube-square"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
-              <i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+      <div class="footer-left">
+          <ul id="social-networks">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                  <i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+                  <i class="fa-brands fa-youtube-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                  <i class="fa-brands fa-instagram"></i></a>
+              </li>
+          </ul>
 
-        <div class="footer-center">
-          <a href="#cookies" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
-          <a href="#privacy-policy" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
+          <div class="footer-mid">
+              <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
+              <a href="privacy-policy.html" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
+          </div>
+
+          <div class="footer-right">
+            <ul id="payment-options">
+                <li>
+                  <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
+                    <i class="fa-brands fa-cc-mastercard"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
+                    <i class="fa-brands fa-cc-visa"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
+                    <i class="fa-brands fa-cc-paypal"></i></a>
+                </li>
+              </ul>
+          </div>
+
+          <!-- Horizontal rule for separation -->
+          <hr class="footer-divider">
+          <div class="footer-bottom">
+            <p>
+              This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
+          </div>
         </div>
-
-        <ul id="payment-options">
-          <li>
-            <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
-              <i class="fa-brands fa-cc-mastercard"></i></a>
-          </li>
-          <li>
-            <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
-              <i class="fa-brands fa-cc-visa"></i></a>
-          </li>
-          <li>
-            <a href="https://www.americanexpress.com/" target="_blank" rel="noopener" aria-label="Pay securely with AMEX (opens in a new tab)">
-              <i class="fa-brands fa-cc-amex"></i></a>
-          </li>
-          <li>
-            <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
-              <i class="fa-brands fa-cc-paypal"></i></a>
-          </li>
-          <li>
-            <a href="https://www.bitcoin.com/" target="_blank" rel="noopener" aria-label="Pay securely with Bitcoin (opens in a new tab)">
-              <i class="fa-brands fa-bitcoin"></i></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Horizontal rule for separation -->
-      <hr class="footer-divider">
-      <div class="footer-bottom">
-        <p>
-          This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
-      </div>
     </footer>
 
     <!-- Font Awesome kit -->
