@@ -507,6 +507,80 @@ main {
   background-color: #503429; 
 }
 
+/* CONTACT PAGE */
+/* Contact Form Basic Styling */
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 0;
+}
+
+#signup-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form select,
+#signup-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#signup-form .radio-btn,
+#signup-form .select-opt-dropdwn,
+#signup-form .combination {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#signup-form .radio-btn div,
+#signup-form .combination {
+  margin-bottom: 10px;
+}
+
+#signup-form button[type="submit"] {
+  background-color: #301301;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#signup-form button[type="submit"]:hover {
+  background-color: #5ae25f;
+}
+
+/* Om jag byter <button> till <a> så ...
+i html:en- <a href="thank-you.html" id="send-btn" class="button-style">Welcome!</a>
+i css - 
+.button-style {
+  display: inline-block;
+  background-color: #301301; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; 
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button-style:hover {
+  background-color: #5ae25f; 
+} */
+
 /* FOOTER */
 footer {
   background-color: #b7a8a2;
@@ -659,6 +733,13 @@ footer {
     width: 90%; /* Adjust the width of the table */
 }
 
+/* CONTACT PAGE */
+
+#signup-form {
+  width: 70%;
+  max-width: 500px;
+}
+
   /* FOOTER */
   footer {
     flex-direction: row;
@@ -757,6 +838,12 @@ footer {
   #price-table table {
     width: 80%; /* Adjust the width for larger screens */
 }
+/* CONTACT PAGE */
+
+#signup-form {
+  width: 60%;
+  max-width: 600px;
+}
  
   }
   
@@ -781,6 +868,12 @@ footer {
   #price-table table {
       width: 70%; /* Further adjust the width for extra large screens */
   }
+  /* CONTACT PAGE */
+
+#signup-form {
+  width: 50%;
+  max-width: 700px;
+}
  
 }
 }
