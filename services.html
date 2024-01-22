@@ -27,17 +27,18 @@
         <!-- Logo Section -->
         <div class="navbar-logo">
           <a href="index.html">
-            <img src="assets/images/logo.png" alt="ManusHerba Therapy Logo">
+            <img src="assets/images/logo.png" alt="Manus Herba Therapy Logo">
           </a>
         </div>
 
         <!-- Burger Menu for Mobile -->
+        <label for="toggle" class="burger"><i class="fa-solid fa-bars">Burger menu</i></label>
         <input type="checkbox" id="toggle" class="burger-chkbox">
-        <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
-
-
+        
         <!-- Menu Items -->
-        <div class="menu-container">
+        <!-- Decorative line under active menu item. Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, Mdn and by trial and error - [https]stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item -->
+        
+          <div class="menu-container">
           <div class="menu">
             <a href="index.html" aria-label="Button for Home section"><i class="fa-solid fa-house" style="font-size: 20px;"></i>Home</a>
             <a href="services.html" class="active" aria-label="Button for Herbal Therapy section"><i class="fa-solid fa-hand-holding-heart" style="font-size: 20px;"></i>Services</a>
@@ -55,7 +56,7 @@
         <section>
           <h2 class="hidden-heading">Top Section</h2>
           <div class="section top-section">
-              <img src="assets/images/tea-glass.webp" alt="Description">
+              <img src="assets/images/tea-glass.webp" alt="A top view of a tea glass with a chamomile flower floating inside.">
               <div class="content">
                 <p>
                     Embark on a natural path to healing with Herbal Therapy. I use a blend of traditional herbs tailored
@@ -67,8 +68,8 @@
               </div>
               <h2 class="hidden-heading">Top Section buttons</h2>
               <div class="buttons">
-                <a href="shop.html" id="btn-shop">Give a Gift!</a>
-                <a href="booking-price.html" id="btn-book">Book Me!</a>
+                <a href="shop.html" class="btn-services-shop">Give a Gift!</a>
+                <a href="booking-price.html" class="btn-services-book">Book Me!</a>
               </div>
           </div>
         </section>
@@ -77,7 +78,7 @@
         <section>
           <h2 class="hidden-heading">Mid section</h2>
           <div class="section mid-section">
-              <img src="assets/images/bed.webp" alt="Description">
+              <img src="assets/images/bed.webp" alt="A lymphatic massage treatment bed set up in a therapy center.">
               <div class="content">
                   <p>
                       Skilled therapists use gentle strokes to enhance lymphatic flow, offering a soothing and stress-relieving escape. Elevate your self-care routine — reserve your moment of bliss today. Your session begins with a discussion with your massage therapist. By sharing your goals, your therapist will combine different massage techniques to meet your individual needs.
@@ -85,7 +86,7 @@
                   <br>
                   <h2 class="hidden-heading">Mid section video</h2>
                   <div class="video-responsive">
-                    <iframe class="fixed-size" src="https://www.youtube.com/embed/mhpWAECfMPw?si=xYfdFOGF5W8DTbHS" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="fixed-size" src="https://www.youtube.com/embed/mhpWAECfMPw?si=xYfdFOGF5W8DTbHS" title="Lymphedema Massage Therapy Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <br>
                   <p id="credit"> 
@@ -94,8 +95,8 @@
               </div>
               <h2 class="hidden-heading">Mid section buttons</h2>
               <div class="buttons">
-                <a href="shop.html" id="btn-shop">Give a Gift!</a>
-                <a href="booking-price.html" id="btn-book">Book Me!</a>
+                <a href="shop.html" class="btn-services-shop">Give a Gift!</a>
+                <a href="booking-price.html" class="btn-services-book">Book Me!</a>
               </div>
             </div>
         </section>
@@ -104,7 +105,7 @@
         <section>
           <h2 class="hidden-heading">Bottom section</h2>
           <div class="section bot-section">
-            <img src="assets/images/footprint.webp" alt="Description">
+            <img src="assets/images/footprint.webp" alt="Footprints etched in the sand, with a hint of frothy water in the background.">
               <div class="content">
                 <p>
                     Experience the transformative power of Zone Therapy. I apply precise pressure to specific zones of the feet and hands,
@@ -115,63 +116,65 @@
               </div>
               <h2 class="hidden-heading">Bottom section buttons</h2>
               <div class="buttons">
-                <a href="shop.html" id="btn-shop">Give a Gift!</a>
-                <a href="booking-price.html" id="btn-book">Book Me!</a>
+                <a href="shop.html" class="btn-services-shop">Give a Gift!</a>
+                <a href="booking-price.html" class="btn-services-book">Book Me!</a>
               </div>
           </div>
         </section>
     </main>
 
-       <!-- Footer -->
-       <footer>
-        <div class="footer-left">
-            <ul id="social-networks">
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
-                    <i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
-                    <i class="fa-brands fa-youtube-square"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
-                    <i class="fa-brands fa-instagram"></i></a>
-                </li>
-            </ul>
-  
-            <div class="footer-mid">
-                <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
-                <a href="privacy-policy.html" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
-            </div>
-  
-            <div class="footer-right">
-              <ul id="payment-options">
-                  <li>
-                    <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
-                      <i class="fa-brands fa-cc-mastercard"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
-                      <i class="fa-brands fa-cc-visa"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
-                      <i class="fa-brands fa-cc-paypal"></i></a>
-                  </li>
-                </ul>
-            </div>
-            <!-- Horizontal rule for separation -->
-            <hr class="footer-divider">
-            <div class="footer-bottom">
-              <p>
-                This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
-            </div>
+    <footer>
+
+     
+      <div class="footer-left">
+          <ul id="social-networks">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                  <i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+                  <i class="fa-brands fa-youtube-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                  <i class="fa-brands fa-instagram"></i></a>
+              </li>
+          </ul>
+
+          <div class="footer-mid">
+              <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
+              <a href="privacy-policy.html" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
           </div>
+
+          <div class="footer-right">
+            <ul id="payment-options">
+                <li>
+                  <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
+                    <i class="fa-brands fa-cc-mastercard"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
+                    <i class="fa-brands fa-cc-visa"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
+                    <i class="fa-brands fa-cc-paypal"></i></a>
+                </li>
+              </ul>
+          </div>
+
+          <!-- Horizontal rule for separation -->
+          <hr class="footer-divider">
+          <div class="footer-bottom">
+            <p>
+              This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
+          </div>
+        </div>
     </footer>
-  
-      <!-- Font Awesome kit -->
-      <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
-    </body>
-  
-  </html>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
+  </body>
+
+</html>

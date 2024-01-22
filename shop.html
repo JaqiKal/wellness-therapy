@@ -14,9 +14,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <!-- Style -->
+    <!-- Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-
   </head>
 
   <body>
@@ -24,6 +23,7 @@
 
     <header>
       <nav class="navbar">
+        
         <!-- Logo Section -->
         <div class="navbar-logo">
           <a href="index.html">
@@ -33,17 +33,18 @@
 
         <!-- Burger Menu for Mobile -->
         <input type="checkbox" id="toggle" class="burger-chkbox">
-        <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
+        <label for="toggle" class="burger"><i class="fa-solid fa-bars">Burger menu</i></label>
 
 
         <!-- Menu Items -->
-        <div class="menu-container">
+        <!-- Decorative line under active menu item. Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, Mdn and by trial and error - [https]stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item -->
+        
+          <div class="menu-container">
           <div class="menu">
-            <a href="index.html" class="active" aria-label="Button for Home section">Home</a>
-            <a href="therapies.html" aria-label="Button for Herbal Therapy section">Services</a>
-            <a href="booking-price.html" aria-label="Button for boooking and prices section">Booking & Pricing</a>
-            <a href="shop.html" aria-label="Button for Webshop section">Shop</a>
-            <a href="contact.html" aria-label="Button for Contact us section">Contact</a>
+            <a href="index.html" aria-label="Button for Home section"><i class="fa-solid fa-house" style="font-size: 20px;"></i>Home</a>
+            <a href="services.html" aria-label="Button for Herbal Therapy section"><i class="fa-solid fa-hand-holding-heart" style="font-size: 20px;"></i>Services</a>
+            <a href="pricing.html" aria-label="Button for boooking and prices section"><i class="fa-solid fa-calendar-check" style="font-size: 20px;"></i>Pricing</a>
+            <a href="contact.html" aria-label="Button for Contact us section"><i class="fa-solid fa-phone" style="font-size: 20px;"></i>Contact</a>
           </div>
         </div>
       </nav>
@@ -85,12 +86,11 @@
 
     <section id="shop-bottom-note">
       <h2 class="hidden-heading">Gift box pic</h2>
-      <img src="assets/images/giftbox-s-t.webp"Image of gift card with value 100 GBP">
+      <img src="assets/images/giftbox-s-t.webp" alt="Image of gift card with value 100 GBP">
     </a>
     </section>
 
 
-    <!-- Footer -->
     <footer>
       <div class="footer-left">
           <ul id="social-networks">
@@ -129,6 +129,7 @@
                 </li>
               </ul>
           </div>
+
           <!-- Horizontal rule for separation -->
           <hr class="footer-divider">
           <div class="footer-bottom">
@@ -136,7 +137,7 @@
               This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
           </div>
         </div>
-  </footer>
+    </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>

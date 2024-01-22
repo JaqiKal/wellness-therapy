@@ -275,6 +275,100 @@ main {
    font-weight: 500;
 }
 
+/* SERVICES PAGE */
+/* Ensuring images and videos are responsive */
+.section top-section {
+  padding-top: 130px;
+}
+
+.section img {
+  width: 100%; /
+  max-width: 300px; 
+  height: auto; 
+  /* Align image properly */
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 15px; 
+}
+.video-responsive iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+/* Content Styling */
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  padding: 0 15px; /* Padding for readability */
+  font-weight: 500;
+  margin-left: 15px; /* Adds space to the left of the text */
+  margin-right: 15px;
+  }
+
+  .content #credit {
+    padding-bottom: 20px;
+  }
+
+  .buttons {
+    text-align: center; 
+  }
+
+/* General Styles for All Buttons */
+.buttons a {
+  display: inline-block;
+  padding: 10px 10px;
+  margin-left: 10px;
+  width: 80px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Specific Styles for Services Buttons */
+/* Styling for the btn-services-shop button */
+.btn-services-shop {
+  background-color: #fdf8f5;
+  border: 2px ridge #301301;
+  color: #301301;
+}
+
+.btn-services-shop:hover {
+  background-color: #5ae25f;
+  transform: scale(1.05);
+}
+
+/* Styling for the btn-services-book button */
+.btn-services-book {
+  background-color: #301301;
+  border: 2px ridge #fdf8f5;
+  color: #fdf8f5;
+}
+
+.btn-services-book:hover {
+  background-color: #5ae25f;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fdf8f5;
+  border-radius: 10px; /* Adds a slight curve to the corners */
+}
+
+/* Credit Text Styling */
+#credit {
+  font-size: 0.8rem;
+  margin-top: 2px;
+  text-align: center;
+}
+
 /* FOOTER */
 footer {
   background-color: #b7a8a2;
@@ -342,12 +436,6 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-
-
-
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
   /* LANDING PAGE min768 */
@@ -368,7 +456,7 @@ footer {
 
 /* MAIN */
 main {
-  margin-top: 80px; /* Lesser margin for larger screens */
+  margin-top: 80px; 
 }
 
 /* Menu */
@@ -400,9 +488,16 @@ main {
 }
 
 #services .service {
-  flex-basis: 30%; /* Adjust width for larger screens */
+  flex-basis: 30%; 
 }
 
+/* SERVICES PAGE */
+.section img {
+  max-width: 500px; 
+}
+ .content p {
+  margin-left: 130px; 
+  margin-right: 130px; 
 
 /* FOOTER */
 footer {
@@ -414,7 +509,17 @@ footer {
 }
 }
 
-@media only screen and (min-width: 768px) {}
+/* Large devices (desktops, 820px and up) */
+@media only screen and (min-width: 820px) {
+   /* SERVICES PAGE */
+   .content p {
+    margin-left: 95px; 
+    margin-right: 95px; 
+  }
+  .section img {
+    max-width: 650px; 
+}
+
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -423,8 +528,21 @@ footer {
     padding-left: 350px; 
     padding-right: 350px;
   }
-}
 
+  /* SERVICES PAGE */
+  .content p {
+    margin-left: 180px; 
+    margin-right: 180px; 
+  }
+  .section img {
+    max-width: 700px; 
+}
+}
 /* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    /* SERVICES PAGE */
+    .section img {
+      max-width: 900px; 
+  }
+
 }
