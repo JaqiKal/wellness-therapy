@@ -286,7 +286,13 @@ main {
 /* SERVICES PAGE */
 /* Ensuring images and videos are responsive */
 .section.top-section {
-  padding-top: 130px;
+  padding-top: 150x;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
 }
 
 .section img {
@@ -517,13 +523,174 @@ main {
 }
 
 /* CONTACT PAGE */
-/* Contact Form Basic Styling */
+main {
+  padding: 5px;
+}
+
+#contact {
+  margin-top: 180px;
+  margin-bottom: 80px;
+}
+
+#signup-form {
+  background: rgba(253, 248, 245, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #301301;
+  box-shadow: 2px 4px 8px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Style for form headings and labels */
+#signup-form h2, 
+#signup-form h3, 
+#signup-form p {
+  color: #301301;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #301301;
+  font-size: larger;
+}
+
+/* Style for input fields, textarea, and select */
+#signup-form input[type="text"], 
+#signup-form input[type="email"], 
+#signup-form select,
+#signup-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  /* Ensures padding and border are included in the width */
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+/* Additional style for textarea */
+#signup-form textarea {
+  /* Allows vertical resizing only */
+  resize: vertical; 
+  min-height: 100px;
+}
+
+#signup-form button[type="submit"] {
+  background-color: #301301;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s;
+  font-size: 1.4rem;
+}
+
+.submit-btn-container {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Style for submit button */
+#signup-form button[type="submit"]:hover {
+  background-color: #5ae25f;
+  font-weight: bold;
+}
+
+.radio-btn label, .combination label {
+  margin-left: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #signup-form {
+      padding: 20px;
+      max-width: 80%;
+  }
+}
+
+
+/*
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Style for the form *
+#signup-form {
+  width: 100%;
+  max-width: 500px; /* Adjust the form width as needed *
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form elements *
+#signup-form h2,
+#signup-form h3,
+#signup-form p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form select,
+#signup-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#signup-form button[type="submit"] {
+  background-color: #301301;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#signup-form button[type="submit"]:hover {
+  background-color: #5ae25f;
+}
+
+/* Style for the radio buttons and checkboxes *
+.radio-btn label,
+.combination label {
+  margin-left: 10px;
+}
+*/
+
+/* 
+/* Contact Form Basic Styling *
 #signup-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 30px 0;
-}
+  font-weight: bold;
+  }
 
 #signup-form label {
   margin-top: 10px;
@@ -568,27 +735,11 @@ main {
 #signup-form button[type="submit"]:hover {
   background-color: #5ae25f;
 }
+*/
 
-/* Om jag byter <button> till <a> så ...
-i html:en- <a href="thank-you.html" id="send-btn" class="button-style">Welcome!</a>
-i css - 
-.button-style {
-  display: inline-block;
-  background-color: #301301; 
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none; 
-  text-align: center;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
 
-.button-style:hover {
-  background-color: #5ae25f; 
-} */
+/* THANK YOU PAGE */
+
 
 /* FOOTER */
 footer {
@@ -732,6 +883,14 @@ footer {
     .shop-giftcard img {
       max-width: 250px; 
     }
+
+    /* CONTACT PAGE */
+    #signup-form {
+      padding: 20px;
+      max-width: 80%;
+  }
+}
+
   }
   /* PRICING PAGE */
   #hero-pricing h1 {
@@ -848,13 +1007,15 @@ footer {
     width: 80%; /* Adjust the width for larger screens */
 }
 /* CONTACT PAGE */
-
-#signup-form {
-  width: 60%;
-  max-width: 600px;
-}
- 
+  #signup-form {
+    padding: 25px;
+    max-width: 70%;
   }
+
+  #signup-form button[type="submit"] {
+    width: auto;
+  }
+}
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
@@ -878,11 +1039,12 @@ footer {
       width: 70%; /* Further adjust the width for extra large screens */
   }
   /* CONTACT PAGE */
-
-#signup-form {
-  width: 50%;
-  max-width: 700px;
-}
- 
+      main {
+        padding: 40px;
+  } 
+      #signup-form {
+        padding: 30px;
+        max-width: 60%;
+  }
 }
 }

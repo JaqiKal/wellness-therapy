@@ -53,9 +53,65 @@
 
     <!-- Main content -->
     <main>
-      <!-- Connect -->
+
+       <section id="contact">
+            <form id="signup-form" method="GET" action="thank-you.html">
+                <h2>Let's meet!</h2>
+                <p>Fill out the form below</p>
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname" class="text-input" required>
+                
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname" id="lname" class="text-input" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" class="text-input" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="text-input" required>
+                
+                <div class="select-opt-dropdwn">
+                    <h3>How do you wish me to contact you?</h3>
+                    <label for="opt">Please select an option:</label>
+                    <select id="opt" name="opt">
+                        <option value="by-phone">Please give me a call!</option>
+                        <option value="by-email">Please send me an e-mail!</option>
+                    </select>
+                </div>
+                
+                <fieldset class="radio-btn">
+                    <legend>Select your therapy form:</legend>
+                    <div>
+                        <input type="radio" name="therapy-type" id="herbal" value="herbal" required checked>
+                        <label for="herbal">Herbal therapy</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="therapy-type" id="lymphatic" value="lymphatic" required>
+                        <label for="lymphatic">Lymphatic therapy</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="therapy-type" id="zone" value="zone" required>
+                        <label for="zone">Zone therapy</label>
+                    </div>
+                </fieldset>
+                
+                <div class="combination">
+                    <h3>Do you wish to combine therapy types?</h3>
+                    <label for="msg">Please write me a message:</label>
+                    <textarea name="msg" id="msg" cols="40" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" name="send" id="send-btn">Welcome!</button>
+            </form>
+        </section>
+  
+
+    
+
+      <!--
+      <!-- Connect --
         <section id="contact">
-            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+            <form id="signup-form" method="GET" action="thank-you.html">
                 <h2>Let's meet!</h2>
                 <h3>Fill out the form below</h3>
                 <br>
@@ -115,6 +171,7 @@
                 </div>
               </form>
         </section>
+      -->
     </main>  
     <footer>
       <div class="footer-left">
