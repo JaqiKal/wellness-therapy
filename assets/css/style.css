@@ -641,7 +641,28 @@ main {
 
 /* GDPR PAGE */
 
+
 /* PRIVACY PAGE */
+#privacy-policy {
+  background-color: #fdf8f5;
+  color: #301301;
+  padding: 20px;
+  max-width: 100%; 
+  margin: 20px auto; 
+  margin-bottom: 1px;
+  margin-top: 99px;
+  border: 1px solid #301301a9;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px #301301;
+}
+
+#privacy-policy ul {
+  padding-left: 20px;
+  list-style-position: outside;
+}
+#privacy-policy ul li {
+  padding-left: 5px;
+}
 
 /* THANK YOU PAGE */
 
@@ -847,6 +868,14 @@ footer {
       margin: 100px 40px 40px 40px; 
     } 
 
+  /* PRIVACY POLICY */
+  /* Narrower content for larger screens */
+  #privacy-policy {
+    max-width: 95%; 
+    margin-bottom: 10px;
+    margin-top: 567px;px;
+  }
+
   /* 404 PAGE */
   #nono-main {
     margin-left: 40px;
@@ -988,6 +1017,22 @@ footer {
   #cookie-content {
     margin: 120px 80px 80px 80px; 
   }
+
+  /* Narrower content for larger screens */
+  #privacy-policy {
+    max-width: 95%; 
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
+
+  /* PRIVACY POLICY */
+  #privacy-policy h1,
+  #privacy-policy p {
+    /* Larger font size for larger screens */
+    font-size: 1.2rem; 
+  }
+
+
 
   /* 404 PAGE */
   #nono-main {
