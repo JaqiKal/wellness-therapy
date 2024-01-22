@@ -3,7 +3,7 @@
 
 /* Copy from LoveRunning */
 /* BASIC RESET Asterisk wildcard selector to override default styles added by the browser */
-  {
+  * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -158,13 +158,10 @@ main {
   /* Ensure full width */
   width: 100%;
   flex-direction: column;
-  
 }
-
 
 /* Leaving LoveRunning - starting my own journey */
 /* Hero Section in LANDING PAGE */
-
 #hero {
   display: flex;
   justify-content: center;
@@ -269,7 +266,6 @@ main {
   /* Set a maximum height for consistency */
   max-height: 200px;
   border-radius: 50px;
-
 }
 
 /* End-note section in LANDING PAGE */
@@ -286,13 +282,12 @@ main {
 /* SERVICES PAGE */
 /* Ensuring images and videos are responsive */
 .section.top-section {
-  padding-top: 150x;
+  padding-top: 150px;
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .section img {
@@ -306,11 +301,11 @@ main {
 
 /* Service Image Hover Effect */
 .service img {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .service img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .video-responsive iframe {
@@ -327,7 +322,6 @@ main {
   margin: 10px 0;
   padding: 0 15px;
   /* Padding for readability */
- 
   margin-left: 15px;
   /* Adds space to the left of the text */
   margin-right: 15px;
@@ -437,23 +431,24 @@ main {
 }
 
 .shop-giftcard img {
-  border: 2px ridge #301301; 
-  border-radius: 15px; 
+  border: 2px ridge #301301;
+  border-radius: 15px;
 }
 
 .giftbox-image {
-  width: 50%; 
+  width: 50%;
   height: auto;
   display: block;
   /* Center the image */
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 /* PRICING */
 /* Viewport background image */
 body {
   background: url('../images/pale-ocean.webp') no-repeat center center/cover;
-  background-size: cover; /* Ensure it covers the entire viewport */
+  background-size: cover;
+  /* Ensure it covers the entire viewport */
 }
 
 /* Hero Section Styling */
@@ -461,15 +456,15 @@ main {
   padding-top: 60px;
 }
 
-  #hero-pricing {
+#hero-pricing {
   text-align: center;
   padding: 20px;
-  color: #800000; 
+  color: #800000;
   font-weight: 500;
 }
 
 #hero-pricing h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 #hero-pricing p {
@@ -482,44 +477,44 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  color: #800000; 
+  color: #800000;
   font-weight: 500;
 }
 
 #price-table {
-  padding: 5px 20px 20px 20px; 
-  border: 3px solid #a0a0a0; 
-  border-radius: 10px; 
-  background-color: white; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  margin: 20px 0; 
+  padding: 5px 20px 20px 20px;
+  border: 3px solid #a0a0a0;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
 }
 
 #price-table table {
-  width: 100%; 
-  margin: 0 auto; 
-  border-collapse: collapse; 
-  background-color: #dbd3d0; 
-  
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #dbd3d0;
 }
 
-#price-table th, #price-table td {
-  text-align: left; 
-  padding: 15px; 
-  border-bottom: 1px solid #fff; 
+#price-table th,
+#price-table td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
 }
 
 #price-table th {
-  color: #301301; 
+  color: #301301;
   font-weight: 600;
-  background-color: #e1dad7; 
+  background-color: #e1dad7;
 }
 
 /* Text color for table data cells */
 #price-table td {
-  color: #fff; 
+  color: #fff;
   font-weight: 600;
-  background-color: #503429; 
+  background-color: #503429;
 }
 
 /* CONTACT PAGE */
@@ -540,14 +535,14 @@ main {
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #301301;
-  box-shadow: 2px 4px 8px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 100%;
 }
 
 /* Style for form headings and labels */
-#signup-form h2, 
-#signup-form h3, 
+#signup-form h2,
+#signup-form h3,
 #signup-form p {
   color: #301301;
   margin-bottom: 10px;
@@ -562,8 +557,8 @@ main {
 }
 
 /* Style for input fields, textarea, and select */
-#signup-form input[type="text"], 
-#signup-form input[type="email"], 
+#signup-form input[type="text"],
+#signup-form input[type="email"],
 #signup-form select,
 #signup-form textarea {
   width: 100%;
@@ -573,13 +568,13 @@ main {
   border-radius: 4px;
   /* Ensures padding and border are included in the width */
   box-sizing: border-box;
-  font-weight: large;
+  font-weight: bold;
 }
 
 /* Additional style for textarea */
 #signup-form textarea {
   /* Allows vertical resizing only */
-  resize: vertical; 
+  resize: vertical;
   min-height: 100px;
 }
 
@@ -599,26 +594,49 @@ main {
   text-align: center;
   margin-top: 10px;
 }
+
 /* Style for submit button */
 #signup-form button[type="submit"]:hover {
   background-color: #5ae25f;
   font-weight: bold;
 }
 
-.radio-btn label, .combination label {
+.radio-btn label,
+.combination label {
   margin-left: 10px;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #signup-form {
-      padding: 20px;
-      max-width: 80%;
+    padding: 20px;
+    max-width: 80%;
   }
 }
 
-/* THANK YOU PAGE */
+/* COOKIES PAGE */
+#cookie-content {
+  background-color: #fdf8f5; 
+  color: #301301;
+  border: 1px solid #301301;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  margin: 120px 20px 20px 20px;
+}
 
+#cookie-content ul li {
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+
+/* GDPR PAGE */
+
+/* PRIVACY PAGE */
+
+/* THANK YOU PAGE */
 
 /* 404 PAGE */
 #nono-main {
@@ -626,7 +644,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-left:20px
+  margin-left: 20px
 }
 
 #nono-content {
@@ -664,8 +682,6 @@ main {
   color: #5ae25f;
 }
 
-
-
 /* FOOTER */
 footer {
   background-color: #b7a8a2;
@@ -698,7 +714,7 @@ footer {
   padding: 0;
   display: flex;
   margin: 0;
-  padding-right: 10;
+  padding-right: 10px;
   order: 2;
 }
 
@@ -752,12 +768,12 @@ footer {
     display: none;
   }
 
-  /* MAIN */
+  /* Main - LANDING PAGE */
   main {
     margin-top: 80px;
   }
 
-  /* Menu */
+  /* Menu - LANDING PAGE*/
   .menu {
     display: flex;
     flex-direction: row;
@@ -776,7 +792,7 @@ footer {
     font-size: 10px;
   }
 
-  /* Hero section - landing page */
+  /* Hero section - LANDING PAGE */
   #hero {
     padding: 80px 10px 10px;
     height: 600px;
@@ -798,57 +814,58 @@ footer {
   .content p {
     margin-left: 130px;
     margin-right: 130px;
-
-    /* SHOP PAGE*/
+  }
+  
+  /* SHOP PAGE*/
     #shop-giftcard {
-      flex-direction: row; 
+      flex-direction: row;
       justify-content: space-around;
     }
-  
+
     .shop-giftcard img {
-      max-width: 250px; 
+      max-width: 250px;
     }
 
     /* CONTACT PAGE */
     #signup-form {
       padding: 20px;
       max-width: 80%;
+    }
+
+    /* COOKIES PAGE */
+    #cookie-content {
+      margin: 100px 40px 40px 40px; 
+    } 
+
+  /* 404 PAGE */
+  #nono-main {
+    margin-left: 40px;
+    margin-top: 0px;
+    padding: 5px;
   }
-}
-      /* 404 PAGE */
-       #nono-main {
-           margin-left: 40px;
-           margin-top: 0px;
-           padding: 5px;
-  }
-}
+
   /* PRICING PAGE */
   #hero-pricing h1 {
-    font-size: 2.5rem; /* Adjust the font size for larger screens */
-}
+    font-size: 2.5rem;
+    /* Adjust the font size for larger screens */
+  }
 
-#price-table table {
-    width: 90%; /* Adjust the width of the table */
-}
+  #price-table table {
+    width: 90%;
+    /* Adjust the width of the table */
+  }
 
-/* CONTACT PAGE */
-
-#signup-form {
-  width: 70%;
-  max-width: 500px;
-}
-
-  /* FOOTER */
+   /* FOOTER */
   footer {
     flex-direction: row;
     justify-content: space-between;
   }
+}
 
   .footer-left,
   .footer-right {
     flex-direction: row;
   }
-}
 
 /* Large devices (desktops, 820px and up) */
 @media only screen and (min-width: 820px) {
@@ -876,72 +893,83 @@ footer {
     font-size: 2rem;
   }
 
-.shop-giftcard {
-  margin: 10px;
-  flex: 1; 
-}
-
-.shop-giftcard img {
-  max-width: 100%; 
-  height: auto;
-}
-.giftbox-image {
-  width: 150px;
-  height: auto;
-  display: block;
-  background-image: url('assets/images/giftbox-s-t.webp');
-  background-repeat: repeat;
-}
-
-/* 404 PAGE */
-  #nono-main {
-      margin-left: 50px;
-      margin-top: 0px;
-      padding: 5px;
-  }
-}
-  /* Large devices (desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-
-    /* End-note in LANDING PAGE */
-    #end-note {
-      padding-left: 350px;
-      padding-right: 350px;
-    }
-
-    /* SERVICES PAGE */
-    .content p {
-      margin-left: 180px;
-      margin-right: 180px;
-    }
-
-    .section img {
-      max-width: 700px;
-    }
-
-    /* SHOP PAGE*/
-    #shop-giftcard {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  }
-
   .shop-giftcard {
-      margin: 10px;
-      flex: 1; /* Equal distribution among items */
+    margin: 10px;
+    flex: 1;
   }
 
   .shop-giftcard img {
-      max-width: 100%; /* Adjust as needed */
-      height: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .giftbox-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    background-image: url('assets/images/giftbox-s-t.webp');
+    background-repeat: repeat;
+  }
+
+  /* COOKIE PAGE */
+  #cookie-content {
+     margin: 120px 60px 60px 60px;
+  }
+
+  /* 404 PAGE */
+  #nono-main {
+    margin-left: 50px;
+    margin-top: 0px;
+    padding: 5px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /* End-note in LANDING PAGE */
+  #end-note {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+
+  /* SERVICES PAGE */
+  .content p {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .section img {
+    max-width: 700px;
+  }
+
+  /* SHOP PAGE*/
+  #shop-giftcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-giftcard {
+    margin: 10px;
+    /* Equal distribution among items */   
+    flex: 1;
+   }
+
+  .shop-giftcard img {
+    max-width: 100%;
+    /* Adjust as needed */
+    height: auto;
   }
 
   /* PRICING PAGE */
   #price-table table {
-    width: 80%; /* Adjust the width for larger screens */
-}
-/* CONTACT PAGE */
+    width: 80%;
+    /* Adjust the width for larger screens */
+  }
+
+  /* CONTACT PAGE */
   #signup-form {
     padding: 25px;
     max-width: 70%;
@@ -951,48 +979,63 @@ footer {
     width: auto;
   }
 
-    /* 404 PAGE */
-    #nono-main {
-      margin-left: 70px;
-      margin-top: 0px;
-      padding: 5px;
+  /* COOKIES PAGE */
+  #cookie-content {
+    margin: 120px 80px 80px 80px; 
+  }
+
+  /* 404 PAGE */
+  #nono-main {
+    margin-left: 70px;
+    margin-top: 0px;
+    padding: 5px;
+  }
 }
-}
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
 
-    /* SERVICES PAGE */
-    .section img {
-      max-width: 900px;
-    }
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-    /* SHOP PAGE*/
-    .shop-giftcard img {
-      max-width: 300px; /* Adjust image size for extra large devices */
-    }
+  /* SERVICES PAGE */
+  .section img {
+    max-width: 900px;
+  }
 
-    /* SHOP PAGE */
-    #hero-pricing h1 {
-      font-size: 3.5rem; /* Larger font size for wide screens */
+  /* SHOP PAGE*/
+  .shop-giftcard img {
+    max-width: 300px;
+    /* Adjust image size for extra large devices */
+  }
+
+  /* SHOP PAGE */
+  #hero-pricing h1 {
+    font-size: 3.5rem;
+    /* Larger font size for wide screens */
   }
 
   #price-table table {
-      width: 70%; /* Further adjust the width for extra large screens */
+    width: 70%;
+    /* Further adjust the width for extra large screens */
   }
+
   /* CONTACT PAGE */
-      main {
-        padding: 40px;
-  } 
-      #signup-form {
-        padding: 30px;
-        max-width: 60%;
+  main {
+    padding: 40px;
   }
-    /* 404 PAGE */
-    #nono-main {
-      margin-left: 120px;
-      margin-top: 0px;
-      padding: 5px;
-}
-}
+
+  #signup-form {
+    padding: 30px;
+    max-width: 60%;
+  }
+
+  /* COOKIES PAGE */
+  #cookie-content {
+    margin: 150px 100px 100px 100px; 
+  }
+
+  /* 404 PAGE */
+  #nono-main {
+    margin-left: 120px;
+    margin-top: 0px;
+    padding: 5px;
+  }
 }
