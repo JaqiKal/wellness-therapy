@@ -655,9 +655,8 @@ main {
   color: #301301;
   padding: 20px;
   max-width: 100%; 
-  margin: 30px auto; 
-  margin-bottom: 30px;
-  margin-top: 90px;
+  margin: 260px 10px 30px 10px; 
+
   border: 1px solid #301301a9;
   border-radius: 10px;
   box-shadow: 1px 2px 4px #301301;
@@ -665,7 +664,7 @@ main {
 
 #gdpr-content ul {
   padding-left: 20px;
-  list-style-position: outside;
+  list-style-position: inside;
 }
 #gdpr-content ul li {
   padding-left: 10px;
@@ -716,13 +715,8 @@ main {
 }
 
 /* 404 PAGE */
-#nono-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-left: 20px;
-  margin-top: 140px;
+.nono-hero {
+  margin: 280px 5px 40px 5px;
 }
 
 #nono-content {
@@ -731,8 +725,8 @@ main {
   border: 1px solid #301301;
   border-radius: 10px;
   text-align: center;
-  padding: 20px;
-  max-width: 90%;
+  padding: 5px;
+  max-width: 100%;
 }
 
 #nono-content h1 {
@@ -949,7 +943,7 @@ footer {
 
   /* GDPR PAGE */
   #gdpr-content {
-  margin: 100px 40px 40px 40px; 
+  margin: 240px 30px 40px 30px; 
 } 
 
   /* PRIVACY POLICY */
@@ -1043,14 +1037,9 @@ footer {
     background-repeat: repeat;
   }
   
-  /* COOKIE PAGE */
-  #cookie-content {
-  /*   margin: 120px 60px 60px 60px; FELSÖKNING main marginal botten*/
-  }
-
   /* GDPR PAGE */
   #gdpr-content {
-    margin: 120px 60px 60px 60px; 
+    margin: 230px 40px 40px 40px; 
   } 
 
   /* PRIVACY POLICY */
