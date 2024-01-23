@@ -288,6 +288,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #fdf8f5;
 }
 
 .section img {
@@ -443,8 +444,12 @@ main {
   margin: 0 auto;
 }
 
-/* PRICING */
+/* PRICING PAGE*/
 /* Viewport background image */
+main {
+  margin-top:140px;
+}
+}
 body {
   background: url('../images/pale-ocean.webp') no-repeat center center/cover;
   background-size: cover;
@@ -458,36 +463,46 @@ main {
 
 #hero-pricing {
   text-align: center;
-  padding: 20px;
-  color: #800000;
+  padding: 10px 5px;
   font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #hero-pricing h1 {
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 #hero-pricing p {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 1.2rem;
+  color: #800000;
 }
 
 /* Pricing Table Styling */
 #price-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   padding: 5px;
-  color: #800000;
+  color: #301301;
   font-weight: 500;
 }
 
 #price-table {
-  padding: 5px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20;
+  text-align:center;
   border: 3px solid #a0a0a0;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
+}
+
+#price-table p {
+  margin-bottom: 20px; 
 }
 
 #price-table table {
@@ -515,6 +530,27 @@ main {
   color: #fff;
   font-weight: 600;
   background-color: #503429;
+}
+
+/* Button style generic */
+.table-button {
+  margin-top: 20px; 
+  background-color: #fdf8f5;
+  color:  #800000;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px 10px; 
+  border: 2px ridge  #301301;
+  border-radius: 15px;
+  font-size: 16px; 
+  cursor: pointer; 
+  text-decoration: none; 
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.table-button:hover {
+  background-color: #5ae25f;
+  transform: scale(1.05);
 }
 
 /* CONTACT PAGE */
@@ -884,14 +920,15 @@ footer {
   }
 
   /* PRICING PAGE */
+  main {
+    margin-top:130px;
+  }
   #hero-pricing h1 {
     font-size: 2.5rem;
-    /* Adjust the font size for larger screens */
-  }
+     }
 
   #price-table table {
-    width: 90%;
-    /* Adjust the width of the table */
+    width: 100%;
   }
 
    /* FOOTER */
@@ -961,7 +998,13 @@ footer {
     margin-top: 0px;
     padding: 5px;
   }
+
+  /* PRICING PAGE */
+  #price-table table {
+    width: 100%;
+  }
 }
+
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -1004,7 +1047,7 @@ footer {
 
   /* PRICING PAGE */
   #price-table table {
-    width: 80%;
+    width: 1o0%;
     /* Adjust the width for larger screens */
   }
 
@@ -1063,7 +1106,7 @@ footer {
   }
 
   #price-table table {
-    width: 70%;
+    width: 100%;
     /* Further adjust the width for extra large screens */
   }
 
