@@ -18,8 +18,7 @@ body {
   font-family: 'open-sans', 'Roboto', sans-serif;
   color: rgba(48, 19, 1, 1);
   background-color: rgba(253, 248, 245, 1);
-  margin: 0;
-  padding-top: 60px;
+
 }
 
 h1,
@@ -446,11 +445,11 @@ main {
 }
 
 /* PRICING PAGE*/
-/* Viewport background image */
 main {
   margin-top:140px;
 }
-}
+
+
 body {
   background: url('../images/pale-ocean.webp') no-repeat center center/cover;
   background-size: cover;
@@ -459,7 +458,8 @@ body {
 
 /* Hero Section Styling */
 main {
-  padding-top: 60px;
+  margin:200px 0 60px;
+  padding-top: 120px;
 }
 
 #hero-pricing {
@@ -857,8 +857,36 @@ footer {
   font-size: 0.9rem;
   margin-top: 20px;
   order: 5;
+  order: 5;
 }
 
+/* Change the size of Font Awesome icons */
+.footer-left .fa-brands {
+  font-size: 24px; /* Change this value to your desired size */
+}
+
+.footer-right .fa-brands {
+  font-size: 24px; /* Change this value to your desired size */
+}
+
+/* Transition effect for all elements in the footer sections */
+.footer-left a:hover, .footer-left li:hover {
+  transform: scale(1.1);
+  color: #5ae25f; 
+  transition: all 0.3s ease;
+}
+
+.footer-mid a:hover {
+  transform: scale(1.1);
+  color: #5ae25f; 
+  transition: all 0.3s ease;
+}
+
+.footer-right a:hover, .footer-right li:hover {
+  transform: scale(1.1);
+  color: #5ae25f; 
+  transition: all 0.3s ease;
+}
 
 
 /* RESPONSIVE DESIGN */
@@ -970,8 +998,10 @@ footer {
 
   /* PRICING PAGE */
   main {
-    margin-top:130px;
+    margin:90px 0 60px;
+    padding-top: 120px;
   }
+
   #hero-pricing h1 {
     font-size: 2.5rem;
      }
@@ -1115,13 +1145,18 @@ footer {
 
   /* PRICING PAGE */
   #price-table table {
-    width: 1o0%;
+    width: 100%;
     /* Adjust the width for larger screens */
   }
 
   /* CONTACT */
   #signup-form {
-    max-width: 70%;
+    max-width: 50%;
+    max-height: 50%
+  }
+
+  #contact > h1 {
+    font-size: 1.8rem; 
 }
 
   /* COOKIES PAGE */
@@ -1135,24 +1170,26 @@ footer {
 } 
 
   /* PRIVACY POLICY */
+  main {
+    margin: 110px 0 60px;
+  }
+
   #privacy-policy {
     width: 95%; 
     margin-bottom: 60px;
     margin-top: 90px;
   }
+  
+  #privacy-policy h1,
+  #privacy-policy p {
+    /* Larger font size for larger screens */
+    font-size: 1.2rem; 
 
   /* Narrower content for larger screens */
   #privacy-policy {
     max-width: 95%; 
     margin-bottom: 10px;
     margin-top: 80px;
-  }
-
-  /* PRIVACY POLICY */
-  #privacy-policy h1,
-  #privacy-policy p {
-    /* Larger font size for larger screens */
-    font-size: 1.2rem; 
   }
 
   /* THANK YOU PAGE */
