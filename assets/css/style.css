@@ -18,7 +18,6 @@ body {
   font-family: 'open-sans', 'Roboto', sans-serif;
   color: rgba(48, 19, 1, 1);
   background-color: rgba(253, 248, 245, 1);
-
 }
 
 h1,
@@ -38,6 +37,7 @@ h6 {
   display: none;
 }
 
+
 /* HEADER & NAVIGATION BAR */
 .navbar {
   background-color: #b7a8a2;
@@ -53,7 +53,7 @@ h6 {
   right: 0;
   width: 100vw;
   z-index: 101;
-  /* Rounded corners adapted from www.w3schools.com/css/css3_borders.asp */
+  /* Corners amended from www.w3schools.com/css/css3_borders.asp */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -134,7 +134,7 @@ h6 {
 }
 
 /* Decorative line under active menu item. */
-/* class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
+/* Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
 /* Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, mdn and by trial  */
 /* and error https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item */
 .menu a.active::after {
@@ -143,7 +143,7 @@ h6 {
   /* This centers the line */
   height: 1px;
   width: 100%;
-  background-color: #3a3a3a;
+  background-color: #800000;
 }
 
 /* MAIN CONTENT */
@@ -151,12 +151,12 @@ main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
   /* Add margin at the top to prevent content from being covered by the header */
-  margin-top: 80px;
+  margin-top: 0px;
   /* Enable flex properties for child elements */
   display: flex;
   /* Ensure full width */
-  width: 100%;
   flex-direction: column;
+  background-color: #fdf8f5;
 }
 
 /* Leaving LoveRunning - starting my own journey */
@@ -170,10 +170,10 @@ main {
   color: #301301;
   text-align: center;
   /* Padding for mobile */
-  /*padding: 110px 20px 10px;*/
+ /* padding: 110px 20px 10px;*/
   padding: 60px 20px;
   /* Flexible height for mobile */
-  margin-top: 60px;
+  margin-top: 200px;
   height: auto;
 }
 
@@ -238,6 +238,7 @@ main {
 #btn-hero-book:hover {
   background-color: #5ae25f;
   transform: scale(1.05);
+  color: #301301; 
 }
 
 /* Service section - LANDING PAGE */
@@ -279,17 +280,26 @@ main {
   font-weight: 500;
 }
 
+#end-note p {
+  padding: 20px;
+}
+
 /* SERVICES PAGE */
 /* Ensuring images and videos are responsive */
+
 .section.top-section {
-  padding-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #fdf8f5;
+  margin-top: 200px;
 }
+.section.top-section h2 {
+  padding: 20px  20px;
+}
+
 
 .section img {
   max-width: 80%;
@@ -373,6 +383,7 @@ main {
 .btn-services-book:hover {
   background-color: #5ae25f;
   transform: scale(1.05);
+  color: #301301; 
 }
 
 /* Section Styling */
@@ -396,10 +407,10 @@ main {
 #shop-intro-hero {
   text-align: center;
   padding: 10px;
-  padding-top: 130px;
   background-color: #fdf8f5;
   font-size: 1.2rem;
   font-weight: 500;
+  margin-top: 230px;
 }
 
 #shop-intro-hero h1 {
@@ -437,7 +448,7 @@ main {
 }
 
 .giftbox-image {
-  width: 50%;
+  width: 40%;
   height: auto;
   display: block;
   /* Center the image */
@@ -445,38 +456,23 @@ main {
 }
 
 /* PRICING PAGE*/
-main {
-  margin-top:140px;
-}
-
-
-body {
-  background: url('../images/pale-ocean.webp') no-repeat center center/cover;
-  background-size: cover;
-  /* Ensure it covers the entire viewport */
-}
-
 /* Hero Section Styling */
-main {
-  margin:200px 0 60px;
-  padding-top: 120px;
-}
-
-#hero-pricing {
+#pricing-content {
   text-align: center;
   padding: 10px 5px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 230px;
   margin-bottom: 20px;
 }
 
-#hero-pricing h1 {
+#pricing-content h1 {
   font-size: 2rem;
   margin-bottom: 0;
+  ma
 }
 
-#hero-pricing p {
-  margin-top: 0;
+#pricing-content p {
+  margin-top: 0px;
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: #800000;
@@ -490,6 +486,7 @@ main {
   padding: 5px;
   color: #301301;
   font-weight: 500;
+  margin-top:30;
 }
 
 #price-table {
@@ -552,123 +549,93 @@ main {
 .table-button:hover {
   background-color: #5ae25f;
   transform: scale(1.05);
+  color: #301301; 
 }
 
 /* CONTACT PAGE */
-main {
-  padding: 5px;
+#contact {
+  margin-top: 250px;
 }
 
-#contact {
-  max-width: 100%; /* Adjust the width as needed */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  padding: 20px;
+#contact > h1, p {
+  margin: 35px;
 }
 
 #signup-form {
-  background: rgba(253, 248, 245, 0.9);
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #301301;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  padding: 20px;
+  border: 2px solid #301301;
+  border-radius: 15px;
+  margin: 40px 20px 30px 10px;
 }
 
-/* Style for form headings and labels */
-#signup-form h2,
-#signup-form h3,
-#signup-form p {
-  color: #301301;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+#signup-form > p {
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: #800000;
 }
 
-#signup-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: #301301;
-  font-size: large;
-}
-
-/* Style for input fields, textarea, and select */
+/* Style for input fields */
 #signup-form input[type="text"],
-#signup-form input[type="email"],
+#signup-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; 
+  border: 1px solid #50342949;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-weight: bold;
+}
+
+/* Style select and textarea */
 #signup-form select,
 #signup-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   border: 1px solid #50342949;
   border-radius: 4px;
-  /* Ensures padding and border are included in the width */
-  box-sizing: border-box;
-  font-weight: bold;
-}
-/* Additional style for textarea */
-#signup-form textarea {
-  /* Allows vertical resizing only */
-  resize: vertical;
-  min-height: 100px;
-}
-
-#signup-form button[type="submit"] {
-  background-color: #301301;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  width: auto;
-  transition: background-color 0.3s;
-  font-size: 1.4rem;
-}
-
-.submit-btn-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Style for submit button */
-#signup-form button[type="submit"]:hover {
-  background-color: #5ae25f;
+  box-sizing: border-box; 
   font-weight: bold;
 }
 
-.radio-btn label,
-.combination label {
-  margin-left: 10px;
-}
-
-
-/* Style for radio buttons and their labels */
+/* Style radio buttons */
 .radio-btn div {
-  display: flex;
-  align-items: center;
-  /* Space between each radio button option */
+  padding: 20px 0 0 10px;
   margin-bottom: 10px; 
 }
 
-.radio-btn input[type="radio"] {
-  /* Space between the radio button and its label */
-  margin-right: 10px; 
+/* Style for the submit button */
+#signup-form button[type="submit"] {
+  margin-top: 20px; 
+  border: 2px ridge  #800000;
+  border-radius: 15px;  
+  background-color: #301301;
+  color:  white;
+  font-style: italic;
+  font-size: 16px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  text-decoration: none; 
+  transition: background-color 0.3s, transform 0.3s;
+}
+ 
+/* Hover effect for the submit button */
+#signup-form button[type="submit"]:hover {
+  background-color: #5ae25f;
+  color: #301301; 
 }
 
-/* COOKIES PAGE */
 
+/* COOKIE PAGE */
 #cookie-content {
   background-color: #fdf8f5;
   color: #301301;
   font-weight: 500;
   padding: 20px;
   max-width: 100%; 
-  margin: 30px auto; 
+  margin: 250px 10px 30px 10px;
   margin-bottom: 30px;
-  margin-top: 90px;
+  margin-top: 250px;
   border: 1px solid #301301a9;
   border-radius: 10px;
   box-shadow: 1px 2px 4px #301301;
@@ -712,7 +679,7 @@ main {
   max-width: 100%; 
   margin: 20px auto; 
   margin-bottom: 20px;
-  margin-top: 90px;
+  margin-top: 220px;
   border: 1px solid #301301a9;
   border-radius: 10px;
   box-shadow: 1px 2px 4px #301301;
@@ -909,11 +876,6 @@ footer {
     display: none;
   }
 
-  /* Main - LANDING PAGE */
-  main {
-    margin-top: 80px;
-  }
-
   /* Menu - LANDING PAGE*/
   .menu {
     display: flex;
@@ -934,11 +896,6 @@ footer {
   }
 
   /* Hero section - LANDING PAGE */
-  #hero {
-    padding: 80px 10px 10px;
-    height: 600px;
-  }
-
   .hero-container h1 {
     font-size: 2.5rem;
   }
@@ -948,6 +905,10 @@ footer {
   }
 
   /* SERVICES PAGE */
+  .section.top-section  {
+    margin-top: 180px;
+  }
+
   .section img {
     max-width: 500px;
   }
@@ -961,20 +922,29 @@ footer {
     #shop-giftcard {
       flex-direction: row;
       justify-content: space-around;
+      margin: 0 5px;
     }
 
     .shop-giftcard img {
       max-width: 250px;
+      }
+
+    .giftbox-image {
+      width: 20%;
+      height: auto;
+      display: block;
+      /* Center the image */
+      margin: 0 auto;
     }
 
   /* CONTACT */
   #signup-form {
-    max-width: 80%;
+    max-width: 100%;
 }
 
   /* COOKIES PAGE */
   #cookie-content {
-    margin: 100px 40px 40px 40px; 
+    margin: 250px 40px 40px 40px; 
   } 
 
   /* GDPR PAGE */
@@ -986,7 +956,7 @@ footer {
     #privacy-policy {
     width: 95%; 
     margin-bottom: 40px;
-    margin-top: 90px;
+    margin-top: 230px;
   }
 
   /* 404 PAGE */
@@ -997,14 +967,15 @@ footer {
   }
 
   /* PRICING PAGE */
-  main {
-    margin:90px 0 60px;
-    padding-top: 120px;
-  }
+ /*   margin:90px 0 60px; FELSÖKNING main marginal botten*/
 
-  #hero-pricing h1 {
+  #pricing-content h1 {
     font-size: 2.5rem;
      }
+
+  #price-table  {
+     margin-bottom: 40px;
+  }
 
   #price-table table {
     width: 100%;
@@ -1044,7 +1015,6 @@ footer {
 
   /* SHOP PAGE*/
   #shop-giftcard {
-    /* Use flexbox to lay out children in a row */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1056,26 +1026,26 @@ footer {
   }
 
   .shop-giftcard {
-    margin: 10px;
+    margin: 5px;
     flex: 1;
   }
 
   .shop-giftcard img {
-    max-width: 100%;
+    max-width: 250px;
     height: auto;
   }
 
   .giftbox-image {
-    width: 150px;
+    width: 28%;
     height: auto;
     display: block;
     background-image: url('assets/images/giftbox-s-t.webp');
     background-repeat: repeat;
   }
-
+  
   /* COOKIE PAGE */
   #cookie-content {
-     margin: 120px 60px 60px 60px;
+  /*   margin: 120px 60px 60px 60px; FELSÖKNING main marginal botten*/
   }
 
   /* GDPR PAGE */
@@ -1087,7 +1057,7 @@ footer {
   #privacy-policy {
     width: 95%; 
     margin-bottom: 50px;
-    margin-top: 90px;
+    margin-top: 240px;
   }
 
   /* 404 PAGE */
@@ -1109,8 +1079,7 @@ footer {
 
   /* End-note in LANDING PAGE */
   #end-note {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding: 0 50px;
   }
 
   /* SERVICES PAGE */
@@ -1133,7 +1102,6 @@ footer {
 
   .shop-giftcard {
     margin: 10px;
-    /* Equal distribution among items */   
     flex: 1;
    }
 
@@ -1143,6 +1111,12 @@ footer {
     height: auto;
   }
 
+  .giftbox-image {
+    width: 35%;
+    height: auto;
+  }
+
+
   /* PRICING PAGE */
   #price-table table {
     width: 100%;
@@ -1150,34 +1124,25 @@ footer {
   }
 
   /* CONTACT */
+  #contact > h1 {
+    font-size: 1.8rem; 
+
   #signup-form {
-    max-width: 50%;
+    max-width: 100%;
     max-height: 50%
   }
 
-  #contact > h1 {
-    font-size: 1.8rem; 
-}
-
-  /* COOKIES PAGE */
-  #cookie-content {
-    margin: 120px 80px 80px 80px; 
-  }
-
+ 
   /* GDPR PAGE */
   #gdpr-content {
     margin: 120px 80px 80px 80px; 
 } 
 
   /* PRIVACY POLICY */
-  main {
-    margin: 110px 0 60px;
-  }
-
   #privacy-policy {
     width: 95%; 
     margin-bottom: 60px;
-    margin-top: 90px;
+    margin-top: 240px;
   }
   
   #privacy-policy h1,
@@ -1216,12 +1181,8 @@ footer {
   }
 
   /* SHOP PAGE*/
-  .shop-giftcard img {
-    max-width: 300px;
-  }
 
-  /* SHOP PAGE */
-  #hero-pricing h1 {
+  #pricing-content h1 {
     font-size: 3.5rem;
   }
 
@@ -1229,7 +1190,7 @@ footer {
     width: 100%;
   }
 
-  /* CONTACT */
+    /* CONTACT */
   #signup-form {
     max-width: 60%;
     #contact > h1 {
@@ -1253,7 +1214,7 @@ footer {
   #privacy-policy {
     width: 95%; 
     margin-bottom: 60px;
-    margin-top: 90px;
+    margin-top: 240px;
   }
 
   /* THANK YOU PAGE */
