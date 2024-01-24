@@ -99,7 +99,6 @@ h6 {
   font-weight: 500;
 }
 
-
 /* Display menu when burger icon (checkbox) is clicked */
 #toggle:checked~.menu-container .menu {
   display: flex;
@@ -134,7 +133,6 @@ h6 {
   /* Add some space between the icon and text */
 }
 
-
 /* Decorative line under active menu item. */
 /* Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
 /* Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, mdn and by trial  */
@@ -147,7 +145,6 @@ h6 {
   width: 100%;
   background-color: #800000;
 }
-
 
 /* MAIN CONTENT */
 main {
@@ -178,10 +175,6 @@ main {
   /* Flexible height for mobile */
   margin-top: 200px;
   height: auto;
-}
-
-#hero h2{
-  color:#800000;
 }
 
 .hero-container {
@@ -255,10 +248,6 @@ main {
   justify-content: space-around;
   background-color: #f8f8f8;
   padding: 20px;
-}
-
-#services h3 {
-  color:#800000;
 }
 
 .service {
@@ -781,7 +770,7 @@ footer {
 
 /* Font Awesome icon styles */
 .fa-brands {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .footer-mid {
@@ -826,26 +815,19 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 20px;
   order: 5;
   order: 5;
 }
 
+/* Change the size of Font Awesome icons */
 .footer-left .fa-brands {
-  font-size:  20px; 
-  color: #231005;
-  line-height: 2rem;
+  font-size: 24px; /* Change this value to your desired size */
 }
 
 .footer-right .fa-brands {
-  font-size: 20px; 
-  line-height: 2rem;
-  color: #231005;
-}
-
-.footer-mid a {
-  color: #231005;
+  font-size: 24px; /* Change this value to your desired size */
 }
 
 /* Transition effect for all elements in the footer sections */
