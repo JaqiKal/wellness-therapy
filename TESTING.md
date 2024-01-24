@@ -120,133 +120,133 @@ Each device tested the site using the following browsers:
 * Google Chrome, version 121.0.6167.86 (Official Build) (64-bit)
 * Firefox, version 122.0 (64-bit)
 
-#### Landing Page
+#### Landing Page (LAP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| LaP | Logo link | Link directs the user back to the home page | Clicked logo | Home page reloads | PASS |
-| LaP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Menu link | Link to insite page (except Home item) - not opening separate tab | Clicked each menu item link, Home item to reload page | Menu item opened insite, except Home item, it reloaded page| PASS |
-| LaP | Menu hover | Menu items sisibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Book me button link |Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
-| LaP | Book me button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
-| LaP | Give a Gift button link | Link directs the user to the Shop sub page | Clicked | Shop page opened | PASS |
-| Landing Page (index) | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
-| LaP | Herbal Therapy image link | Link directs the user to the Services page | Clicked | Services page opened | PASS |
-| LaP | Herbal Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Lymphatic Drainage Therapy image link | Link directs the user to the Services page  | Clicked | Services page opened | PASS |
-| LaP | Lymphatic Drainage Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Zone Therapy image link|Link directs the user to the Services page | Clicked | Services page opened | PASS |
-| LaP | Zone Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | footer fa-brands icon social media link | Upon click take one to social media site in separate tab | Clicked | Site opened in separate tab | PASS |
-| LaP | footer fa-brands icon social media hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Footer fa-brands icon payment link | Upon click take one to social media site in separate tab | Clicked | Site opened in separate tab | PASS |
-| LaP | Footer fa-brands icon payment hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| LaP | Footer links| Upon click take one to insite sub page - not opening separate tab| Clicked | Site opened insite | PASS |
-| LaP | Footer links hover | Changeing colour when hovering over with pointer | Hover over with pointer | Visibly changing colout | PASS |
+| LAP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Home page reloads | PASS |
+| LAP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-03 | Menu link | Link to insite page (except Home item) - not opening separate tab | Clicked each menu item link, Home item to reload page | Menu item opened insite, except Home item, it reloaded page| PASS |
+| LAP-04 | Menu hover | Menu items visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-05 | Book me button link |Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
+| LAP-06 | Book me button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
+| LAP-07 | Give a Gift button link | Link directs the user to the Shop sub page | Clicked | Shop page opened | PASS |
+| LAP-08 | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
+| LAP-09 | Herbal Therapy image link | Link directs the user to the Services page | Clicked | Services page opened | PASS |
+| LAP-10 | Herbal Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-11 | Lymphatic Drainage Therapy image link | Link directs the user to the Services page  | Clicked | Services page opened | PASS |
+| LAP-12 | Lymphatic Drainage Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-13 | Zone Therapy image link|Link directs the user to the Services page | Clicked | Services page opened | PASS |
+| LAP-14 | Zone Therapy image hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-15 | footer fa-brands icon social media link | Upon click take one to social media site in separate tab | Clicked | Site opened in separate tab | PASS |
+| LAP-16 | footer fa-brands icon social media hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-17 | Footer fa-brands icon payment link | Upon click take one to social media site in separate tab | Clicked | Site opened in separate tab | PASS |
+| LAP-18 | Footer fa-brands icon payment hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| LAP-19 | Footer links| Upon click take one to insite sub page - not opening separate tab| Clicked | Site opened insite | PASS |
+| LAP-20 | Footer links hover | Changeing colour when hovering over with pointer | Hover over with pointer | Visibly changing colout | PASS |
 
-#### Services Page
+#### Services Page (SEP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| SeP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| SeP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| SeP | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| SeP | Book me button links under each image | Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
-| SeP | Give a gift button links under each image | Link directs the user to the Shop page | Clicked | Shop page opened | PASS following FAIL, detailed below|
-| SeP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| SEP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| SEP+02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| SEP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| SEP-04 | Book me button links under each image | Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
+| SEP-05 | Give a gift button links under each image | Link directs the user to the Shop page | Clicked | Shop page opened | PASS following FAIL, detailed below|
+| SEP-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Pricing Page
+#### Pricing Page (PRP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| PrP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| PrP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| PrP | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| PrP | Book a session button link |Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
-| PrP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| PRP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| PRP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| PRP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| PRP-04 | Book a session button link |Link directs the user to the Contact page | Clicked | Contact page opened | PASS |
+| PRP-05 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Contact Page
+#### Contact Page (COP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| CoP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| CoP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| CoP | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| CoP | Form - text field input check | On Contact page, attempt to "Get in contact" without entering data| Leave field empty| User is prompted to enter a value. Form is not submitted. | PASS |
-| CoP | Form - drop down menu check | Ensure every option in the dropdown menu is accessible | Selected each option | All options in the dropdown are individually selectable | PASS |
-| CoP | Form - radio button check | Verify that each radio button in a form can be selected  | Clicked each button | Each button can be selected individually | PASS |
-| CoP| Form - text message field check | Confirm that the text message field is functional | Typed in the field | Text can be entered and edited in the field | PASS |
-| CoP | "Get in Touch" Button Submission | Verify the button leads to a Thank-you page upon correctly completing the form | Completed the form | Redirected to Thank-you page successfully | PASS |
-| CoP | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
-| CoP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| COP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| COP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| COP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| COP-04 | Form - text field input check | On Contact page, attempt to "Get in contact" without entering data| Leave field empty| User is prompted to enter a value. Form is not submitted. | PASS |
+| COP-05 | Form - drop down menu check | Ensure every option in the dropdown menu is accessible | Selected each option | All options in the dropdown are individually selectable | PASS |
+| COP-06 | Form - radio button check | Verify that each radio button in a form can be selected  | Clicked each button | Each button can be selected individually | PASS |
+| COP-07 | Form - text message field check | Confirm that the text message field is functional | Typed in the field | Text can be entered and edited in the field | PASS |
+| CO0-08 | "Get in Touch" Button Submission | Verify the button leads to a Thank-you page upon correctly completing the form | Completed the form | Redirected to Thank-you page successfully | PASS |
+| COP-09 | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
+| COP-10 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Shop Page
+#### Shop Page (SPP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| SoP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| SoP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| SoP| Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| SoP | Click on Image |Link directs the user to the Thank-you page | Clicked | Thank-you page opened | PASS |
-| SoP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| SPP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| SPP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| SPP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| SPP-04 | Click on Image |Link directs the user to the Thank-you page | Clicked | Thank-you page opened | PASS |
+| SPP-05 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Thank-You Page
+#### Thank-You Page (TYP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| TyP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| TyP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| TyP | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| TyP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| TYP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| TYP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| TYP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| TYP-04| Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### 404 Page
+#### 404 Page (404P)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| 404 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| 404 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| 404 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| 404 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| 404P-01| Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| 404P-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| 404P-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| 404P-04 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Privacy Policy Page
+#### Privacy Policy Page (PPP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| PpP | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| PpP | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| PpP| Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| PpP | Page internal links | Link to external page on new tab | Clicked each item linked externally on new tab | Each item linked externally on new tab| PASS |
-| PpP | Page internal links-'visiting website'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
-| PpP | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| PPP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| PPP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| PPP-03| Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| PPP-04 | Page internal links | Link to external page on new tab | Clicked each item linked externally on new tab | Each item linked externally on new tab| PASS |
+| PPP-05 | Page internal links-'visiting website'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
+| PPP-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### Cookies Page
+#### Cookies Page (CKP)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| Cookies Page | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| Cookies Page | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| Cookies Page | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| Cookies Page | Page internal links | Link to external page on new tab | Clicked item linked externally on new tab | Item linked externally on new tab| PASS |
-| Cookies Page | Page internal links'GDPR'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
-| Cookies Page | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| CKP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| CKP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| CKP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| CKP-04 | Page internal links | Link to external page on new tab | Clicked item linked externally on new tab | Item linked externally on new tab| PASS |
+| CKP-05 | Page internal links'GDPR'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
+| CKP-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
-#### GDPR Page
+#### GDPR Page (GDPR)
 
-| Page | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| GDPR | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
-| GDPR | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| GDPR | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| GDPR | Page internal link 'Cookies' | Link to Cookies page insite | Clicked item linked insite to Cookies page | Cookies page opened insite | PASS |
-| GDPR | Page internal links'contact us'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
-| GDPR | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| GDPR-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| GDPR-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
+| GDPR-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| GDPR-04 | Page internal link 'Cookies' | Link to Cookies page insite | Clicked item linked insite to Cookies page | Cookies page opened insite | PASS |
+| GDPR-05 | Page internal links'contact us'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
+| GDPR-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
 
 ### FAILED test cases  - now fixed
-| Page | Feature | Expected Outcome | Result | Result after correction|
+| TestCase ID| Feature | Expected Outcome | Result | Result after correction|
 | ---| --- | --- | --- | --- |
-| SeP | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS
+| SeP-05 | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS
 
 --------------------
 

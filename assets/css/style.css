@@ -3,7 +3,7 @@
 
 /* Copy from LoveRunning */
 /* BASIC RESET Asterisk wildcard selector to override default styles added by the browser */
-  * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -36,7 +36,6 @@ h6 {
 .hidden-heading {
   display: none;
 }
-
 
 /* HEADER & NAVIGATION BAR */
 .navbar {
@@ -99,7 +98,6 @@ h6 {
   font-weight: 500;
 }
 
-
 /* Display menu when burger icon (checkbox) is clicked */
 #toggle:checked~.menu-container .menu {
   display: flex;
@@ -134,7 +132,6 @@ h6 {
   /* Add some space between the icon and text */
 }
 
-
 /* Decorative line under active menu item. */
 /* Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). */
 /* Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, mdn and by trial  */
@@ -147,7 +144,6 @@ h6 {
   width: 100%;
   background-color: #800000;
 }
-
 
 /* MAIN CONTENT */
 main {
@@ -173,15 +169,15 @@ main {
   color: #301301;
   text-align: center;
   /* Padding for mobile */
- /* padding: 110px 20px 10px;*/
+  /* padding: 110px 20px 10px;*/
   padding: 60px 20px;
   /* Flexible height for mobile */
   margin-top: 200px;
   height: auto;
 }
 
-#hero h2{
-  color:#800000;
+#hero h2 {
+  color: #800000;
 }
 
 .hero-container {
@@ -233,7 +229,7 @@ main {
 #btn-hero-shop:hover {
   background-color: blue;
   transform: scale(1.05);
-  color:#fff;
+  color: #fff;
 }
 
 /* Styling for the btn-hero-book button */
@@ -246,7 +242,7 @@ main {
 #btn-hero-book:hover {
   background-color: blue;
   transform: scale(1.05);
-  color: #fff; 
+  color: #fff;
 }
 
 /* Service section - LANDING PAGE */
@@ -259,7 +255,7 @@ main {
 }
 
 #services h3 {
-  color:#800000;
+  color: #800000;
 }
 
 .service {
@@ -282,12 +278,13 @@ main {
 }
 
 .service img:hover {
-  transform: scale(1.5); /* Scale the image to 110% when hovered */
+  transform: scale(1.5);
+  /* Scale the image to 110% when hovered */
 }
 
 .service h3 a {
   text-decoration: none;
-  color:rgba(48, 19, 1, 1)
+  color: rgba(48, 19, 1, 1)
 }
 
 .service h3 a:hover {
@@ -321,10 +318,10 @@ main {
   background-color: #fdf8f5;
   margin-top: 200px;
 }
-.section.top-section h2 {
-  padding: 20px  20px;
-}
 
+.section.top-section h2 {
+  padding: 20px 20px;
+}
 
 .section img {
   max-width: 80%;
@@ -409,7 +406,7 @@ main {
 .btn-services-book:hover {
   background-color: blue;
   transform: scale(1.05);
-  color: #fff; 
+  color: #fff;
 }
 
 /* Section Styling */
@@ -475,7 +472,8 @@ main {
 }
 
 .shop-giftcard img:hover {
-  transform: scale(1.05); /* Scale the image to 110% when hovered */
+  transform: scale(1.05);
+  /* Scale the image to 110% when hovered */
   /* Add drop-shadow when hovering, amended from mdn web doc - developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
   filter: drop-shadow(30px 10px 4px #0000ff);
 }
@@ -501,7 +499,6 @@ main {
 #pricing-content h1 {
   font-size: 2rem;
   margin-bottom: 0;
-  ma
 }
 
 #pricing-content p {
@@ -515,17 +512,17 @@ main {
 #price-section {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   padding: 5px;
   color: #301301;
   font-weight: 500;
-  margin-top:30;
+  margin-top: 30px;
 }
 
 #price-table {
   padding: 20px 20px 20px 20px;
-  margin-bottom: 20;
-  text-align:center;
+  margin-bottom: 20px;
+  text-align: center;
   border: 3px solid #a0a0a0;
   border-radius: 10px;
   background-color: white;
@@ -533,7 +530,7 @@ main {
 }
 
 #price-table p {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 #price-table table {
@@ -565,24 +562,24 @@ main {
 
 /* Button style generic */
 .table-button {
-  margin-top: 20px; 
+  margin-top: 20px;
   background-color: #fdf8f5;
-  color:  #800000;
+  color: #800000;
   font-style: italic;
   font-weight: 600;
-  padding: 10px 10px; 
-  border: 2px ridge  #301301;
+  padding: 10px 10px;
+  border: 2px ridge #301301;
   border-radius: 15px;
-  font-size: 16px; 
-  cursor: pointer; 
-  text-decoration: none; 
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .table-button:hover {
   background-color: blue;
   transform: scale(1.05);
-  color: #fff; 
+  color: #fff;
 }
 
 /* CONTACT PAGE */
@@ -590,7 +587,8 @@ main {
   margin-top: 250px;
 }
 
-#contact > h1, p {
+#contact>h1,
+p {
   margin: 35px;
 }
 
@@ -601,7 +599,7 @@ main {
   margin: 40px 20px 30px 10px;
 }
 
-#signup-form > p {
+#signup-form>p {
   padding-bottom: 20px;
   font-weight: bold;
   color: #800000;
@@ -612,10 +610,10 @@ main {
 #signup-form input[type="email"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   border: 1px solid #50342949;
   border-radius: 4px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-weight: bold;
 }
 
@@ -624,40 +622,39 @@ main {
 #signup-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   border: 1px solid #50342949;
   border-radius: 4px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-weight: bold;
 }
 
 /* Style radio buttons */
 .radio-btn div {
   padding: 20px 0 0 10px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 /* Style for the submit button */
 #signup-form button[type="submit"] {
-  margin-top: 20px; 
-  border: 2px ridge  #800000;
-  border-radius: 15px;  
+  margin-top: 20px;
+  border: 2px ridge #800000;
+  border-radius: 15px;
   background-color: #301301;
-  color:  white;
+  color: white;
   font-style: italic;
-  font-size: 16px; 
-  padding: 10px 20px; 
-  cursor: pointer; 
-  text-decoration: none; 
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }
- 
+
 /* Hover effect for the submit button */
 #signup-form button[type="submit"]:hover {
   background-color: #0000ff;
-  color: ##fff; 
+  color: #fff;
 }
-
 
 /* COOKIE PAGE */
 #cookie-content {
@@ -665,7 +662,7 @@ main {
   color: #301301;
   font-weight: 500;
   padding: 20px;
-  max-width: 100%; 
+  max-width: 100%;
   margin: 250px 10px 30px 10px;
   margin-bottom: 30px;
   margin-top: 250px;
@@ -678,6 +675,7 @@ main {
   padding-left: 20px;
   list-style-position: outside;
 }
+
 #cookie-content ul li {
   padding-left: 10px;
 }
@@ -687,8 +685,8 @@ main {
   background-color: #fdf8f5;
   color: #301301;
   padding: 20px;
-  max-width: 100%; 
-  margin: 260px 10px 30px 10px; 
+  max-width: 100%;
+  margin: 260px 10px 30px 10px;
 
   border: 1px solid #301301a9;
   border-radius: 10px;
@@ -699,6 +697,7 @@ main {
   padding-left: 20px;
   list-style-position: inside;
 }
+
 #gdpr-content ul li {
   padding-left: 10px;
 }
@@ -708,8 +707,8 @@ main {
   background-color: #fdf8f5;
   color: #301301;
   padding: 20px;
-  max-width: 100%; 
-  margin: 20px auto; 
+  max-width: 100%;
+  margin: 20px auto;
   margin-bottom: 20px;
   margin-top: 220px;
   border: 1px solid #301301a9;
@@ -721,6 +720,7 @@ main {
   padding-left: 20px;
   list-style-position: outside;
 }
+
 #privacy-policy ul li {
   padding-left: 5px;
 }
@@ -730,8 +730,8 @@ main {
   background-color: #fdf8f5;
   color: #301301;
   padding: 20px;
-  max-width: 100%; 
-  margin: 20px auto; 
+  max-width: 100%;
+  margin: 20px auto;
   margin-bottom: 20px;
   margin-top: 300px;
   border: 1px solid #301301a9;
@@ -743,6 +743,7 @@ main {
   padding-left: 20px;
   list-style-position: outside;
 }
+
 .thank-you ul li {
   padding-left: 5px;
 }
@@ -786,7 +787,6 @@ main {
 
 #nono-content a:hover {
   color: #000;
-
 }
 
 /* FOOTER */
@@ -857,13 +857,13 @@ footer {
 }
 
 .footer-left .fa-brands {
-  font-size:  20px; 
+  font-size: 20px;
   color: #231005;
   line-height: 2rem;
 }
 
 .footer-right .fa-brands {
-  font-size: 20px; 
+  font-size: 20px;
   line-height: 2rem;
   color: #231005;
 }
@@ -876,13 +876,11 @@ footer {
 .footer-left li:hover,
 .footer-right a:hover,
 .footer-right li:hover,
-.footer-mid a:hover 
-{
+.footer-mid a:hover {
   transform: scale(1.5);
-  color: #0000ff; 
+  color: #0000ff;
   transition: all 0.3s ease;
 }
-
 
 /* RESPONSIVE DESIGN */
 /* Medium devices (tablets, 768px and up) */
@@ -933,7 +931,7 @@ footer {
   }
 
   /* SERVICES PAGE */
-  .section.top-section  {
+  .section.top-section {
     margin-top: 180px;
   }
 
@@ -945,44 +943,44 @@ footer {
     margin-left: 130px;
     margin-right: 130px;
   }
-  
+
   /* SHOP PAGE*/
-    #shop-giftcard {
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 0 5px;
-    }
+  #shop-giftcard {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 5px;
+  }
 
-    .shop-giftcard img {
-      max-width: 250px;
-      }
+  .shop-giftcard img {
+    max-width: 250px;
+  }
 
-    .giftbox-image {
-      width: 20%;
-      height: auto;
-      display: block;
-      /* Center the image */
-      margin: 0 auto;
-    }
+  .giftbox-image {
+    width: 20%;
+    height: auto;
+    display: block;
+    /* Center the image */
+    margin: 0 auto;
+  }
 
   /* CONTACT */
   #signup-form {
     max-width: 100%;
-}
+  }
 
   /* COOKIES PAGE */
   #cookie-content {
-    margin: 250px 40px 40px 40px; 
-  } 
+    margin: 250px 40px 40px 40px;
+  }
 
   /* GDPR PAGE */
   #gdpr-content {
-  margin: 240px 30px 40px 30px; 
-} 
+    margin: 240px 30px 40px 30px;
+  }
 
   /* PRIVACY POLICY */
-    #privacy-policy {
-    width: 95%; 
+  #privacy-policy {
+    width: 95%;
     margin-bottom: 40px;
     margin-top: 230px;
   }
@@ -996,34 +994,33 @@ footer {
 
   #pricing-content h1 {
     font-size: 2.5rem;
-     }
+  }
 
-  #price-table  {
-     margin-bottom: 40px;
+  #price-table {
+    margin-bottom: 40px;
   }
 
   #price-table table {
     width: 100%;
   }
 
-    /* THANK YOU PAGE */
-    .thank-you {
-      width: 95%;
-      margin-bottom: 50px;
-      margin-top: 300px;
-    }
+  /* THANK YOU PAGE */
+  .thank-you {
+    width: 95%;
+    margin-bottom: 50px;
+    margin-top: 300px;
+  }
 
-   /* FOOTER */
+  /* FOOTER */
   footer {
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-  .footer-left,
-  .footer-right {
-    flex-direction: row;
-  }
+.footer-left,
+.footer-right {
+  flex-direction: row;
+}
 
 /* Large devices (desktops, 820px and up) */
 @media only screen and (min-width: 820px) {
@@ -1067,15 +1064,15 @@ footer {
     background-image: url('assets/images/giftbox-s-t.webp');
     background-repeat: repeat;
   }
-  
+
   /* GDPR PAGE */
   #gdpr-content {
-    margin: 230px 40px 40px 40px; 
-  } 
+    margin: 230px 40px 40px 40px;
+  }
 
   /* PRIVACY POLICY */
   #privacy-policy {
-    width: 95%; 
+    width: 95%;
     margin-bottom: 50px;
     margin-top: 240px;
   }
@@ -1091,8 +1088,6 @@ footer {
   #price-table table {
     width: 100%;
   }
-}
-
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -1123,11 +1118,10 @@ footer {
   .shop-giftcard {
     margin: 10px;
     flex: 1;
-   }
+  }
 
   .shop-giftcard img {
     max-width: 100%;
-    /* Adjust as needed */
     height: auto;
   }
 
@@ -1136,118 +1130,48 @@ footer {
     height: auto;
   }
 
-
   /* PRICING PAGE */
   #price-table table {
     width: 100%;
-    /* Adjust the width for larger screens */
   }
 
   /* CONTACT */
-  #contact > h1 {
-    font-size: 1.8rem; 
+  #contact>h1 {
+    font-size: 1.8rem;
 
-  #signup-form {
-    max-width: 100%;
-    max-height: 50%
+    /* THANK YOU PAGE */
+    .thank-you {
+      width: 95%;
+      margin-bottom: 50px;
+      margin-top: 90px;
+    }
+
+    /* 404 PAGE */
+    #nono-main {
+      margin-left: 70px;
+      margin-top: 0px;
+      padding: 5px;
+    }
   }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      /* SERVICES PAGE */
+      .section img {
+        max-width: 900px;
+      }
+
+      /* SHOP PAGE*/
+      #pricing-content h1 {
+        font-size: 3.5rem;
+      }
+
+      #price-table table {
+        width: 100%;
+      }
+
+      /* CONTACT */
+      #signup-form {
+        max-width: 60%;
 
  
-  /* GDPR PAGE */
-  #gdpr-content {
-    margin: 120px 80px 80px 80px; 
-} 
-
-  /* PRIVACY POLICY */
-  #privacy-policy {
-    width: 95%; 
-    margin-bottom: 60px;
-    margin-top: 240px;
-  }
-  
-  #privacy-policy h1,
-  #privacy-policy p {
-    /* Larger font size for larger screens */
-    font-size: 1.2rem; 
-
-  /* Narrower content for larger screens */
-  #privacy-policy {
-    max-width: 95%; 
-    margin-bottom: 10px;
-    margin-top: 80px;
-  }
-
-  /* THANK YOU PAGE */
-  .thank-you {
-    width: 95%;
-    margin-bottom: 50px;
-    margin-top: 90px;
-  }
-
-  /* 404 PAGE */
-  #nono-main {
-    margin-left: 70px;
-    margin-top: 0px;
-    padding: 5px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  /* SERVICES PAGE */
-  .section img {
-    max-width: 900px;
-  }
-
-  /* SHOP PAGE*/
-
-  #pricing-content h1 {
-    font-size: 3.5rem;
-  }
-
-  #price-table table {
-    width: 100%;
-  }
-
-    /* CONTACT */
-  #signup-form {
-    max-width: 60%;
-    #contact > h1 {
-    font-size: 1.8rem; 
-  }
-
-  #contact > p {
-      font-size: 1.8rem; 
-}
-  /* COOKIES PAGE */
-  #cookie-content {
-    margin: 150px 100px 100px 100px; 
-  }
-
-  /* GDPR PAGE */
-  #gdpr-content {
-    margin: 150px 100px 100px 100px; 
-} 
-
-  /* PRIVACY POLICY */
-  #privacy-policy {
-    width: 95%; 
-    margin-bottom: 60px;
-    margin-top: 240px;
-  }
-
-  /* THANK YOU PAGE */
-  .thank-you {
-    width: 95%;
-    margin-bottom: 50px;
-    margin-top: 90px;
-  }
-
-  /* 404 PAGE */
-  #nono-main {
-    margin-left: 120px;
-    margin-top: 0px;
-    padding: 5px;
-  }
-}

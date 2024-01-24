@@ -1,9 +1,7 @@
 # Manus Herba - Herbal, Lymphatic drainage and Zone therapy website
 
-[The website shown on a variety of screen sizes](documentation/doc-image/amiresponsive-wellness-therapy.png)
-*add an image of the finished site her Use [amiresponsive](https://ui.dev/amiresponsive?url=https://jaqikal.github.io/wellness-therapy/).*
+![The website shown on a variety of screen sizes](documentation/doc-image/amiresponsive.png)
 
- <!-- [The website XX](url via git) -->
 Visit the deployed site: [Manus Herba](https://jaqikal.github.io/wellness-therapy/) 
 
 **by Jacqueline Kalmár**
@@ -100,13 +98,11 @@ I've used:
 
 ### Typography
 
-
 * Google Fonts was used to import the chosen fonts for use in the site. I used [Google Fonts](https://fonts.google.com/) as it doesn't require you to download the font.
 * I've included all weights to have the possibility of variation.
 * My choice was based on readability and that I find the fonts to convey a neutral, easy to read feeling.
-* ![Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website=roboto) for headings H1-H6 & paragraph.
-* ![Open sans](https://fonts.google.com/?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website&query=Open+sans) for body text.
-
+* [Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website=roboto) for headings H1-H6 & paragraph.
+* [Open sans](https://fonts.google.com/?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website&query=Open+sans) for body text.
 
 ### Imagery
 
@@ -114,8 +110,8 @@ Images used on this website have been sourced from free online resources, either
 
 ### Wireframes
 
-[Wireframes](documentation/wireframes/pp1-wireframe.png) were created for mobile, tablet and desktop using 'Balsamiq'
-
+Wireframese created for mobile, tablet and desktop using 'Balsamiq'
+![Wireframes](documentation/wireframes/pp1-wireframe.png) 
 
 ## Structure & Features
 
@@ -303,6 +299,13 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 ### Testing User Stories
 
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+### Unolved Bugs
+
+| No | Bug | How I solved the issue |
+| :--- | :--- | :--- |
+| [1] | In Chrome browser & MS Edge the bottom rigth corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| Not Solved |
+
 
 ### Solved Bugs
 
