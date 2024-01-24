@@ -34,23 +34,54 @@ I also used the following websites to test responsiveness:
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](testing/w3/w3-index.png) - Passed.
-* [game.html](testing/w3/w3-game.png) - No errors, 1 Warning. The warning is for an empty H2 tag. This is where the question is inserted using jQuery.
-* [highscores.html](testing/w3/w3-highscores.png) - Passed.
-* [404.html](testing/w3/w3-404.png) - Passed.
-* [500.html](testing/w3/w3-500.png) - Passed.
-
-* [style.css](testing/w3/w3-css.png) - Passed, no errors found.
+* [404.htm](/documentation/doc-image/w3-404.png) - Passed
+* [contact.html](/documentation/doc-image/w3-contact.png) - Passed
+* [cookies.html](/documentation/doc-image/w3-css.png) - Passed
+* [style.css](/documentation/doc-image/w3-css.png) - Passed
+* [gdpr.html](/documentation/doc-image/w3-gdpr.png) - Passed
+* [index.html](/documentation/doc-image/w3-index.png) - Passed
+* [pricing.html](/documentation/doc-image/w3-pricing.png) - Passed
+* [privacy-policy.html](/documentation/doc-image/w3-privacy-policy.png) - Passed
+* [services.html](/documentation/doc-image/w3-services.png) - Passed
+* [shop.html](/documentation/doc-image/w3-shop.png) - Passed
+* [thank-you.html](/documentation/doc-image/w3-ty.png) - Passed
 
 - - -
 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+This was done only on Desktop
 
-### Desktop Results
+All but one page is in the green, achieving a scores from 92  till 100
+Main issues are related to performance.
 
-All pages of the site are achieving a score of 100 across the 4 categories.
+Those pages with scores of 92 and up:
+*  Form elements do not have associated labels causes accessibility issues.
+*  Badly sized images.
+*  Unused code.
+
+One with score 76 on perormance is the page with all the image problems. This draws down all the other performace rates on the other pages.
+*  Image elements do not have explicit width and height.
+*  Video: some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required.
+*  LCP is to hig (or slow), LCP measures when the largest content element in the viewport is rendered to the screen.
+*  Form elements do not have associated labels cause accessibility issues.
+
+![404.htm](/documentation/doc-image/w3-404.png)
+![contact.html](/documentation/doc-image/w3-contact.png) 
+![cookies.html](/documentation/doc-image/w3-css.png) 
+![style.css](/documentation/doc-image/w3-css.png) 
+![gdpr.html](/documentation/doc-image/w3-gdpr.png)
+![index.html](/documentation/doc-image/w3-index.png) 
+![pricing.html](/documentation/doc-image/w3-pricing.png) 
+![privacy-policy.html](/documentation/doc-image/w3-privacy-policy.png)
+![services.html](/documentation/doc-image/w3-services.png)
+![shop.html](/documentation/doc-image/w3-shop.png)
+![thank-you.html](/documentation/doc-image/w3-ty.png)
+
+
+Each page is achieving a score of 100 for the last three categories. The performance category is achieving a score of 98 for the first three pages and a score of 99 on the 404 & 500 page.
+
 
 ![index.html](testing/lighthouse/lighthouse-desktop-index.webp)
 
@@ -62,20 +93,6 @@ All pages of the site are achieving a score of 100 across the 4 categories.
 
 ![500.html](testing/lighthouse/lighthouse-desktop-500.png)
 
-### Mobile Results
-
-Each page is achieving a score of 100 for the last three categories. The performance category is achieving a score of 98 for the first three pages and a score of 99 on the 404 & 500 page.
-
-![index.html](testing/lighthouse/lighthouse-mobile-index.webp)
-
-![game.html](testing/lighthouse/lighthouse-mobile-game.webp)
-
-![highscores.html](testing/lighthouse/lighthouse-mobile-highscores.webp)
-
-![404.html](testing/lighthouse/lighthouse-mobile-404.webp)
-
-![500.html](testing/lighthouse/lighthouse-mobile-500.png)
-
 - - -
 
 ## MANUAL TESTING
@@ -86,39 +103,34 @@ Each page is achieving a score of 100 for the last three categories. The perform
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| I want to take part in a pub quiz online and improve my general knowledge. I want to be able to play at any time, anywhere. | The Quiz Arms pulls general knowledge quiz questions from a large variety of topics, much like a pub quiz would do. The site is available for use whenever is convenient to the user. |
-| I want the site to be responsive to my device. | I have developed the site with responsiveness in mind. |
-| I want the site to be easy to navigate. | Buttons are used throughout the site for navigation, much like a mobile app. As the site is like a mobile app - I decided that I didn't want to add a navigation bar or footer, as these would make the site look more like a traditional webpage. The page title also acts as a link to the home page.  |
+| I want to easily find information about the different therapies offered. | The website have information snippets on landing page and links to Services page where the therapy forms are presented. Clear call to action button to mildly steer visitor towards either buying gift card or book an appointment. |
+| I need to clearly understand how to get in contact and or book an appointment. | Call to action button on all pages. Though this is an area that definitely can be improved |
 
 `Returning Visitors`
 
 |  Goals | How are they achieved? |
 | :--- | :--- |
-| I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site. | Users are able to select their own level of difficulty before the game begins. Once they have played they are free to select a different level of difficulty for subsequent games. |
+| I want to easily purchase gift cards, having already experienced the benefits of the therapies myself. | Call to action button on  landing page is the first thin that meets a visitor. In future improvement I mention 'favourite' button, a way to bookmark what interest you on thre site. |
 
 `Frequent Visitors`
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| I want to be able to adjust the difficulty level to keep improving my knowledge. | Users are able to select their own level of difficulty before the game begins. Once they have played they are free to select a different level of difficulty for subsequent games. |
-| I want to be able to log my high scores to see how I am performing. | Users of the site are able to log their high scores to the high scores page. The top ten results will be displayed. |
+| I want a simple way to provide feedback or suggestions.| In current version of the site our visitor can give their feedback on contact page. In coming versions of site a dedicated form and page will be created. |
 
 - - -
 
 ### Full Testing
 
-Full testing was performed on the following devices:
+Testing was performed on the following devices:
 
 * Laptop:
     * Lenovo Legion T7 - i9 | 32GB | 2TB 
 * Screen:
-   * Samsung Odyssey G3 / 27" / VA / 1920 x 1080 / 144 Hz / 1ms / 
    * Samsung Odyssey G3 / 27" / VA / 1920 x 1080 / 165 Hz / 1ms / 
 * Mobile Devices:
     * Samsung Galaxy S20
-    * iPhone 12 pro.
-
-
+  
 Each device tested the site using the following browsers:
 
 * Google Chrome, version 121.0.6167.86 (Official Build) (64-bit)
@@ -181,9 +193,10 @@ Each device tested the site using the following browsers:
 | COP-05 | Form - drop down menu check | Ensure every option in the dropdown menu is accessible | Selected each option | All options in the dropdown are individually selectable | PASS |
 | COP-06 | Form - radio button check | Verify that each radio button in a form can be selected  | Clicked each button | Each button can be selected individually | PASS |
 | COP-07 | Form - text message field check | Confirm that the text message field is functional | Typed in the field | Text can be entered and edited in the field | PASS |
-| CO0-08 | "Get in Touch" Button Submission | Verify the button leads to a Thank-you page upon correctly completing the form | Completed the form | Redirected to Thank-you page successfully | PASS |
-| COP-09 | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
-| COP-10 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| COP-08 | Form - text message field check | Preventing user from submitting only whitespace in the form | Typed in the field | space, tab etc can be entered. | FAIL |
+| CO0-09 | "Get in Touch" Button Submission | Verify the button leads to a Thank-you page upon correctly completing the form | Completed the form | Redirected to Thank-you page successfully | PASS |
+| COP-10 | Give a Gift button hover | Visibly scaling up and changing colour when hovering over with pointer | Hover over with pointer | Visibly scaling up and changing colour | PASS |
+| COP-11 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
 #### Shop Page (SPP)
 
@@ -208,7 +221,7 @@ Each device tested the site using the following browsers:
 
 | TestCase ID | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | ---| --- | --- | --- | --- |--- |
-| 404P-01| Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
+| 404P-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
 | 404P-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
 | 404P-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
 | 404P-04 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
@@ -219,7 +232,7 @@ Each device tested the site using the following browsers:
 | ---| --- | --- | --- | --- |--- |
 | PPP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
 | PPP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
-| PPP-03| Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
+| PPP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
 | PPP-04 | Page internal links | Link to external page on new tab | Clicked each item linked externally on new tab | Each item linked externally on new tab| PASS |
 | PPP-05 | Page internal links-'visiting website'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
 | PPP-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
@@ -246,18 +259,18 @@ Each device tested the site using the following browsers:
 | GDPR-05 | Page internal links'contact us'| Links to Thank-you page insite | Clicked | Thank-you page opened| PASS |
 | GDPR-06 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
+### Failed  test cases  - now FIXED
 
-### FAILED test cases  - now fixed
 | TestCase ID| Feature | Expected Outcome | Result | Result after correction|
 | ---| --- | --- | --- | --- |
-| SeP-05 | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS
+| SEP-05 | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS
+
+### UNSOLVED Bugs
+
+| TestCase ID| Feature | Expected Outcome | Result | Result after correction|
+| ---| --- | --- | --- | --- |
+| COP-08 | Form - text message field check           | Preventing user from submitting only whitespace in the form | To address the issue I applied the pattern attribute to each relevant input field.  "input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.". This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html.| NOT SOLVED | 
+| Observation post test |  NAVBAR | NAvbar and footer corners not hidden | In Chrome browser & MS Edge the bottom right corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| NOT SOLVED | 
+| Observation post test| Bulleted list | Normal formatting | On 1920px wide screen bulleted list has strange formatting | NOT SOLVED | 
 
 --------------------
-
-1; I want to easily find information about the different therapies offered.
-
-2; I need to clearly understand how to get in contact and or book an appointment.
-
-3; I want to easily purchase gift cards, having already experienced the benefits of the therapies myself.
-
-4; I want a simple way to provide feedback or suggestions.

@@ -59,7 +59,8 @@ h6 {
 }
 
 .navbar-logo img {
-  width: 150px;
+  width: 35%;
+  height: auto;
 }
 
 /* Navbar logo hover effect */
@@ -738,8 +739,8 @@ main {
 }
 
 .thank-you ul {
-  padding-left: 20px;
-  list-style-position: inside;
+  padding-left: 10px;
+  list-style-position: outside;
 }
 
 .thank-you ul li {
@@ -1153,7 +1154,7 @@ footer {
 
     /* THANK YOU PAGE - min992 */
       .thank-you {
-        width: 95%;
+        width: 90%;
         margin: 250px 20px 50px 20px;
       }
     
