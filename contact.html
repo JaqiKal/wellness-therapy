@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +22,7 @@
     <!-- Header & Navigation -->
     <header>
       <nav class="navbar">
-        
+
         <!-- Logo Section -->
         <div class="navbar-logo">
           <a href="index.html">
@@ -35,7 +36,7 @@
 
         <!-- Menu Items -->
         <!-- Decorative line under active menu item. Class active selector with border-bottom did not function as wished, the line was much wider than the menu item(text). Found an answer on slack that I modified with the help of reading up on pseudo elements on w3school, Mdn and by trial and error - [https]stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item -->
-                  <div class="menu-container">
+        <div class="menu-container">
           <div class="menu">
             <a href="index.html" aria-label="Button for Home section"><i class="fa-solid fa-house" style="font-size: 20px;"></i>Home</a>
             <a href="services.html" aria-label="Button for Herbal Therapy section"><i class="fa-solid fa-hand-holding-heart" style="font-size: 20px;"></i>Services</a>
@@ -48,117 +49,119 @@
     </header>
     <!-- Main content -->
     <main>
-          <section>
-            <div id="contact">
-                <div id="contact-content">
-                  <h1>Welcome!</h1>
-                  <p> At Manus Herba, we conduct a thorough assessment during the consultation. This includes reviewing your medical history, discussing your existing dietary and lifestyle practices, and checking if you are on any medications or supplements.</p>
-                  <p>Gaining a comprehensive understanding of the potential causes of your illness is crucial for us. This knowledge allows us to formulate the most suitable therapy tailored to your specific health requirements and objectives.</p>
-                  <p>A consultation begins with you receiving a questionnaire to fill out and send to me about a week before the visit. In order to find the cause of your problems and recommend therapy that can alleviate your specific issues, I need answers to some questions about you. When we meet, the consultation takes about an hour, and you will take home my written advice for you.</p>
-                  <p><strong>Get in touch with me through the form!</strong></p>
-                  <p><sup>*</sup> Required field.</p>
-                </div>      
-                <form id="signup-form" method="GET" action="thank-you.html">
-                    <h1>Let's meet!</h1>
-                    <p>Fill out the form below </p>
-                    <label for="fname">First name<sup>*</sup>:</label>
-                    <!-- To not letting the user to be able to put whitespace at the beginning/end of a textinput. With the courtesy of
+      <section>
+        <div id="contact">
+          <div id="contact-content">
+            <h1>Welcome!</h1>
+            <p> At Manus Herba, we conduct a thorough assessment during the consultation. This includes reviewing your medical history, discussing your existing dietary and lifestyle practices, and checking if you are on any medications or supplements.</p>
+            <p>Gaining a comprehensive understanding of the potential causes of your illness is crucial for us. This knowledge allows us to formulate the most suitable therapy tailored to your specific health requirements and objectives.</p>
+            <p>A consultation begins with you receiving a questionnaire to fill out and send to me about a week before the visit. In order to find the cause of your problems and recommend therapy that can alleviate your specific issues, I need answers to some questions about you. When we meet, the consultation takes about an hour, and you will take home my written advice for you.</p>
+            <p><strong>Get in touch with me through the form!</strong></p>
+            <p><sup>*</sup> Required field.</p>
+          </div>
+          <form id="signup-form" method="GET" action="thank-you.html">
+            <h1>Let's meet!</h1>
+            <p>Fill out the form below </p>
+            <label for="fname">First name<sup>*</sup>:</label>
+            <!-- To not letting the user to be able to put whitespace at the beginning/end of a textinput. With the courtesy of
                       (stackoverflow.com/questions/13766015/is-it-possible-to-configure-a-required-field-to-ignore-white-space) -->
-                    <input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">           
-                    <label for="lname">Last name<sup>*</sup>:</label>
-                    <input type="text" name="lname" id="lname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">            
-                    <label for="phone">Phone<sup>*</sup>:</label>
-                    <input type="text" name="phone" id="phone" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">            
-                    <label for="email">E-mail<sup>*</sup>:</label>
-                    <input type="email" name="email" id="email" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">               
-                    <div>
-                        <h3>How do you wish to be contacted?</h3>
-                        <label for="opt">Please select an option<sup>*</sup></label>
-                        <select id="contact-option" name="contact-option" required>
-                            <option value="by-phone">Please call me!</option>
-                            <option value="by-email">Please send an e-mail!</option>
-                        </select>
-                    </div>             
-                    <fieldset class="radio-btn">
-                        <legend>Select your therapy form or choose Other to give feed-back<sup>*</sup>:</legend>
-                        <div>
-                            <input type="radio" name="therapy-type" id="herbal" value="herbal" required checked>
-                            <label for="herbal">Herbal therapy</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="therapy-type" id="lymphatic" value="lymphatic" required>
-                            <label for="lymphatic">Lymphatic therapy</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="therapy-type" id="zone" value="zone" required>
-                            <label for="zone">Zone therapy</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="therapy-type" id="other" value="Other" required>
-                          <label for="zone">Other</label>
-                      </div>
-                    </fieldset>     
-                    <div>
-                        <h3>Do you wish to combine therapy types, or do you want to give feed-back/suggestions to me - Please do write to me!</h3>
-                        <label for="msg">Please write a message:</label>
-                        <textarea name="msg" id="msg" cols="40" rows="5"></textarea>
-                    </div>
-                    <div class="button-container">
-                      <button type="submit" name="send" id="send-btn">Let's get in touch!</button>
-                    </div>
-                </form>
+            <input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">
+            <label for="lname">Last name<sup>*</sup>:</label>
+            <input type="text" name="lname" id="lname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">
+            <label for="phone">Phone<sup>*</sup>:</label>
+            <input type="text" name="phone" id="phone" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">
+            <label for="email">E-mail<sup>*</sup>:</label>
+            <input type="email" name="email" id="email" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces.">
+            <div>
+              <h3>How do you wish to be contacted?</h3>
+              <label for="contact-option">Please select an option<sup>*</sup></label>
+              <select id="contact-option" name="contact-option" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="by-phone">Please call me!</option>
+                <option value="by-email">Please send an e-mail!</option>
+              </select>
+            </div>
+            <fieldset class="radio-btn">
+              <legend>Select your therapy form or choose Other to give feed-back<sup>*</sup>:</legend>
+              <div>
+                <input type="radio" name="therapy-type" id="herbal" value="herbal" required checked>
+                <label for="herbal">Herbal therapy</label>
               </div>
-        </section>
-    </main>  
+              <div>
+                <input type="radio" name="therapy-type" id="lymphatic" value="lymphatic" required>
+                <label for="lymphatic">Lymphatic therapy</label>
+              </div>
+              <div>
+                <input type="radio" name="therapy-type" id="zone" value="zone" required>
+                <label for="zone">Zone therapy</label>
+              </div>
+              <div>
+                <input type="radio" name="therapy-type" id="other" value="Other" required>
+                <label for="zone">Other</label>
+              </div>
+            </fieldset>
+            <div>
+              <h3>Do you wish to combine therapy types, or do you want to give feed-back/suggestions to me - Please do write to me!</h3>
+              <label for="msg">Please write a message:</label>
+              <textarea name="msg" id="msg" cols="40" rows="5"></textarea>
+            </div>
+            <div class="button-container">
+              <button type="submit" name="send" id="send-btn">Let's get in touch!</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-left">
-          <ul id="social-networks">
-              <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
-                  <i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
-                  <i class="fa-brands fa-youtube-square"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
-                  <i class="fa-brands fa-instagram"></i></a>
-              </li>
-          </ul>
+        <ul id="social-networks">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+              <i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+              <i class="fa-brands fa-youtube-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+              <i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
 
-          <div class="footer-mid">
-              <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
-              <a href="privacy-policy.html" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
-          </div>
-
-          <div class="footer-right">
-            <ul id="payment-options">
-                <li>
-                  <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
-                    <i class="fa-brands fa-cc-mastercard"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
-                    <i class="fa-brands fa-cc-visa"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
-                    <i class="fa-brands fa-cc-paypal"></i></a>
-                </li>
-              </ul>
-          </div>
-
-          <!-- Horizontal rule for separation -->
-          <hr class="footer-divider">
-          <div class="footer-bottom">
-            <p>
-              This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
-          </div>
+        <div class="footer-mid">
+          <a href="cookies.html" id="footer-cookie" aria-label="Button for Cookies information">Cookies</a>
+          <a href="privacy-policy.html" id="footer-privacy" aria-label="Button for Privacy polcy information">Privacy Policy</a>
         </div>
+
+        <div class="footer-right">
+          <ul id="payment-options">
+            <li>
+              <a href="https://www.mastercard.com" target="_blank" rel="noopener" aria-label="Pay securely with Mastercard (opens in a new tab)">
+                <i class="fa-brands fa-cc-mastercard"></i></a>
+            </li>
+            <li>
+              <a href="https://www.visa.com/" target="_blank" rel="noopener" aria-label="Pay securely with VISA (opens in a new tab)">
+                <i class="fa-brands fa-cc-visa"></i></a>
+            </li>
+            <li>
+              <a href="https://www.paypal.com/" target="_blank" rel="noopener" aria-label="Pay securely with PayPal (opens in a new tab)">
+                <i class="fa-brands fa-cc-paypal"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Horizontal rule for separation -->
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <p>
+            This site was developed as an educational project for the Full Stack Software Development diploma program at the Code Institute.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
   </body>
+
 </html>

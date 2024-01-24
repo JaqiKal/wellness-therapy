@@ -128,9 +128,8 @@ h6 {
 
 /* FontAwesome Icons in Menu */
 .menu a i.fa-solid {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-right: 10px;
-  /* Add some space between the icon and text */
 }
 
 /* Decorative line under active menu item. */
@@ -587,7 +586,7 @@ main {
 
 #contact #contact-content h1, p {
   margin: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 #signup-form {
@@ -595,7 +594,7 @@ main {
   border: 2px solid #301301;
   border-radius: 15px;
   margin: 40px auto; /* Center the form */
-  max-width: 500px; /* Set a maximum width for larger screens */
+  max-width: 400px; /* Set a maximum width for larger screens */
 }
 
 #signup-form > p {
@@ -730,7 +729,7 @@ main {
   color: #301301;
   padding: 20px;
   max-width: 100%;
-  margin: 20px auto;
+  margin: 0 30px auto;
   margin-bottom: 20px;
   margin-top: 300px;
   border: 1px solid #301301a9;
@@ -740,7 +739,7 @@ main {
 
 .thank-you ul {
   padding-left: 20px;
-  list-style-position: outside;
+  list-style-position: inside;
 }
 
 .thank-you ul li {
@@ -1011,8 +1010,7 @@ footer {
   /* THANK YOU PAGE - min768  */
   .thank-you {
     width: 95%;
-    margin-bottom: 50px;
-    margin-top: 300px;
+    margin: 250px 20px 50px 20px;
   }
 
   /* FOOTER - min768 */
@@ -1132,7 +1130,7 @@ footer {
   }
 
   .giftbox-image {
-    width: 35%;
+    width: 15%;
     height: auto;
   }
 
@@ -1154,10 +1152,11 @@ footer {
   }
 
     /* THANK YOU PAGE - min992 */
-    .thank-you {
-      width: 95%;
-      margin-bottom: 50px;
-      margin-top: 90px;
+      .thank-you {
+        width: 95%;
+        margin: 250px 20px 50px 20px;
+      }
+    
     }
 
     /* 404 PAGE - min992*/
@@ -1166,7 +1165,6 @@ footer {
       margin-top: 0px;
       padding: 5px;
     }
-}
 
     /* Extra large devices (large desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
@@ -1185,7 +1183,14 @@ footer {
       }
 
       /* CONTACT - min1200 */
+      #contact #contact-content h1, p {
+        margin: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+
       #signup-form {
         max-width: 60%;
       }
+      
     }

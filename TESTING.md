@@ -22,6 +22,10 @@ During development I made use of google developer tools to ensure everything was
 
 I have gone through each page using google chrome developer tools & Firefox inspector tool to ensure that each page is responsive on a variety of different screen sizes and devices.
 
+I also used the following websites to test responsiveness:
+* [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fjaqikal.github.io%2Fwellness-therapy%2F)
+* [Am I Responsive](https://ui.dev/amiresponsive?url=https://jaqikal.github.io/wellness-therapy/)
+
 - - -
 
 ## AUTOMATED TESTING

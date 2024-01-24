@@ -215,6 +215,7 @@ While developing the website, I've carefully focused on maximizing its accessibi
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 * [Google Dev Tools](https://developers.google.com/web/tools)- To troubleshoot and test features, solve issues with responsiveness and styling.
 * [Markup Validation Service](https://validator.w3.org/) - Used to check code ensuring that my HTML is error-free and adheres to the latest web standards.
+* [Responsinator](http://www.responsinator.com/) -  Used to test the sites resposiveness on mobile viewport.
 * [Shields.io](https://shields.io/) - To add badges to the README.
 * [Tiny PNG](https://tinypng.com/) - To compress images.
 * [Visual Studio Code](https://code.visualstudio.com/) - a free and open-source code editor
@@ -263,6 +264,8 @@ To clone the zone-lymphatic-therapy repository:
 
 All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) [and W3C HTML Validator](https://validator.w3.org/)
 
+
+
 ### HTML validation
 
 * *Add screenshot of HTML checker result per page*
@@ -294,8 +297,6 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 
 ### Known bugs
 
-*To be added!*
-
 ### Testing User Stories
 
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
@@ -306,6 +307,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | :--- | :--- | :--- |
 | [1] | In Chrome browser & MS Edge the bottom rigth corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| Not Solved |
 | [2] | To address the issue of preventing users from submitting only white spaces in the form in Contact page, I applied the pattern attribute to each relevant input field. [ <input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces."> ]. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html.| Not Solved |
+| [3] | To change the size of the menu icons [fa-solid fa-house], this code didn't work [.menu a. i.fa-solid {font-size: 30px !important;}] regardless of how I applied it. So, I had to resort to an emergency solution by setting the font size in the a href directly." This approach, while not ideal in terms of best practices for separating content and style, can be a practical short-term solution when CSS adjustments fail to produce the desired result. | Not Solved |
 
 
 ### Solved Bugs
