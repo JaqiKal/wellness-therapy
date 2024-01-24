@@ -168,7 +168,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/ocean-banner.webp") no-repeat center center/cover;
+  background: url("../images/pale-ocean.webp") no-repeat center center/cover;
   background-position: center;
   color: #301301;
   text-align: center;
@@ -231,8 +231,9 @@ main {
 }
 
 #btn-hero-shop:hover {
-  background-color: #5ae25f;
+  background-color: blue;
   transform: scale(1.05);
+  color:#fff;
 }
 
 /* Styling for the btn-hero-book button */
@@ -243,9 +244,9 @@ main {
 }
 
 #btn-hero-book:hover {
-  background-color: #5ae25f;
+  background-color: blue;
   transform: scale(1.05);
-  color: #301301; 
+  color: #fff; 
 }
 
 /* Service section - LANDING PAGE */
@@ -276,8 +277,20 @@ main {
   height: auto;
   object-fit: cover;
   /* Set a maximum height for consistency */
-  max-height: 200px;
+  max-height: 250px;
   border-radius: 50px;
+}
+
+.service img:hover {
+  transform: scale(1.5); /* Scale the image to 110% when hovered */
+}
+
+.service h3 a {
+  text-decoration: none;
+}
+
+.service h3 a:hover {
+  color: blue;
 }
 
 /* End-note section in LANDING PAGE */
@@ -380,8 +393,9 @@ main {
 }
 
 .btn-services-shop:hover {
-  background-color: #5ae25f;
+  background-color: blue;
   transform: scale(1.05);
+  color: #fff;
 }
 
 /* Styling for the btn-services-book button */
@@ -392,9 +406,9 @@ main {
 }
 
 .btn-services-book:hover {
-  background-color: #5ae25f;
+  background-color: blue;
   transform: scale(1.05);
-  color: #301301; 
+  color: #fff; 
 }
 
 /* Section Styling */
@@ -461,8 +475,8 @@ main {
 
 .shop-giftcard img:hover {
   transform: scale(1.05); /* Scale the image to 110% when hovered */
-  /* Add colour when hovering, amended from mdn web doc - developer.mozilla.org/en-US/docs/Web/CSS/filter */
-  filter: brightness(1.1) sepia(0.3) saturate(1.5) hue-rotate(90deg);
+  /* Add drop-shadow when hovering, amended from mdn web doc - developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+  filter: drop-shadow(30px 10px 4px #0000ff);
 }
 
 .giftbox-image {
@@ -565,9 +579,9 @@ main {
 }
 
 .table-button:hover {
-  background-color: #5ae25f;
+  background-color: blue;
   transform: scale(1.05);
-  color: #301301; 
+  color: #fff; 
 }
 
 /* CONTACT PAGE */
@@ -639,8 +653,8 @@ main {
  
 /* Hover effect for the submit button */
 #signup-form button[type="submit"]:hover {
-  background-color: #5ae25f;
-  color: #301301; 
+  background-color: #0000ff;
+  color: ##fff; 
 }
 
 
@@ -764,12 +778,14 @@ main {
 }
 
 #nono-content a {
-  color: #301301;
-  text-decoration: underline;
+  color: #0000ff;
+  text-decoration: none;
+  text-decoration: none;
 }
 
 #nono-content a:hover {
-  color: #5ae25f;
+  color: #000;
+
 }
 
 /* FOOTER */
@@ -855,22 +871,14 @@ footer {
   color: #231005;
 }
 
-/* Transition effect for all elements in the footer sections */
-.footer-left a:hover, .footer-left li:hover {
-  transform: scale(1.1);
-  color: #5ae25f; 
-  transition: all 0.3s ease;
-}
-
-.footer-mid a:hover {
-  transform: scale(1.1);
-  color: #5ae25f; 
-  transition: all 0.3s ease;
-}
-
-.footer-right a:hover, .footer-right li:hover {
-  transform: scale(1.1);
-  color: #5ae25f; 
+.footer-left a:hover,
+.footer-left li:hover,
+.footer-right a:hover,
+.footer-right li:hover,
+.footer-mid a:hover 
+{
+  transform: scale(1.5);
+  color: #0000ff; 
   transition: all 0.3s ease;
 }
 

@@ -334,7 +334,7 @@ Solved Bugs
 
 * I sought a straightforward method to enhance the footer and header and discovered an approach for creating rounded corners. This technique, inspired by an example from [w3schools](https://www.w3schools.com/css/css3_borders.asp) involves using CSS3 properties for borders. This has effectively given a more polished look to these website sections.
 
-* I wanted to highlight the giftcard images in shop with something more than scaling effect. Added colour when hovering, amended from [mdn web doc](https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
+* I wanted to highlight the giftcard images in shop with something more than scaling effect up hover. Added dropshadow when hovering, amended from [mdn web doc](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow).
 
 * [Favicon.io](https://favicon.io/favicon-converter/): Used to create the site Favicon and provided the code in the head of all pages.
 
