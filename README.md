@@ -114,7 +114,7 @@ Images used on this website have been sourced from free online resources, either
 
 ### Wireframes
 
-![Wireframes](documentation/wireframes/pp1-wireframe.png) were created for mobile, tablet and desktop using 'Balsamiq'
+[Wireframes](documentation/wireframes/pp1-wireframe.png) were created for mobile, tablet and desktop using 'Balsamiq'
 
 
 
@@ -133,7 +133,7 @@ The site has a simple structure made up of 7 pages plus 3 additional subpages.
 * There are also two additional subpages:
   * GDPR
   * A thank you page for when a user has submitted a form.
-  * A 404 page for when user land on a non-existent peage.
+  * A 404 page for when user land on a non-existent page.
 
 ### General features on each page
 
@@ -155,18 +155,20 @@ All Pages on the website are responsive and have:
   * *add  screenshot*
 * Home page / landing page
   * *add  screenshot*
-* Zone Therapy content page
+* Service page
   * *add  screenshot*
-* Lymphatic drainage therapy content page
+* Shop page
   * *add  screenshot*
-* Booking form
-  * *add  screenshot*
-* Shop
-  * *add  screenshot*
+* Pricing page
+  * *add screenshot*
+* Contact page
+  *add screenshot
 * Privacy policy
   * *add  screenshot*
 * Cookies
   * *add  screenshot*
+* GDPR page
+ *  *add screenshot*
 * A thank you page for when a user has submitted a form.
   * *add  screenshot*
 * A 404 page for when user land on a non-existent peage.
@@ -188,10 +190,10 @@ Possible future implemantaions would be to 'shopify' the site, with all that com
 While developing the website, I've carefully focused on maximizing its accessibility. This goal was achieved through the following methods:
 
 * [Wave Web Accessibility Evaulation Tool](https://wave.webaim.org/)
-* Using semantic HTML.
-* Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
-* Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
-* Ensuring that there is a sufficient colour contrast throughout the site.
+  * Using semantic HTML.
+  * Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
+  * Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
+  * Ensuring that there is a sufficient colour contrast throughout the site.
 
 ---
 
@@ -270,20 +272,20 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 
 * *Add screenshot of HTML checker result per page*
 
-* CSS Validation
+### CSS Validation
 
 * *Add screenshot of HTML checker result per page*
 
-* Accessibility
+### Accessibility
 * *I ran the site through the Wave Web Accessibility Evaulation Tool. The tool did not raise specific isssues, it pointed att good practice. Though after the the test I did make the buttons larger and cose a darker color for the fa-brands icons in the footer.
 
-* Performance
+### Performance
 * *I ran the site through Google Chrome Dev Tools' Lighthouse to check on its performance. List whatever findings, rememeber to add screenshots of the lighthouse result*.
 
-* Responsiveness
+### Responsiveness
 * Tested on Galaxy S20, Iphone Pro 13, 27" Samsung screen, 24" Imac.
 
-* Browser compability
+### Browser compability
 * *The site was tested on the following browsers*
   * Google Chrome, version 120.0.6099.225 (Official Build) (64-bit)
   * Mozilla Firefox, version 122.0.0 (64-bit)
