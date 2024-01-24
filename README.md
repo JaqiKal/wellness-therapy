@@ -305,6 +305,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
 | [1] | In Chrome browser & MS Edge the bottom rigth corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| Not Solved |
+| [2] | To address the issue of preventing users from submitting only white spaces in the form in Contact page, I applied the pattern attribute to each relevant input field. [ <input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces."> ]. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html.| Not Solved |
 
 
 ### Solved Bugs
@@ -320,13 +321,14 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ## Credits
 
-### Code used
 
 ### Code Used
 
 * I encountered a challenge with styling an active menu item. Initially, using a class active selector with border-bottom resulted in a line that was wider than desired. To resolve this, I sought advice on Slack and supplemented it by researching pseudo-elements on W3Schools and MDN, and through experimentation. This process led to a solution, further inspired by a specific Stack Overflow discussion related to creating a vertical line for active menu items [found here](https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item)
 
 * I sought a straightforward method to enhance the footer and header and discovered an approach for creating rounded corners. This technique, inspired by an example from [w3schools](https://www.w3schools.com/css/css3_borders.asp) involves using CSS3 properties for borders. This has effectively given a more polished look to these website sections.
+
+* To not letting the user to be able to put whitespace at the beginning/end of a textinput I founda vode snippet at [Stack overflow](https://stackoverflow.com/questions/13766015/is-it-possible-to-configure-a-required-field-to-ignore-white-space), unforunately it doesn't work as intended.
 
 * I wanted to highlight the giftcard images in shop with something more than scaling effect up hover. Added dropshadow when hovering, amended from [mdn web doc](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow).
 

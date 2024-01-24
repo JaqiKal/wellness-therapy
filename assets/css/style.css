@@ -31,13 +31,14 @@ h6 {
   color: #301301;
   margin-top: 20px;
   margin-bottom: 15px;
+
 }
 
 .hidden-heading {
   display: none;
 }
 
-/* HEADER & NAVIGATION BAR */
+/* HEADER & NAVIGATION BAR - mobile first */
 .navbar {
   background-color: #b7a8a2;
   box-shadow: 0px 1px 10px rgba(48, 19, 1, 0.8);
@@ -145,7 +146,7 @@ h6 {
   background-color: #800000;
 }
 
-/* MAIN CONTENT */
+/* MAIN CONTENT - mobile first */
 main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
@@ -306,9 +307,8 @@ main {
   padding: 20px;
 }
 
-/* SERVICES PAGE */
+/* SERVICES PAGE - mobile first */
 /* Ensuring images and videos are responsive */
-
 .section.top-section {
   display: flex;
   flex-direction: column;
@@ -425,8 +425,7 @@ main {
   text-align: center;
 }
 
-/* SHOP PAGE */
-/* Shop Intro Hero Section */
+/* SHOP PAGE - mobile first */
 #shop-intro-hero {
   text-align: center;
   padding: 10px;
@@ -486,8 +485,7 @@ main {
   margin: 0 auto;
 }
 
-/* PRICING PAGE*/
-/* Hero Section Styling */
+/* PRICING PAGE - mobile first */
 #pricing-content {
   text-align: center;
   padding: 10px 5px;
@@ -582,24 +580,25 @@ main {
   color: #fff;
 }
 
-/* CONTACT PAGE */
+/* CONTACT PAGE - mobile first */
 #contact {
   margin-top: 250px;
 }
 
-#contact>h1,
-p {
-  margin: 35px;
+#contact #contact-content h1, p {
+  margin: 20px;
+  margin-left: 30px;
 }
 
 #signup-form {
   padding: 20px;
   border: 2px solid #301301;
   border-radius: 15px;
-  margin: 40px 20px 30px 10px;
+  margin: 40px auto; /* Center the form */
+  max-width: 500px; /* Set a maximum width for larger screens */
 }
 
-#signup-form>p {
+#signup-form > p {
   padding-bottom: 20px;
   font-weight: bold;
   color: #800000;
@@ -656,7 +655,7 @@ p {
   color: #fff;
 }
 
-/* COOKIE PAGE */
+/* COOKIES PAGE - mobile first */
 #cookie-content {
   background-color: #fdf8f5;
   color: #301301;
@@ -680,7 +679,7 @@ p {
   padding-left: 10px;
 }
 
-/* GDPR PAGE */
+/* GDPR PAGE - mobile first */
 #gdpr-content {
   background-color: #fdf8f5;
   color: #301301;
@@ -702,7 +701,7 @@ p {
   padding-left: 10px;
 }
 
-/* PRIVACY PAGE */
+/* PRIVACY PAGE - mobile first */
 #privacy-policy {
   background-color: #fdf8f5;
   color: #301301;
@@ -725,7 +724,7 @@ p {
   padding-left: 5px;
 }
 
-/* THANK YOU PAGE */
+/* THANK YOU PAGE - mobile first */
 .thank-you {
   background-color: #fdf8f5;
   color: #301301;
@@ -748,7 +747,7 @@ p {
   padding-left: 5px;
 }
 
-/* 404 PAGE */
+/* 404 PAGE - mobile first */
 .nono-hero {
   margin: 280px 5px 40px 5px;
 }
@@ -836,10 +835,11 @@ footer {
 }
 
 .footer-right,
-.footer-left ul {
+.footer-left ul li {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left:10px;
+  /* Pushes stacked icons left and right out from center */
+  margin: 5px;
 }
 
 .footer-divider {
@@ -852,7 +852,6 @@ footer {
   text-align: center;
   font-size: 1rem;
   margin-top: 20px;
-  order: 5;
   order: 5;
 }
 
@@ -886,7 +885,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  /* LANDING PAGE min768 */
+  /* LANDING PAGE - min768 */
   /* Navbar*/
   .navbar {
     flex-direction: row;
@@ -944,7 +943,7 @@ footer {
     margin-right: 130px;
   }
 
-  /* SHOP PAGE*/
+  /* SHOP PAGE  - min768 */
   #shop-giftcard {
     flex-direction: row;
     justify-content: space-around;
@@ -963,29 +962,34 @@ footer {
     margin: 0 auto;
   }
 
-  /* CONTACT */
-  #signup-form {
-    max-width: 100%;
+  /* CONTACT  - min768  */
+  #contact #contact-content {
+    font-weight: 500;
   }
 
-  /* COOKIES PAGE */
+  #signup-form {
+    margin: 50px auto; /* Center the form */
+    max-width: 700px;
+  }
+
+  /* COOKIES PAGE  - min768 */
   #cookie-content {
     margin: 250px 40px 40px 40px;
   }
 
-  /* GDPR PAGE */
+  /* GDPR PAGE  - min768  */
   #gdpr-content {
     margin: 240px 30px 40px 30px;
   }
 
-  /* PRIVACY POLICY */
+  /* PRIVACY POLICY  - min768 */
   #privacy-policy {
     width: 95%;
     margin-bottom: 40px;
     margin-top: 230px;
   }
 
-  /* 404 PAGE */
+  /* 404 PAGE  - min768 */
   #nono-main {
     margin-left: 40px;
     margin-top: 0px;
@@ -1004,28 +1008,29 @@ footer {
     width: 100%;
   }
 
-  /* THANK YOU PAGE */
+  /* THANK YOU PAGE - min768  */
   .thank-you {
     width: 95%;
     margin-bottom: 50px;
     margin-top: 300px;
   }
 
-  /* FOOTER */
+  /* FOOTER - min768 */
   footer {
     flex-direction: row;
     justify-content: space-between;
   }
 
-.footer-left,
-.footer-right {
-  flex-direction: row;
-}
+  .footer-left,
+  .footer-right {
+    flex-direction: row;
+  }
 
+}
 /* Large devices (desktops, 820px and up) */
 @media only screen and (min-width: 820px) {
 
-  /* SERVICES PAGE */
+  /* SERVICES PAGE - min820 */
   .content p {
     margin-left: 95px;
     margin-right: 95px;
@@ -1035,7 +1040,7 @@ footer {
     max-width: 650px;
   }
 
-  /* SHOP PAGE*/
+  /* SHOP PAGE - min820*/
   #shop-giftcard {
     display: flex;
     flex-direction: row;
@@ -1065,39 +1070,40 @@ footer {
     background-repeat: repeat;
   }
 
-  /* GDPR PAGE */
+  /* GDPR PAGE - min820 */
   #gdpr-content {
     margin: 230px 40px 40px 40px;
   }
 
-  /* PRIVACY POLICY */
+  /* PRIVACY POLICY - min820 */
   #privacy-policy {
     width: 95%;
     margin-bottom: 50px;
     margin-top: 240px;
   }
 
-  /* 404 PAGE */
+  /* 404 PAGE - min820 */
   #nono-main {
     margin-left: 50px;
     margin-top: 0px;
     padding: 5px;
   }
 
-  /* PRICING PAGE */
+  /* PRICING PAGE - min820 */
   #price-table table {
     width: 100%;
   }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  /* End-note in LANDING PAGE */
+  /* End-note in LANDING PAGE - min992 */
   #end-note {
     padding: 0 50px;
   }
 
-  /* SERVICES PAGE */
+  /* SERVICES PAGE - min992 */
   .content p {
     margin-left: 180px;
     margin-right: 180px;
@@ -1107,7 +1113,7 @@ footer {
     max-width: 700px;
   }
 
-  /* SHOP PAGE*/
+  /* SHOP PAGE - min992 */
   #shop-giftcard {
     display: flex;
     flex-direction: row;
@@ -1130,38 +1136,46 @@ footer {
     height: auto;
   }
 
-  /* PRICING PAGE */
+  /* PRICING PAGE - min992 */
   #price-table table {
     width: 100%;
   }
 
-  /* CONTACT */
-  #contact>h1 {
-    font-size: 1.8rem;
+  /* CONTACT - min992 */
+  #contact #contact-content {
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
-    /* THANK YOU PAGE */
+  #signup-form {
+    margin: 30px auto; /* Center the form */
+    max-width: 800px;
+  }
+
+    /* THANK YOU PAGE - min992 */
     .thank-you {
       width: 95%;
       margin-bottom: 50px;
       margin-top: 90px;
     }
 
-    /* 404 PAGE */
+    /* 404 PAGE - min992*/
     #nono-main {
       margin-left: 70px;
       margin-top: 0px;
       padding: 5px;
     }
-  }
+}
 
     /* Extra large devices (large desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-      /* SERVICES PAGE */
+      /* SERVICES PAGE - min1200*/
       .section img {
         max-width: 900px;
       }
 
-      /* SHOP PAGE*/
+      /* SHOP PAGE  - min1200 */
       #pricing-content h1 {
         font-size: 3.5rem;
       }
@@ -1170,8 +1184,8 @@ footer {
         width: 100%;
       }
 
-      /* CONTACT */
+      /* CONTACT - min1200 */
       #signup-form {
         max-width: 60%;
-
- 
+      }
+    }
