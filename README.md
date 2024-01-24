@@ -88,12 +88,12 @@ I've used:
 * #301301 and #fdf8f5 as primary color for body, heading and paragraph.
 * #800000 for highlighting headings and buttons
 * #ded9db for header and footer background.
-* #5ae25f as hover effect on buttons and links.
+* #0000ff as hover effect on buttons, links and giftcard images.
 * #503429, 
 * #dbd3d0, 
 * #e1dad7
 * #fdf8f5
-*  #ffffff
+* #ffffff as effect on buttons when hovering
 
  [Manus Herba website](documentation/doc-image/colorscheme.png)
 
@@ -115,7 +115,6 @@ Images used on this website have been sourced from free online resources, either
 ### Wireframes
 
 [Wireframes](documentation/wireframes/pp1-wireframe.png) were created for mobile, tablet and desktop using 'Balsamiq'
-
 
 
 ## Structure & Features
@@ -141,7 +140,8 @@ All Pages on the website are responsive and have:
 
 * a favicon in the browser tab
 * fixed navbar at the top for desktop and tablet users, enabling easy navigation to any section at any time – ideal for returning visitors familiar with the layout. On mobile devices, the navbar scrolls with the page to optimize screen space and enhance user experience.
-* Additionally, every page includes a footer with links to the enteprise's social media, ensuring constant connectivity and engagement.
+* Additionally, every page includes a footer with links to the enteprise's social media, ensuring constant connectivity and engagement. 
+* The website includes payment links that will provide convenient and secure transaction options in future versions when it becomes 'shopified.'
 
 ### Features entire site
 
@@ -163,9 +163,9 @@ All Pages on the website are responsive and have:
   * *add screenshot*
 * Contact page
   *add screenshot
-* Privacy policy
+* Privacy policy page
   * *add  screenshot*
-* Cookies
+* Cookies page
   * *add  screenshot*
 * GDPR page
  *  *add screenshot*
@@ -178,12 +178,11 @@ All Pages on the website are responsive and have:
 Possible future implemantaions would be to 'shopify' the site, with all that comes with that. Smaller steps on the way are:
 * A booking form with calendar
 * A separate feedback form
+* A search function
 * Possibility to bookmark ones favourites
 * An FAQ page
-* An chat-bot
+* A chat-bot
 * A check-out procedure
-* Parallax
-
 
 ### Accessibility
 
@@ -277,7 +276,9 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 * *Add screenshot of HTML checker result per page*
 
 ### Accessibility
-* *I ran the site through the Wave Web Accessibility Evaulation Tool. The tool did not raise specific isssues, it pointed att good practice. Though after the the test I did make the buttons larger and cose a darker color for the fa-brands icons in the footer.
+* I ran the site through the Wave Web Accessibility Evaulation Tool. The tool did not raise specific isssues, it pointed att good practice. 
+  * Though after the the test I did make the buttons larger and chose a darker color for the fa-brands icons in the footer.
+  * I also changed the link colour to blue when hovered upon, blue is often a good choice as it is generally distinguishable by people with various forms of color blindness.
 
 ### Performance
 * *I ran the site through Google Chrome Dev Tools' Lighthouse to check on its performance. List whatever findings, rememeber to add screenshots of the lighthouse result*.
@@ -301,26 +302,16 @@ All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.
 
 ### Testing User Stories
 
-Please refer to TESTING.md file for all testing carried out.
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
-Solved Bugs
+### Solved Bugs
 
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 | X | Z |
-| s | X | Z |
-| 3 | X | Z |
-| 4 | X | Z |
-| 5 | X | Z |
-
-
-1; I want to easily find information about the different therapies offered.
-
-2; I need to clearly understand how to get in contact and or book an appointment.
-
-3; I want to easily purchase gift cards, having already experienced the benefits of the therapies myself.
-
-4; I want a simple way to provide feedback or suggestions.
+| [1] | :--- | :--- |
+| [2] | :--- | :--- |
+| [3] | :--- | :--- |
+| [4] | :--- | :--- |
 
 ---
 
