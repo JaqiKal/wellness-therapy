@@ -61,28 +61,29 @@
           <p>Gaining a comprehensive understanding of the potential causes of your illness is crucial for us. This knowledge allows us to formulate the most suitable therapy tailored to your specific health requirements and objectives.</p>
           <p>A consultation begins with you receiving a questionnaire to fill out and send to me about a week before the visit. In order to find the cause of your problems and recommend therapy that can alleviate your specific issues, I need answers to some questions about you. When we meet, the consultation takes about an hour, and you will take home my written advice for you.</p>
           <p>Get in touch with me through the form!</p>
+          <p><sup>*</sup> Required field.</p>
         </div>      
         <form id="signup-form" method="GET" action="thank-you.html">
             <h1>Let's meet!</h1>
-            <p>Fill out the form below</p>
-            <label for="fname">First name:</label>
+            <p>Fill out the form below </p>
+            <label for="fname">First name<sup>*</sup>:</label>
             <input type="text" name="fname" id="fname" class="text-input" required>           
-            <label for="lname">Last name:</label>
+            <label for="lname">Last name<sup>*</sup>:</label>
             <input type="text" name="lname" id="lname" class="text-input" required>            
-            <label for="phone">Phone:</label>
+            <label for="phone">Phone<sup>*</sup>:</label>
             <input type="text" name="phone" id="phone" class="text-input" required>            
-            <label for="email">E-mail:</label>
+            <label for="email">E-mail<sup>*</sup>:</label>
             <input type="email" name="email" id="email" class="text-input" required>               
             <div>
                 <h3>How do you wish to be contacted?</h3>
-                <label for="opt">Please select an option:</label>
-                <select>
+                <label for="opt">Please select an option<sup>*</sup></label>
+                <select id="contact-option" name="contact-option" required>
                     <option value="by-phone">Please call me!</option>
                     <option value="by-email">Please send an e-mail!</option>
                 </select>
             </div>             
             <fieldset class="radio-btn">
-                <legend>Select your therapy form or choose Other to give feed-back:</legend>
+                <legend>Select your therapy form or choose Other to give feed-back<sup>*</sup>:</legend>
                 <div>
                     <input type="radio" name="therapy-type" id="herbal" value="herbal" required checked>
                     <label for="herbal">Herbal therapy</label>
@@ -96,7 +97,7 @@
                     <label for="zone">Zone therapy</label>
                 </div>
                 <div>
-                  <input type="radio" name="therapy-type" id="zone" value="Other" required>
+                  <input type="radio" name="therapy-type" id="other" value="Other" required>
                   <label for="zone">Other</label>
               </div>
             </fieldset>     

@@ -1,6 +1,6 @@
 # Manus Herba - Herbal, Lymphatic drainage and Zone therapy website
 
-[The website shown on a variety of screen sizes](documentation/images/amiresponsive-wellness-therapy.png)
+[The website shown on a variety of screen sizes](documentation/doc-image/amiresponsive-wellness-therapy.png)
 *add an image of the finished site her Use [amiresponsive](https://ui.dev/amiresponsive?url=https://jaqikal.github.io/wellness-therapy/).*
 
  <!-- [The website XX](url via git) -->
@@ -95,7 +95,7 @@ I've used:
 * #fdf8f5
 *  #ffffff
 
- ![Manus Herba website](documentation/doc-img/colorscheme.png)
+ [Manus Herba website](documentation/doc-image/colorscheme.png)
 
 
 ### Typography
@@ -333,6 +333,8 @@ Solved Bugs
 * I encountered a challenge with styling an active menu item. Initially, using a class active selector with border-bottom resulted in a line that was wider than desired. To resolve this, I sought advice on Slack and supplemented it by researching pseudo-elements on W3Schools and MDN, and through experimentation. This process led to a solution, further inspired by a specific Stack Overflow discussion related to creating a vertical line for active menu items [found here](https://stackoverflow.com/questions/68834109/how-do-i-get-a-vertical-line-to-the-left-of-the-active-menu-item)
 
 * I sought a straightforward method to enhance the footer and header and discovered an approach for creating rounded corners. This technique, inspired by an example from [w3schools](https://www.w3schools.com/css/css3_borders.asp) involves using CSS3 properties for borders. This has effectively given a more polished look to these website sections.
+
+* I wanted to highlight the giftcard images in shop with something more than scaling effect. Added colour when hovering, amended from [mdn web doc](https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 
 * [Favicon.io](https://favicon.io/favicon-converter/): Used to create the site Favicon and provided the code in the head of all pages.
 
