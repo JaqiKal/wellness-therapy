@@ -370,7 +370,7 @@ main {
 /* General Styles for All Buttons */
 .buttons a {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px 15px;
   margin-left: 10px;
   width: 90px;
   border-radius: 15px;
