@@ -112,9 +112,9 @@ This code is present on all pages on the website:
 
 `First Time Visitors`
 
-| Goals | How are they achieved?|
+|Goals|How are they achieved?|
 | :--- | :--- |
-| I want to easily find information about the different therapies offered. | The website have information snippets on landing page and links to Services page where the therapy forms are presented. Clear call to action button to mildly steer visitor towards either buying gift card or book an appointment. | I need to clearly understand how to get in contact and or book an appointment. | Call to action button on all pages. Though this is an area that definitely can be improved |
+|I want to easily find information about the different therapies offered.| The website have information snippets on landing page and links to Services page where the therapy forms are presented. Clear call to action button to mildly steer visitor towards either buying gift card or book an appointment.|I need to clearly understand how to get in contact and or book an appointment.|Call to action button on all pages. Though this is an area that definitely can be improved|
 
 `Returning Visitors`
 

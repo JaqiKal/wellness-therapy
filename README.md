@@ -138,6 +138,7 @@ The site has a simple structure made up of 7 pages plus 3 additional subpages.
 
   --   Insert IMAGE per Feature  --
 
+*
 * Home page / landing page - A short introduction to the therapy types with call to action buttons.
 * Therapy content page - Exploring all the therapy forms, short blurb of what to expect.
 * Shop - A page where I offer to purchase gift cards.
