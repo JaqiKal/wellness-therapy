@@ -69,14 +69,15 @@ Each device tested the site using the following browsers:
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 This was done only on Desktop
 
-All but one page is in the green, achieving a scores from 92  till 100. Main issues are related to lesser performance due to bad image handling.
+All but one score-meter is in the green, achieving a scores from 92  till 100. Main issues are related to lesser performance due to bad image handling.
 
 `Those pages with scores of 92 and up:`
 
 * Form elements do not have associated labels causes accessibility issues.
 
 This code is present on all pages on the website:
-``` 
+
+``` html
 <input type="checkbox" id="toggle" class="burger-chkbox">
 <label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
 ```
@@ -85,15 +86,13 @@ This code is present on all pages on the website:
 
 * Unused code.
 
-`One with score 76 on performance is the page with all the image problems. This impacts all the other performace rates on the other pages.`
-
-* Image elements do not have explicit width and height.
+`In Services page performance score is 76, this is the page with the image isues. This impacts all the other performace rates on the other pages.`
 
 * Video: some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required.
 
 * LCP is to hig (or slow), LCP measures when the largest content element in the viewport is rendered to the screen.
 
-* Form elements do not have associated labels cause accessibility issues.
+* Form elements do not have associated labels cause accessibility issues, it is tha same code snippet as already shown.
 
 ![404.htm](/documentation/doc-image/lighthouse-404.png)
 ![contact.html](/documentation/doc-image/lighthouse-contact.png)
@@ -155,7 +154,7 @@ This code is present on all pages on the website:
 | LAP-17 | Footer fa-brands icon payment link | Upon click take one to social media site in separate tab | Clicked | Site opened in separate tab | PASS |
 | LAP-18 | Footer fa-brands icon payment hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
 | LAP-19 | Footer links| Upon click take one to insite sub page - not opening separate tab| Clicked | Site opened insite | PASS |
-| LAP-20 | Footer links hover | Changeing colour when hovering over with pointer | Hover over with pointer | Visibly changing colout | PASS |
+| LAP-20 | Footer links hover | Changing colour when hovering over with pointer | Hover over with pointer | Visibly changing colout | PASS |
 
 #### Services Page (SEP)
 
@@ -211,7 +210,7 @@ This code is present on all pages on the website:
 | TYP-01 | Logo link | Link directs the user back to the home page | Clicked logo | Links to landing page | PASS |
 | TYP-02 | Logo hover | Visibly scaling up when hovering over with pointer | Hover over with pointer | Visibly scaling up | PASS |
 | TYP-03 | Menu link | Link to insite page - not opening separate tab | Clicked each menu item link | Menu item opened insite | PASS |
-| TYP-04| Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
+| TYP-04 | Footer links behaving as in Landing page | Hovering and clicking on each icon/link | Hovered and Clicked | All opened in separate tab and transported to correct external page | PASS |
 
 #### 404 Page (404P)
 
@@ -259,13 +258,21 @@ This code is present on all pages on the website:
 
 | TestCase ID| Feature | Expected Outcome | Result | Result after correction|
 | ---| --- | --- | --- | --- |
-|SEP-05|Give a gift button links under each image|Same size on all media sizes|Button larger on screens > 768px|PASS|
+| SEP-05 | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS |
 
 ### UNSOLVED Bugs
 
 |TestCase ID|Feature|Expected Outcome|Result|Result after correction|
 |---|---|---|---|---|
-|COP-08|Form - text message field check|Preventing user from submitting only whitespace in the form|To address the issue I applied the pattern attribute to each relevant input field ```<input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces">```. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html file.|NOT SOLVED|
-|Observation post test|NAVBAR|Navbar and footer corners not hidden|In Chrome browser & MS Edge the bottom right corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.|NOT SOLVED|
+| COP-08 | Form - text message field check|Preventing user from submitting only whitespace in the form | To address the issue I applied the pattern attribute to each relevant input field ```<input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces">```. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html file. | NOT SOLVED |
+| Observation post test | NAVBAR|Navbar and footer corners not hidden | In Chrome browser & MS Edge the bottom right corner of the navbar is hidden under the browser schrollbar. Not present in Firefox. | NOT SOLVED |
 
-- - - 
+### KNOWN ISSUES
+
+* Warning in CSS
+
+> Imported style sheets are not checked in direct input and file upload modes
+
+ Since the tool used does not check imported stylesheets, it will not validate or ensure the correctness of the styles coming from the Google Fonts link. This means any issues with these styles (like incorrect font weights or families) would not be detected.
+
+- - -

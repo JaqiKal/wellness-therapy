@@ -584,7 +584,8 @@ main {
   margin-top: 250px;
 }
 
-#contact #contact-content h1, p {
+#contact #contact-content h1,
+p {
   margin: 20px;
   margin-left: 20px;
 }
@@ -593,11 +594,13 @@ main {
   padding: 20px;
   border: 2px solid #301301;
   border-radius: 15px;
-  margin: 40px auto; /* Center the form */
-  max-width: 400px; /* Set a maximum width for larger screens */
+  margin: 40px auto;
+  /* Center the form */
+  max-width: 400px;
+  /* Set a maximum width for larger screens */
 }
 
-#signup-form > p {
+#signup-form>p {
   padding-bottom: 20px;
   font-weight: bold;
   color: #800000;
@@ -736,7 +739,8 @@ main {
   box-shadow: 1px 2px 4px #301301;
 }
 
-.thank-you h1, h2{
+.thank-you h1,
+h2 {
   padding-left: 5px;
   margin-left: 20px;
 }
@@ -841,7 +845,7 @@ footer {
 .footer-right,
 .footer-left ul li {
   list-style: none;
-  padding-left:10px;
+  padding-left: 10px;
   /* Pushes stacked icons left and right out from center */
   margin: 5px;
 }
@@ -972,7 +976,8 @@ footer {
   }
 
   #signup-form {
-    margin: 50px auto; /* Center the form */
+    margin: 50px auto;
+    /* Center the form */
     max-width: 700px;
   }
 
@@ -1030,142 +1035,146 @@ footer {
   }
 
 }
-/* Large devices (desktops, 820px and up) */
-@media only screen and (min-width: 820px) {
 
-  /* SERVICES PAGE - min820 */
-  .content p {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
+  /* Large devices (desktops, 820px and up) */
+  @media only screen and (min-width: 820px) {
 
-  .section img {
-    max-width: 650px;
-  }
+    /* SERVICES PAGE - min820 */
+    .content p {
+      margin-left: 95px;
+      margin-right: 95px;
+    }
+
+    .section img {
+      max-width: 650px;
+    }
 
     /* PRICING PAGE - min820 */
     #price-table table {
       width: 100%;
     }
 
-  /* SHOP PAGE - min820*/
-  #shop-giftcard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #shop-intro-hero h1 {
-    font-size: 2rem;
-  }
-
-  .shop-giftcard {
-    margin: 5px;
-    flex: 1;
-  }
-
-  .shop-giftcard img {
-    max-width: 250px;
-    height: auto;
-  }
-
-  .giftbox-image {
-    width: 28%;
-    height: auto;
-    display: block;
-    background-image: url('assets/images/giftbox-s-t.webp');
-    background-repeat: repeat;
-  }
-
-  /* GDPR PAGE - min820 */
-  #gdpr-content {
-    margin: 230px 40px 40px 40px;
-  }
-
-  /* PRIVACY POLICY - min820 */
-  #privacy-policy {
-    width: 98%;
-    margin-bottom: 50px;
-    margin-top: 280px;
-  }
-
-  /* 404 PAGE - min820 */
-  #nono-main {
-    margin-left: 50px;
-    margin-top: 0px;
-    padding: 5px;
-  }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  /* End-note in LANDING PAGE - min992 */
-  #end-note {
-    padding: 0 50px;
-  }
-
-  /* SERVICES PAGE - min992 */
-  .content p {
-    margin-left: 180px;
-    margin-right: 180px;
-  }
-
-  .section img {
-    max-width: 700px;
-  }
-
-  /* SHOP PAGE - min992 */
-  #shop-giftcard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .shop-giftcard {
-    margin: 10px;
-    flex: 1;
-  }
-
-  .shop-giftcard img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .giftbox-image {
-    width: 15%;
-    height: auto;
-  }
-
-  /* PRICING PAGE - min992 */
-  #price-table table {
-    width: 100%;
-  }
-
-  /* CONTACT - min992 */
-  #contact #contact-content {
-    font-weight: 500;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  #signup-form {
-    margin: 30px auto; /* Center the form */
-    max-width: 800px;
-  }
- 
-    /* THANK YOU PAGE - min992 */
-      .thank-you {
-        width: 90%;
-        margin: 250px 20px 50px 100px;
-      }
+    /* SHOP PAGE - min820*/
+    #shop-giftcard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
-    
-        /* Extra large devices (large desktops, 1200px and up) */
+
+    #shop-intro-hero h1 {
+      font-size: 2rem;
+    }
+
+    .shop-giftcard {
+      margin: 5px;
+      flex: 1;
+    }
+
+    .shop-giftcard img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .giftbox-image {
+      width: 28%;
+      height: auto;
+      display: block;
+      background-image: url('assets/images/giftbox-s-t.webp');
+      background-repeat: repeat;
+    }
+
+    /* GDPR PAGE - min820 */
+    #gdpr-content {
+      margin: 230px 40px 40px 40px;
+    }
+
+    /* PRIVACY POLICY - min820 */
+    #privacy-policy {
+      width: 98%;
+      margin-bottom: 50px;
+      margin-top: 280px;
+    }
+
+    /* 404 PAGE - min820 */
+    #nono-main {
+      margin-left: 50px;
+      margin-top: 0px;
+      padding: 5px;
+    }
+
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    /* End-note in LANDING PAGE - min992 */
+    #end-note {
+      padding: 0 50px;
+    }
+
+    /* SERVICES PAGE - min992 */
+    .content p {
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+
+    .section img {
+      max-width: 700px;
+    }
+
+    /* SHOP PAGE - min992 */
+    #shop-giftcard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .shop-giftcard {
+      margin: 10px;
+      flex: 1;
+    }
+
+    .shop-giftcard img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .giftbox-image {
+      width: 15%;
+      height: auto;
+    }
+
+    /* PRICING PAGE - min992 */
+    #price-table table {
+      width: 100%;
+    }
+
+    /* CONTACT - min992 */
+    #contact #contact-content {
+      font-weight: 500;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    #signup-form {
+      margin: 30px auto;
+      /* Center the form */
+      max-width: 800px;
+    }
+
+    /* THANK YOU PAGE - min992 */
+    .thank-you {
+      width: 90%;
+      margin: 250px 20px 50px 100px;
+    }
+
+  }
+
+    /* Extra large devices (large desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
+
       /* SERVICES PAGE - min1200*/
       .section img {
         max-width: 900px;
@@ -1180,9 +1189,7 @@ footer {
         width: 100%;
       }
 
-       */
       #signup-form {
         max-width: 60%;
       }
-     
     }
