@@ -706,7 +706,7 @@ main {
   color: #301301;
   padding: 20px;
   max-width: 100%;
-  margin: 20px auto;
+  margin: 0 20px auto;
   margin-top: 240px;
   border: 1px solid #301301a9;
   border-radius: 10px;
@@ -736,6 +736,11 @@ main {
   box-shadow: 1px 2px 4px #301301;
 }
 
+.thank-you h1, h2{
+  padding-left: 5px;
+  margin-left: 20px;
+}
+
 .thank-you ul {
   padding-left: 10px;
   list-style-position: outside;
@@ -743,6 +748,7 @@ main {
 
 .thank-you ul li {
   padding-left: 5px;
+  margin-left: 30px;
 }
 
 /* 404 PAGE - mobile first */
@@ -1037,6 +1043,11 @@ footer {
     max-width: 650px;
   }
 
+    /* PRICING PAGE - min820 */
+    #price-table table {
+      width: 100%;
+    }
+
   /* SHOP PAGE - min820*/
   #shop-giftcard {
     display: flex;
@@ -1074,7 +1085,7 @@ footer {
 
   /* PRIVACY POLICY - min820 */
   #privacy-policy {
-    width: 100%;
+    width: 98%;
     margin-bottom: 50px;
     margin-top: 280px;
   }
@@ -1086,10 +1097,6 @@ footer {
     padding: 5px;
   }
 
-  /* PRICING PAGE - min820 */
-  #price-table table {
-    width: 100%;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1153,9 +1160,8 @@ footer {
     /* THANK YOU PAGE - min992 */
       .thank-you {
         width: 90%;
-        margin: 250px 20px 50px 20px;
+        margin: 250px 20px 50px 100px;
       }
-
     }
     
         /* Extra large devices (large desktops, 1200px and up) */
@@ -1172,13 +1178,6 @@ footer {
 
       #price-table table {
         width: 100%;
-      }
-
-      /* CONTACT - min1200 */
-/*      #contact #contact-content h1, p {
-        margin: 20px;
-        margin-left: 300px;
-        margin-right: 300px;
       }
 
        */
