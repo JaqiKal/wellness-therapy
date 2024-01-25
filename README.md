@@ -8,11 +8,7 @@ Visit the deployed site: [Manus Herba](https://jaqikal.github.io/wellness-therap
 
 This website, dedicated to Herbal, Lymphatic drainage, and Zone therapy, is a static yet responsive front-end project. It was developed as part of the Code Institute's Diploma in Web Application Development Course for educational reasons. Crafted with HTML and CSS, the website aims at a seamless and user-friendly interface.  It highlights my interest for these therapeutic methods as a means of achieving body balance and wellness. This project serves as the first step in my path to mastering both front-end and back-end development, aiming to create an online space that is informative, easy to use, and effectively showcases these therapeutic services.
 
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/JaqiKal/zone-lymphatic-therapy?style=plastic&labelColor=%23301a4b&color=%23e66eb2)
-![GitHub contributors](https://img.shields.io/github/contributors/JaqiKal/zone-lymphatic-therapy?style=plastic&labelColor=%23301a4b&color=%235393ff)
-![GitHub language count](https://img.shields.io/github/languages/count/JaqiKal/zone-lymphatic-therapy?style=plastic&labelColor=%23301a4b&color=%2356ff94)
-![GitHub top language](https://img.shields.io/github/languages/top/JaqiKal/zone-lymphatic-therapy?style=plastic&labelColor=%23301a4b&color=%23f4ff5d)
-![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fgithub.com%2FJaqiKal%2Fzone-lymphatic-therapy&style=plastic&labelColor=%23301a4b&color=%23ff701a)
+- - -
 
 ## CONTENTS
 
@@ -81,19 +77,23 @@ I used colour sparingly to highlight key areas like headings or important featur
 
 ### Colour Scheme
 
-Soft blues, greens, and neutral brown/beige hues are often associated with health and wellness.
-I've used:
-* #301301 and #fdf8f5 as primary color for body, heading and paragraph.
-* #800000 for highlighting headings and buttons
-* #ded9db for header and footer background.
-* #0000ff as hover effect on buttons, links and giftcard images.
-* #503429, 
-* #dbd3d0, 
-* #e1dad7
-* #fdf8f5
-* #ffffff as effect on buttons when hovering
+I wanted down to earth hues, calm, soft and non intrusive ambiance. 
 
- [Manus Herba website](documentation/doc-image/colorscheme.png)
+| Hex Colour | Use | Objectives |
+| ---| --- | --- |
+| #800000 | To highlight headings and buttons | A deep, rich color suggesting sophistication and earthiness. It's grounding and can evoke a sense of balance and stability, which is fitting for a website focused on natural  therapies.|
+| #231005 | Footer icons and links |  A very dark brown, almost black, is reminiscent of the earth and soil. It's a strong, foundational color that can convey a sense of seriousness and depth.|
+| #301301 | Heading and paragraph | Similar to maroon but with a deeper tone, burgundy adds a touch of elegance and warmth, reinforcing a nurturing and comforting atmosphere. |
+| #503429 | Background-color for table data cells and for lines in form | This is a warm, welcoming brown. It's softer and less intense than the darker browns, helping to balance the palette with a more approachable feel.|
+| #b7a8a2 | Header and footer background | A neutral, gentle color that harmonizes the palette. It's unobtrusive and soothing, and in my opinion making it ideal for backgrounds or to soften the overall look of the website. |
+| #e1dad7 | Background colour table heading, outline toggle box ridge |soft, warm off-white adds lightness and a sense of calm. It's less stark than pure white, which helps maintain the down-to-earth vibe. |
+| #fdf8f5 | Generic background color |This is almost white with a hint of warmth. It's inviting and comforting, perfect for creating a sense of openness and light without being too clinical. |
+| #ffffff | As effect on button text when hovering |Pure white is great for clarity and cleanliness. It provides a neutral background that can make other colors stand out and is essential for text readability. |
+| #0000ff | As hover effect on buttons, links and giftcard images. | A good colour for accessibility purpose. |
+
+In summary, the palette I chose combines grounding, earthy tones with soft, calming neutrals. I believe that this combination is well-suited for a website in the wellness and therapy domain, as it can create a tranquil and inviting space that encourages visitors to explore and learn more about the natural treatments I offer.
+
+ ![Manus Herba website](/documentation/doc-image/colorscheme.png)
 
 
 ### Typography
@@ -101,8 +101,17 @@ I've used:
 * Google Fonts was used to import the chosen fonts for use in the site. I used [Google Fonts](https://fonts.google.com/) as it doesn't require you to download the font.
 * I've included all weights to have the possibility of variation.
 * My choice was based on readability and that I find the fonts to convey a neutral, easy to read feeling.
-* [Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website=roboto) for headings H1-H6 & paragraph.
-* [Open sans](https://fonts.google.com/?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website&query=Open+sans) for body text.
+
+* H1-H6 & paragraph.
+[Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website=roboto)
+
+![x](/documentation/doc-image/roboto-font.png)
+
+* Body text
+[Open sans](https://fonts.google.com/?preview.text=Manus%20Herba%20-%20Herbal,%20Lymphatic%20drainage%20and%20Zone%20therapy%20website&query=Open+sans)
+
+![x](/documentation/doc-image/open-sans-font.png)
+
 
 ### Imagery
 
@@ -112,6 +121,16 @@ Images used on this website have been sourced from free online resources, either
 
 Wireframese created for mobile, tablet and desktop using 'Balsamiq'
 ![Wireframes](documentation/wireframes/pp1-wireframe.png) 
+
+
+### General features on each page
+
+All Pages on the website are responsive and have:
+
+* a favicon in the browser tab
+* fixed navbar at the top for desktop and tablet users, enabling easy navigation to any section at any time – ideal for returning visitors familiar with the layout. On mobile devices, the navbar scrolls with the page to optimize screen space and enhance user experience.
+* Additionally, every page includes a footer with links to the enteprise's social media, ensuring constant connectivity and engagement. 
+* The website includes payment links that will provide convenient and secure transaction options in future versions when it becomes 'shopified.'
 
 ## Structure & Features
 
@@ -125,53 +144,14 @@ The site has a simple structure made up of 7 pages plus 3 additional subpages.
 * Contact -  A page where one can book the either type of therapy and or leave feed-back.
 * Privacy policy - Outlines data handling, user rights, and privacy practices on website.
 * Cookies - Details website's use of cookies and user consent requirements.
-* There are also two additional subpages:
+* There are also three additional subpages:
   * GDPR
   * A thank you page for when a user has submitted a form.
   * A 404 page for when user land on a non-existent page.
 
-### General features on each page
-
-All Pages on the website are responsive and have:
-
-* a favicon in the browser tab
-* fixed navbar at the top for desktop and tablet users, enabling easy navigation to any section at any time – ideal for returning visitors familiar with the layout. On mobile devices, the navbar scrolls with the page to optimize screen space and enhance user experience.
-* Additionally, every page includes a footer with links to the enteprise's social media, ensuring constant connectivity and engagement. 
-* The website includes payment links that will provide convenient and secure transaction options in future versions when it becomes 'shopified.'
-
-### Features entire site
-
-* Favicon
-  * *add  screenshot*
-* Hero
-  * *add  screenshot*
-* Nav bar
-  * *add  screenshot*
-* Footer
-  * *add  screenshot*
-* Home page / landing page
-  * *add  screenshot*
-* Service page
-  * *add  screenshot*
-* Shop page
-  * *add  screenshot*
-* Pricing page
-  * *add screenshot*
-* Contact page
-  *add screenshot
-* Privacy policy page
-  * *add  screenshot*
-* Cookies page
-  * *add  screenshot*
-* GDPR page
- *  *add screenshot*
-* A thank you page for when a user has submitted a form.
-  * *add  screenshot*
-* A 404 page for when user land on a non-existent peage.
-  * *add  screenshot*
 
 ### Future Implemantations
-Possible future implemantaions would be to 'shopify' the site, with all that comes with that. Smaller steps on the way are:
+* Possible future implemantaions would be to 'shopify' the site, with all that comes with that. Smaller steps on the way are:
 * A booking form with calendar
 * A separate feedback form
 * A search function
@@ -189,6 +169,8 @@ While developing the website, I've carefully focused on maximizing its accessibi
   * Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
   * Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
   * Ensuring that there is a sufficient colour contrast throughout the site.
+  * I also changed the link colour to blue when hovered upon, blue is often a good choice as it is generally distinguishable by people with various forms of color blindness.
+  * I did make the buttons larger and chose a darker color for the fa-brands icons in the footer.
 
 ---
 
@@ -220,7 +202,6 @@ While developing the website, I've carefully focused on maximizing its accessibi
 * [Tiny PNG](https://tinypng.com/) - To compress images.
 * [Visual Studio Code](https://code.visualstudio.com/) - a free and open-source code editor
 * [Web Disability Sim](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
-* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 
 ## Deployment & Local Development
@@ -262,67 +243,11 @@ To clone the zone-lymphatic-therapy repository:
 
 ## Testing & Defects(Bugs)
 
-All code have been validated throught the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) [and W3C HTML Validator](https://validator.w3.org/)
-
-
-
-### HTML validation
-
-* *Add screenshot of HTML checker result per page*
-
-### CSS Validation
-
-* *Add screenshot of HTML checker result per page*
-
-### Accessibility
-* I ran the site through the Wave Web Accessibility Evaulation Tool. The tool did not raise specific isssues, it pointed att good practice. 
-  * Though after the the test I did make the buttons larger and chose a darker color for the fa-brands icons in the footer.
-  * I also changed the link colour to blue when hovered upon, blue is often a good choice as it is generally distinguishable by people with various forms of color blindness.
-
-### Performance
-* *I ran the site through Google Chrome Dev Tools' Lighthouse to check on its performance. List whatever findings, rememeber to add screenshots of the lighthouse result*.
-
-### Responsiveness
-* Tested on Galaxy S20, Iphone Pro 13, 27" Samsung screen, 24" Imac.
-
-### Browser compability
-* *The site was tested on the following browsers*
-  * Google Chrome, version 120.0.6099.225 (Official Build) (64-bit)
-  * Mozilla Firefox, version 122.0.0 (64-bit)
-  * Microsoft Edge, version 120.0.2210.144 (Official build) (64-bit)
-
-*Note whatever finding*
-
-* Defects (bugs) & fixes
-
-### Known bugs
-
-### Testing User Stories
-
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
-
-### Unolved Bugs
-
-| No | Bug | How I solved the issue |
-| :--- | :--- | :--- |
-| [1] | In Chrome browser & MS Edge the bottom rigth corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| Not Solved |
-| [2] | To address the issue of preventing users from submitting only white spaces in the form in Contact page, I applied the pattern attribute to each relevant input field. [ <input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces."> ]. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html.| Not Solved |
-| [3] | To change the size of the menu icons [fa-solid fa-house], this code didn't work [.menu a. i.fa-solid {font-size: 30px !important;}] regardless of how I applied it. So, I had to resort to an emergency solution by setting the font size in the a href directly." This approach, while not ideal in terms of best practices for separating content and style, can be a practical short-term solution when CSS adjustments fail to produce the desired result. | Not Solved |
-
-
-### Solved Bugs
-
-| No | Bug | How I solved the issue |
-| :--- | :--- | :--- |
-| [1] | :--- | :--- |
-| [2] | :--- | :--- |
-| [3] | :--- | :--- |
-| [4] | :--- | :--- |
 
 ---
 
 ## Credits
-
 
 ### Code Used
 
@@ -338,7 +263,6 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 * [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create content in [Privacy Policy page](https://jaqikal.github.io/wellness-therapy/privacy-policy).
 
-* 
 
 ### Content
 

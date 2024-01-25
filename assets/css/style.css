@@ -108,7 +108,7 @@ h6 {
   align-items: flex-start;
   background: #dbd3d8;
   border: 2px ridge #301301;
-  outline: 1px solid #dbd3d0;
+  outline: 1px solid #e1dad7;
   padding: 20px;
   margin-top: 8px;
   border-radius: 10px;
@@ -535,7 +535,6 @@ main {
   width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
-  background-color: #dbd3d0;
 }
 
 #price-table th,
@@ -551,7 +550,7 @@ main {
   background-color: #e1dad7;
 }
 
-/* Text color for table data cells */
+/* olor for table data cells */
 #price-table td {
   color: #fff;
   font-weight: 600;
@@ -1157,17 +1156,9 @@ footer {
         width: 90%;
         margin: 250px 20px 50px 20px;
       }
+}
     
-    }
-
-    /* 404 PAGE - min992*/
-    #nono-main {
-      margin-left: 70px;
-      margin-top: 0px;
-      padding: 5px;
-    }
-
-    /* Extra large devices (large desktops, 1200px and up) */
+        /* Extra large devices (large desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
       /* SERVICES PAGE - min1200*/
       .section img {
