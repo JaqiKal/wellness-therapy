@@ -108,7 +108,7 @@ h6 {
   align-items: flex-start;
   background: #dbd3d8;
   border: 2px ridge #301301;
-  outline: 1px solid #e1dad7;
+  outline: 1px solid #dbd3d0;
   padding: 20px;
   margin-top: 8px;
   border-radius: 10px;
@@ -707,8 +707,7 @@ main {
   padding: 20px;
   max-width: 100%;
   margin: 20px auto;
-  margin-bottom: 20px;
-  margin-top: 220px;
+  margin-top: 240px;
   border: 1px solid #301301a9;
   border-radius: 10px;
   box-shadow: 1px 2px 4px #301301;
@@ -1075,9 +1074,9 @@ footer {
 
   /* PRIVACY POLICY - min820 */
   #privacy-policy {
-    width: 95%;
+    width: 100%;
     margin-bottom: 50px;
-    margin-top: 240px;
+    margin-top: 280px;
   }
 
   /* 404 PAGE - min820 */
@@ -1150,13 +1149,14 @@ footer {
     margin: 30px auto; /* Center the form */
     max-width: 800px;
   }
-
+ 
     /* THANK YOU PAGE - min992 */
       .thank-you {
         width: 90%;
         margin: 250px 20px 50px 20px;
       }
-}
+
+    }
     
         /* Extra large devices (large desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
@@ -1175,14 +1175,15 @@ footer {
       }
 
       /* CONTACT - min1200 */
-      #contact #contact-content h1, p {
+/*      #contact #contact-content h1, p {
         margin: 20px;
         margin-left: 300px;
         margin-right: 300px;
       }
 
+       */
       #signup-form {
         max-width: 60%;
       }
-      
+     
     }

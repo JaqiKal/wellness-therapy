@@ -15,25 +15,29 @@ Visit the deployed site: [Manus Herba](https://jaqikal.github.io/wellness-therap
   * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
 
-
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
 During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
 I have used google chrome developer tools & Firefox inspector tool to ensure that each page is responsive on a variety of different screen sizes and devices.
 
-### Testing was performed on the following devices:
-* Desktop:
-    * Lenovo Legion T7
-* Screen:
-   * Samsung Odyssey G3 / 27" / 1920 x 1080 /
-* Mobile Devices:
-    * Samsung Galaxy S20
+### Testing was performed on the following devices
 
-### Browser compability 
+* Desktop:
+ *Lenovo Legion T7
+* Screen:
+  *Samsung Odyssey G3 / 27" / 1920 x 1080 /
+* Mobile Devices:
+  *Samsung Galaxy S20
+
+### Browser compability
+
 Each device tested the site using the following browsers:
+
 * Google Chrome, version 121.0.6167.86 (Official Build) (64-bit)
+
 * Firefox, version 122.0 (64-bit)
 
 ### Responsiveness
+
 * Tested on Galaxy S20, 27" Samsung screen
 * [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fjaqikal.github.io%2Fwellness-therapy%2F)
 * [Am I Responsive](https://ui.dev/amiresponsive?url=https://jaqikal.github.io/wellness-therapy/)
@@ -68,15 +72,28 @@ This was done only on Desktop
 All but one page is in the green, achieving a scores from 92  till 100. Main issues are related to lesser performance due to bad image handling.
 
 `Those pages with scores of 92 and up:`
-*  Form elements do not have associated labels causes accessibility issues.
-*  Badly sized images.
-*  Unused code.
+
+* Form elements do not have associated labels causes accessibility issues.
+
+This code is present on all pages on the website:
+``` 
+<input type="checkbox" id="toggle" class="burger-chkbox">
+<label for="toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
+```
+
+* Badly sized images.
+
+* Unused code.
 
 `One with score 76 on performance is the page with all the image problems. This impacts all the other performace rates on the other pages.`
-*  Image elements do not have explicit width and height.
-*  Video: some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required.
-*  LCP is to hig (or slow), LCP measures when the largest content element in the viewport is rendered to the screen.
-*  Form elements do not have associated labels cause accessibility issues.
+
+* Image elements do not have explicit width and height.
+
+* Video: some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required.
+
+* LCP is to hig (or slow), LCP measures when the largest content element in the viewport is rendered to the screen.
+
+* Form elements do not have associated labels cause accessibility issues.
 
 ![404.htm](/documentation/doc-image/lighthouse-404.png)
 ![contact.html](/documentation/doc-image/lighthouse-contact.png)
@@ -242,14 +259,13 @@ All but one page is in the green, achieving a scores from 92  till 100. Main iss
 
 | TestCase ID| Feature | Expected Outcome | Result | Result after correction|
 | ---| --- | --- | --- | --- |
-| SEP-05 | Give a gift button links under each image | Same size on all media sizes | Button larger on screens > 768px | PASS
+|SEP-05|Give a gift button links under each image|Same size on all media sizes|Button larger on screens > 768px|PASS|
 
 ### UNSOLVED Bugs
 
-| TestCase ID| Feature | Expected Outcome | Result | Result after correction|
-| ---| --- | --- | --- | --- |
-| COP-08 | Form - text message field check | Preventing user from submitting only whitespace in the form | To address the issue I applied the pattern attribute to each relevant input field `<input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces">`. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html file.| NOT SOLVED |
-| Observation post test |  NAVBAR | Navbar and footer corners not hidden | In Chrome browser & MS Edge the bottom right corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.| NOT SOLVED | 
-| Observation post test| Bulleted list | Normal formatting | On 1920px wide screen bulleted list has strange formatting | NOT SOLVED |
+|TestCase ID|Feature|Expected Outcome|Result|Result after correction|
+|---|---|---|---|---|
+|COP-08|Form - text message field check|Preventing user from submitting only whitespace in the form|To address the issue I applied the pattern attribute to each relevant input field ```<input type="text" name="fname" id="fname" class="text-input" required pattern="\S(.*\S)?" title="This field cannot be empty or contain only spaces">```. This doesn't handle the problem with white-space. Cannot find any answers on the net to why. Code is kept in my contact html file.|NOT SOLVED|
+|Observation post test|NAVBAR|Navbar and footer corners not hidden|In Chrome browser & MS Edge the bottom right corner of the navbar is hidden under the browser schrollbar. Not present in Firefox.|NOT SOLVED|
 
---------------------
+- - - 
